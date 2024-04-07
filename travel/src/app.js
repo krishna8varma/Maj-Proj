@@ -1,8 +1,18 @@
 import React from 'react';
 import './app.css'
+import Home from './Components/Home/home';
+import Main from './Components/Main/main';
+import Reviews from './Components/Reviews/review';
+import Navbar from './Components/Navbar/navbar'
 const App =()=>{
     return(
-        <h2>Travel</h2>
+        <>
+        <Navbar/>
+        <Home/>
+        <Main/>
+        <Reviews/>
+        </>
+       
     )
 }
 export default App

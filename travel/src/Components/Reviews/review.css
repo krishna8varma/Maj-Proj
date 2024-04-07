@@ -1,0 +1,14 @@
+.reviewTitle{
+    text-align: center;
+padding: 2rem;
+padding-bottom: 1.5rem;
+font-size: 30px;
+position: relative;
+z-index: 2;
+text-decoration: underline;
+}
+.reviewDesc{
+    text-align: center;
+    position: relative;
+    font-weight: 200;
+}

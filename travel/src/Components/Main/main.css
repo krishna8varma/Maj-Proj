@@ -1,0 +1,100 @@
+.iconss{
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+}
+.secTitle{
+    text-align: center;
+    padding: 2rem;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+}
+.underline{
+    text-decoration: underline;
+   text-underline-position:above
+}
+:root{
+    --PrimaryColor: hsl(199,100%,33%);
+    --SecondaryColor: hsl(241, 28%, 60%);
+    --gradientColor: linear-gradient(to right ,hsl(19,100%,33%),hsl(0,0%,100%));
+    --black:  hsl(0, 100%, 2%);
+    --white: hsl(0, 29%, 97%);
+    --input:hsl(0, 29%, 97%);
+    --body:hsl(0, 29%, 97%);
+    --cardBG:hsl(0, 29%, 97%);
+}
+
+button{
+    background-color: rgb(19, 78, 111);
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    color: aliceblue;
+    border-color: white;
+
+}
+.seeContent{
+   justify-content: center; 
+   
+     .singleDestination{
+        height:100%;
+        display: grid;
+        padding: 1rem;
+        row-gap: 2 rem;
+        border-radius: 10px;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(140, 140, 141, 0.6);
+        overflow: hidden;
+        &:hover{
+            background: rgba(204, 202, 202, 0.914);
+            box-shadow: 0 2px 4px rgba(140, 140, 141, 0.6);
+            transition: .3s ease;
+        }
+        .imageDiv{
+            height: 180px;
+            width: 100%;
+            overflow: hidden;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: 2s ease;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .cardInfo{
+            
+           padding: 1rem; 
+           .destTitle{
+            color: var(--black);
+            font-size: 1.25rem;
+
+           }
+           .continent{
+            gap: .5rem;
+              
+              .name{
+                font-weight: 300;
+                font-size: 14px;
+              }
+              .desc{
+                font-size: 13.5px;
+                font-weight: 200;
+
+              }
+            
+
+           }
+        }
+
+     }
+}
