@@ -109,7 +109,7 @@
                 
             }
             button{
-                background-color: rgb(8, 71, 107);
+                background-color: linear-gradient(to right ,rgb(8, 71, 107),rgb(21, 137, 205));
                 padding: 0.5rem;
                 padding-left: 2rem;
                 padding-right: 2rem;

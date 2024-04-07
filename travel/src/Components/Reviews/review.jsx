@@ -1,38 +1,71 @@
 import React from "react";
 import './review.css';
-// import img1 from 
-// const Data=[{
-//     id:1,
-//     imgSrc:manali,
-//     destTitle: 'Manali',
-//     Location:"India",
-//     description:'Manali is a town, near Kullu town in Kullu district in the Indian state of Himachal Pradesh.[2] It is situated in the northern end of the Kullu Valley, formed by the Beas River. ',
+import img1 from '../../Assets/adi.png';
+import img2 from '../../Assets/shradha.png';
+import img3 from '../../Assets/ramesh.png';
+const Data = [{
+    id: 1,
+    imgSrc: img1,
+    destTitle: 'Aditya Kapoor',
+    Rating: 4.5,
+    description: "This trip planner is a game-changer! Its user-friendly, customizable, and offers personalized recommendations that helped me create the perfect itinerar"
 
-// },
-// {
-//     id:2,
-//     imgSrc:goa,
-//     destTitle: 'Goa',
-//     Location:"India",
-//     description:'Goa, state of India, comprising a mainland district on the country’s southwestern coast and an offshore island. It is located about 250 miles (400 km) south of Mumbai (Bombay). ',
-
-
-// },
-// {
-//     id:3,
-//     imgSrc:paris,
-//     destTitle: 'Paris',
-//     Location:"France",
-//     description:'Paris, capital of France, is one of the most important and influential cities in the world. In terms of tourism, Paris is the second most visited city in Europe after London. ',
-
-// }
-const Review =()=>
+},
 {
-    return(
-        <div className="reviewHead">
-            <h3 className="reviewTitle">Reviews and Testimonials</h3>
-            <p className="reviewDesc">“Read some of our latest testimonials from people about their trip experience with us.”</p>
-        </div>
+    id: 2,
+   imgSrc:img2,
+    destTitle: 'Shraddha Solanki',
+    Rating: 4.7,
+    description: 'I consider myself a seasoned traveler, but even I can get overwhelmed with planning sometimes. This website took all the stress out of the equation and allowed me to focus on the excitement of my upcoming trip. I have already recommended it to all my friends! ',
+
+
+},
+{
+    id: 3,
+    imgSrc:img3,
+    destTitle: 'Ramesh Sharma',
+    Rating: 5.0,
+    description: "I used this trip planner for my recent vacation, and I couldn't be happier with the experience! It made organizing my itinerary a breeze, and the suggestions for activities and accommodations were spot on. Highly recommended!",
+
+}]
+const Review = () => {
+    return (
+        <section className="Reviews">
+            <div className="reviewHead">
+                <h3 className="reviewTitle">Reviews and Testimonials</h3>
+                <p className="reviewDesc">“Read some of our latest testimonials from people about their trip experience with us.”</p>
+            </div>
+            <div className="seeContentR grid">
+                {
+                    Data.map(({ id, imgSrc, destTitle, description, Rating }) => {
+                        return (
+                            <div key={id} className="singleDestination">
+                                {/* <div className="imageDiv">
+                                <img src={imgSrc} alt={destTitle} />
+                             </div> */}
+                                <div className="cardInfo">
+                                    <div className="userImg">
+                                    <h4 className="destTitle"><img src={imgSrc} alt="#"/>{destTitle}</h4>
+                                    </div>
+
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <div className="desc">
+                                            <p>{description}</p>
+
+                                        </div>
+
+
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </section>
     )
 }
 

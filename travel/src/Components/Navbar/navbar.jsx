@@ -20,7 +20,7 @@ const removeNavbar = () =>{
        <section className='navBarSection'>
     <header className='header flex'>
         <div className='logoDiv'>
-            <a href="#" className='logo'>
+            <a href="#" className='logo flex'>
             <h1> <MdOutlineTravelExplore className="icon"/> Travel</h1>
             </a>
         </div>
@@ -31,7 +31,7 @@ const removeNavbar = () =>{
       <div onClick={removeNavbar} className='closeNavBar'>
         <IoCloseCircle className='icon'/>
        </div>
-        <ul className='navLists-flex'>
+        <ul className='navLists flex'>
         
         <li className='navItem'>
             <a href="#" className='navLink'>Home</a>

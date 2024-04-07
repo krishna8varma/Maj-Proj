@@ -1,0 +1,19 @@
+.Footer{
+    position: relative;
+    text-align: center;
+  background-color: rgb(20, 2, 2);
+  color: aliceblue;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  
+}
+.footerinfo{display: inline-block;
+    
+    margin-right: 30px;
+}
+.icon{
+    padding:5px;
+    margin: 5 px;
+}

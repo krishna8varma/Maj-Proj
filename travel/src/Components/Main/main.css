@@ -4,6 +4,18 @@
         height: auto;
       }
 }
+.column {
+    float: left;
+    width: 25%;
+    padding: 40px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 .secTitle{
     text-align: center;
     padding: 2rem;

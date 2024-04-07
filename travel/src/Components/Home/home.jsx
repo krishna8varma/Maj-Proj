@@ -4,6 +4,7 @@ import video from '../../Assets/video.mp4';
 
 
 
+
 const Home=()=> {
     return (
         <section className='home'>
@@ -21,7 +22,7 @@ const Home=()=> {
                         <label htmlFor="city">Starting Location:</label>
                         <div className="input flex">
                             <input type="text" placeholder="Enter name here"/>
-                         
+                           
                         </div>
                     
                     </div>
@@ -32,6 +33,7 @@ const Home=()=> {
                             <input type="text" placeholder="Enter name here"/>
                            
                         </div>
+                    
                         
                     
                     </div>
@@ -52,7 +54,7 @@ const Home=()=> {
                     
                     </div>
                     <div className="startButton">
-                        <button>Start Trip</button>
+                        <button >Start Trip</button>
                     </div>
                 </div>
                 
