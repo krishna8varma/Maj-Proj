@@ -2,6 +2,7 @@ import React from "react";
 import './home.css';
 import video from '../../Assets/video.mp4';
 
+import { Link } from "react-router-dom";
 
 
 
@@ -18,6 +19,7 @@ const Home=()=> {
                     <h1>Search your Holiday</h1>
                 </div>
                 <div className="cardDiv grid">
+                    
                     <div className="destinationInput">
                         <label htmlFor="city">Starting Location:</label>
                         <div className="input flex">
@@ -26,6 +28,7 @@ const Home=()=> {
                         </div>
                     
                     </div>
+               
                     <div className="destinationInput">
                         <label htmlFor="city">Ending Destination:</label>
                         
@@ -54,7 +57,7 @@ const Home=()=> {
                     
                     </div>
                     <div className="startButton">
-                        <button >Start Trip</button>
+                       <Link to="/Page1"> <button   >Start Trip </button></Link>
                     </div>
                 </div>
                 
