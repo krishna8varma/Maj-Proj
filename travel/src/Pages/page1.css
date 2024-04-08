@@ -1,0 +1,82 @@
+.home-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Assets/Page1bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: opacity(1); /* Optional: Add opacity to the background image */
+  }
+  
+  .content {
+  margin-top: 0px;
+    z-index: 1;
+    text-align: center;
+    color: rgb(242, 241, 241);
+    font-weight: 600;
+    h1{
+        font-size: 3rem;
+      }
+      p{
+        font-size: 1rem;
+        padding-top: 30px;
+      }
+  }
+ 
+
+  .button-container {
+
+    display: flex;
+    justify-content:space-between;
+   
+    
+    margin-top: 4.5rem;
+
+    
+   
+  }
+  
+  .button-container img {
+    width: 150px; /* Adjust the width of the buttons as needed */
+    height: auto;
+    cursor: pointer;
+    margin :40px;
+    margin-bottom: 5px;
+    gap: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 2rem;
+    padding:2rem;
+    
+  }
+  .icon{
+    p{
+        font-size: 15px;
+        text-align:center;
+        color: rgb(242, 235, 235);
+            
+    }
+  }
+  .btn{
+    
+    background-color: rgb(22, 77, 113);
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    color: aliceblue;
+    border-color: white;
+    margin-top: 3rem;
+    
+
+  }
