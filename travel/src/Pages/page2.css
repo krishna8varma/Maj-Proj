@@ -1,0 +1,90 @@
+background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Assets/Page1Bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: opacity(1); /* Optional: Add opacity to the background image */
+  }
+  .home-container2 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content2 {
+    margin-top: -300px;
+      z-index: 1;
+      text-align: center;
+      color: rgb(242, 241, 241);
+      font-weight: 600;
+      h1{
+          font-size: 3rem;
+        }
+        p{
+          font-size: 1rem;
+          padding-top: 30px;
+        }
+    }
+    .black-box {
+      background-color: rgba(0, 0, 0, 0.5); /* Black box with opacity */
+      padding: 10px;
+      border-radius: 50px;
+      opacity: 1;
+      max-width: 85%;
+      margin-right: 50px;
+    }  
+    .button2 {
+  
+      display: inline-block;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-right: 30px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 30px;
+      background-color: #f0ecec;
+      color: rgb(11, 1, 1);
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  
+    .button2:hover {
+      background-color: #120101; /* Change color on hover */
+      color: #f0ecec;
+    }
+    
+    .button2.selected {
+      background-color: #ff0000; /* Change color when selected */
+    }
+    
+.button-container2 {
+  position: absolute;
+  top: calc(50% ); /* Adjust the distance below the text */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  
+  
+}
+.btn2{
+/*  
+  background-color: rgb(20, 92, 128); */
+  /* 
+   */
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  border-radius: 20px;
+  text-align: center;
+  color: aliceblue;
+  border-color: white;
+  
+  margin-top: 1.5rem;
+
+}
