@@ -23,10 +23,24 @@
     position: relative;
     z-index: 2;
 }
-.underline{
+/* .underline{
     text-decoration: underline;
    text-underline-position:above
+} */
+ 
+h3{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 3rem;
+  color:rgb(84, 83, 83);
 }
+
+h2{
+  font-size: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(84, 83, 83);
+  
+}
+
 :root{
     --PrimaryColor: hsl(199,100%,33%);
     --SecondaryColor: hsl(241, 28%, 60%);

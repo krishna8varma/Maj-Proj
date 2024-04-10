@@ -56,11 +56,19 @@ background-image {
     .button2:hover {
       background-color: #120101; /* Change color on hover */
       color: #f0ecec;
+
+      
     }
-    
     .button2.selected {
       background-color: #ff0000; /* Change color when selected */
     }
+    .button2:active, 
+.button2:focus {
+  background-color: black; /* Color when button is clicked or selected */
+  color: #f0ecec;
+}
+    
+    
     
 .button-container2 {
   position: absolute;

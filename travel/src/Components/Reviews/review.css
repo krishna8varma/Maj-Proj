@@ -16,7 +16,7 @@ padding-bottom: 1.5rem;
 font-size: 30px;
 position: relative;
 z-index: 2;
-text-decoration: underline;
+font-weight:bolder;
 }
 .reviewDesc{
     text-align: center;
@@ -36,6 +36,7 @@ text-decoration: underline;
     position: relative;
     z-index: 2;
 }
+
 .underline{
     text-decoration: underline;
    text-underline-position:above

@@ -19,17 +19,18 @@
   }
   
   .content {
-  margin-top: 0px;
+  margin-top: 70px;
     z-index: 1;
     text-align: center;
     color: rgb(242, 241, 241);
     font-weight: 600;
+
     h1{
         font-size: 3rem;
       }
       p{
         font-size: 1rem;
-        padding-top: 30px;
+        padding-top: 40px;
       }
   }
  
@@ -47,23 +48,25 @@
   }
   
   .button-container img {
-    width: 150px; /* Adjust the width of the buttons as needed */
+    width: 180px; /* Adjust the width of the buttons as needed */
     height: auto;
     cursor: pointer;
-    margin :40px;
-    margin-bottom: 5px;
+    margin : -10px;
+    margin-bottom: 1px;
     gap: 2rem;
     background-color: #f8f9fa;
-    border-radius: 2rem;
+    border:8px solid rgb(227, 210, 14) ;
+    border-radius: 360%;
     padding:2rem;
-    
+   
   }
   .icon{
+    
     p{
-        font-size: 15px;
+        font-size: 16px;
         text-align:center;
-        color: rgb(242, 235, 235);
-            
+        color: black;
+          
     }
   }
   .btn{
@@ -77,10 +80,18 @@
     color: aliceblue;
     border-color: white;
     margin-top: 3rem;
-    
+   
 
   }
-  .but:hover{
-    background-color: black;
+  .but{
+    width: 15rem;
+    height: 20rem;
+    background-color: #f8f9fa;
+    margin: 20px;
+  
     
   }
+  .but:hover{
+    background-color: grey;
+    transform: scale(1.1);
+}

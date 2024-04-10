@@ -38,6 +38,8 @@ const Page2 = () => {
                     
                 </div>
                 
+     
+
                 <Footer />
             </section>
         </>

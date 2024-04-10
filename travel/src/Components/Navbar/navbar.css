@@ -95,8 +95,7 @@
             padding: .8rem;
             width: 8rem;
             margin-bottom: 1rem; */
-            background-color: rgb(8, 71, 107);
-                padding: 0.5rem;
+               padding: 0.5rem;
                 padding-left: 2rem;
                 padding-right: 2rem;
                 border-radius: 20px;
@@ -108,7 +107,7 @@
                 font-weight: 500;
                 color : var(--whiteColor);
 
-               }
+               } 
 
            }
            

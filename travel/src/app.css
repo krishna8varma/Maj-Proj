@@ -13,6 +13,7 @@
     --white: hsl(0, 29%, 97%);
     --input:hsl(0, 29%, 97%);
     --body:hsl(0, 29%, 97%);
+    scroll-behavior:smooth;
 }
 a{
     text-decoration: none;
@@ -61,4 +62,5 @@ input{
 }
 body{
     background-color: var(--body);
+    
 }
