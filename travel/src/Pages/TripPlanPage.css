@@ -1,0 +1,139 @@
+.trip-plan-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .left-half {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .right-half {
+    flex: 1;
+  }
+  
+  /* Selection bar styles */
+  .selection-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .selection-bar div {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 5px;
+  }
+  
+  .selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Date list styles */
+  .date-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .date {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .date-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Sections list styles */
+  .sections-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .sections-list h3 {
+    margin-bottom: 5px;
+  }
+  
+  /* Place and restaurant cards styles */
+  .place-card,
+  .restaurant-card {
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .place-card img,
+  .restaurant-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .place-details,
+  .restaurant-details {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .place-details h4,
+  .restaurant-details h4 {
+    margin-bottom: 5px;
+  }
+  
+  .restaurant-details p {
+    margin-bottom: 3px;
+  }
+  
+  /* Map styles */
+  .map {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #ccc;
+  }
+  .restaurants-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Restaurant card styles */
+  .restaurant-card {
+    flex: 1 0 calc(33.33% - 10px); /* Adjust width based on the number of cards per row */
+    max-width: calc(33.33% - 10px); /* Adjust max width based on the number of cards per row */
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .restaurant-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .restaurant-details {
+    flex: 1;
+    padding: 10px;
+  }

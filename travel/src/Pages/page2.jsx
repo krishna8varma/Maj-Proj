@@ -3,6 +3,8 @@ import Navbar from "../Components/Navbar/navbar";
 import './page2.css';
 import Footer from "../Components/Footer/footer";
 import { Link } from "react-router-dom";
+
+
 const Page2 = () => {
     return (
 
@@ -10,7 +12,7 @@ const Page2 = () => {
 
             <Navbar />
             <section className="page2">
-
+                
                 <div className="home-container2">
                     <div className="background-image"></div>
                     <div className="content2">
@@ -32,7 +34,7 @@ const Page2 = () => {
                             {/* Add more buttons as needed */}
                         </div>
                         <div className="btn2">
-                    <Link to="/Page3"> <button className="btn2">NEXT</button></Link>
+                    <Link to="/HotelsPage"> <button className="btn2">NEXT</button></Link>
                     </div>
                     </div>
                     
