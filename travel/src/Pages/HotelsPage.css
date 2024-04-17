@@ -1,57 +1,128 @@
+
+
 .hotels-page {
     width: 100%;
     height: 100vh; /* Set the height of the page */
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to left, #91D2E4, #D3F8E2);
+     scroll-behavior: smooth;
   }
-  
+
+  .transport , .hotelSelected , .trip-planner{
+    background-color: transparent;
+   color: #000000;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   
+  }
+
+  .transport,.hotelSelected , .trip-planner:active{
+     text-decoration: underline;
+     
+  }
+
   .selection-bar {
-    margin-left: 100px;
+     margin-left: 350px;
     margin-right: 100px;
-    margin-top:70px;
+    margin-top : 80px;
+    margin-bottom: 2px;
+    height: 50px;
+    width: 50rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f0f0f0;
     padding: 10px;
+    border-radius: 36px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    
   }
   
   .selection-bar > div {
     padding: 8px 12px;
     cursor: pointer;
     border-radius: 8px;
+   
+    
   }
   
-  .selection-bar > .selected {
-    background-color: #f3f6f9; /* Selected item background color */
+   .selection-bar > .selected {
+     background-color: #f3f6f9; /*Selected item background color */
     color: white;
-  }
-  
+  } 
+
   .main-content {
     flex: 1;
     display: flex;
     overflow: hidden; /* Prevent content from overflowing */
+    background-color: #f0f0f0;
+    margin-top: 1rem;
   }
   
   .hotels-list {
     flex: 1;
     overflow-y: auto; /* Add scrollbar when content overflows vertically */
     padding: 10px;
+    
   }
-  
+  h3{
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    width: 20rem;margin-left: 10px;
+    line-height: 1.5rem;
+    height: 20px;
+    position: relative;
+    top: 10px;
+
+    
+  }
+  h6{
+    font-weight: 300;
+  }
   .hotel-box {
     display: flex;
+    margin-top: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
     padding: 10px;
+    box-shadow: #bbb;
+    border-radius: 8px;
+    border: 1px solid #D8D8D8;
+    background: #e6e6e6;
+    height: 180px;
+    /* &:hover{
+     
+          transform: scale(1.1);
+   
+     } */
   }
   
-  .hotel-box img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+ .rating{
+  margin-left: 10px;
+  margin-top: 90px;
+    background-color: #FFE897;
     border-radius: 8px;
+    height: 2rem;
+    width: 2rem;
+    color: #000000;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+ }
+ .price{
+    position: relative;
+    bottom:8rem;
+    left: 400px;
+    font-size: large;
+ }
+
+
+  .hotel-box img {
+    width: 200px;
+    height: 158px;
+    object-fit: cover;
+    /* border-radius: 8px; */
     margin-right: 10px;
   }
   
@@ -59,10 +130,10 @@
     flex: 1;
   }
   
-  .rating,
+  /* .rating,
   .price {
     margin-bottom: 5px;
-  }
+  } */
   
   .map {
     flex: 1;
@@ -85,13 +156,20 @@
     color: white;
     border: none;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 36px;
     cursor: pointer;
+    background: #028BB2;
+    box-shadow: #333;
+    font-size: small;
+    justify-content: center;
+    position: relative;
+    left: 400px;
+    top: -4rem;
   }
   
-  .view-deal:hover {
-    background-color: #0056b3;
-  }
+  /* .view-deal:hover {
+    background-color: #028BB2;
+  } */
   
   /* Custom scrollbar style */
   .hotels-list::-webkit-scrollbar {

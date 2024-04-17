@@ -17,8 +17,8 @@ const Page2 = () => {
                     <div className="background-image"></div>
                     <div className="content2">
                         <div className="title">
-                            <h1>Discover Activities: Find Your Perfect Adventure!</h1>
-                            <p>Start Date: 06 Arp 2024 - End Date: 10 Arp 2024</p>
+                            <h1 className="title">Discover Activities: Find Your Perfect Adventure!</h1>
+                            <p className="dates">Start Date: 06 Arp 2024 - End Date: 10 Arp 2024</p>
                         </div>
                     </div>
                     <div className="button-container2">

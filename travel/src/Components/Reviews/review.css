@@ -10,15 +10,18 @@
     }
 }
 .reviewTitle{
+    font-size: x-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 3rem;
+    color:rgb(84, 83, 83);
+    justify-content: center;
     text-align: center;
-padding: 2rem;
-padding-bottom: 1.5rem;
-font-size: 30px;
-position: relative;
-z-index: 2;
-font-weight:bolder;
+    text-align: center;
+    width: 100%;
 }
 .reviewDesc{
+    position: relative;
+    top:4rem;
     text-align: center;
     position: relative;
     font-weight: 200;
@@ -65,6 +68,7 @@ button{
 }
 .seeContentR{
    justify-content: center; 
+   margin-top: 80px;
    
      .singleDestination{
         height:100%;

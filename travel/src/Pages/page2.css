@@ -8,6 +8,7 @@ background-image {
     background-size: cover;
     background-position: center;
     filter: opacity(1); /* Optional: Add opacity to the background image */
+   
   }
   .home-container2 {
     position: relative;
@@ -17,6 +18,7 @@ background-image {
     align-items: center;
   }
   .content2 {
+   
     margin-top: -300px;
       z-index: 1;
       text-align: center;
@@ -24,10 +26,14 @@ background-image {
       font-weight: 600;
       h1{
           font-size: 3rem;
+          color: #f0ecec;
+          font-family: 'Poppins', sans-serif;
         }
         p{
           font-size: 1rem;
           padding-top: 30px;
+          color: #f0ecec;
+          font-family: 'Poppins', sans-serif;
         }
     }
     .black-box {

@@ -69,7 +69,7 @@ const Main = () => {
             </div> */}
             <div className="secTitle">
                 <h3 className="title">You're always a short detour from an</h3>
-                <h2>Extraordinary Place</h2>
+                <h2 className="line2">Extraordinary Place</h2>
             </div>
 
             <div className="seeContent grid">

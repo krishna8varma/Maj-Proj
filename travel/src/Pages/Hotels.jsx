@@ -3,62 +3,79 @@ import Navbar from '../Components/Navbar/navbar'; // Assuming you have a Navbar 
 import './HotelsPage.css'; // Import the corresponding CSS file
 import Map from '../Components/Map/map';
 import { Link } from "react-router-dom";
+import hotel_a from '../Assets/hotel_a.jpg';
+import hotel_b from '../Assets/hotel_b.jpg';
+import hotel_c from '../Assets/hotel_c.jpg';
+import hotel_d from '../Assets/hotel_d.jpg';
+// import hotel_e from '../Assets/hotel_e.jpg';
+// import hotel_f from '../Assets/hotel_f.jpg';
+
 const HotelsPage = () => {
   // Sample array of hotel details
   const hotelData = [
     {
       id: 1,
-      name: 'Hotel A',
-      image: 'hotel_a.jpg',
+      name: 'Goa Marriott Resort & Spa',
+      image: hotel_a,
       rating: 4.5,
-      price: '$100/night',
+      price: 'Rs. 3600',
     },
     {
       id: 2,
-      name: 'Hotel B',
-      image: 'hotel_b.jpg',
+      name: 'ITC Grand Goa, a Luxury Collection Resort & Spa, Goa',
+      image: hotel_b,
       rating: 4.2,
-      price: '$120/night',
+      price: 'Rs. 10000',
     },
     // Add more hotel data as needed
     {
       id: 3,
-      name: 'Hotel C',
-      image: 'hotel_c.jpg',
+      name: 'West Valley Villa, North Goa',
+      image: hotel_c,
       rating: 4.0,
-      price: '$80/night',
+      price: 'Rs. 1500',
     },
     {
       id: 4,
-      name: 'Hotel D',
-      image: 'hotel_d.jpg',
+      name: 'Hyatt Centric Candolim Goa',
+      image: hotel_d,
       rating: 4.7,
-      price: '$150/night',
+      price: 'Rs. 3600',
     },
-    {
-      id: 5,
-      name: 'Hotel E',
-      image: 'hotel_e.jpg',
-      rating: 4.3,
-      price: '$110/night',
-    },
-    {
-      id: 6,
-      name: 'Hotel F',
-      image: 'hotel_f.jpg',
-      rating: 4.8,
-      price: '$200/night',
-    },
+    // {
+    //   id: 5,
+    //   name: 'Hotel E',
+    //   image: hotel_e,
+    //   rating: 4.3,
+    //   price: 'Rs. 3600',
+    // },
+    // {
+    //   id: 6,
+    //   name: 'Hotel F',
+    //   image:  hotel_f,
+    //   rating: 4.8,
+    //   price: 'Rs. 3600',
+    // },
   ];
+
+  const MyComponent = ({ condition }) => {
+    if (condition) {
+        return <div>This is rendered if condition is true.</div>;
+    } else {
+        return <div>This is rendered if condition is false.</div>;
+    }
+}
 
   return (
     <div className="hotels-page">
       <Navbar />
 
       <div className="selection-bar">
-        <div className="transport"><button>Transport</button></div>
-        <div className="hotels selected"><button>Hotels</button></div>
-      <Link to="/TripPlanner">  <div className="trip-planner"> <button>Trip Planner</button></div></Link>
+      
+           <button className="transport">Transport</button>
+          <button className="hotelSelected">Hotels</button>
+          <Link to="/TripPlanner"> <button className="trip-planner">Trip Planner</button></Link>
+       
       </div>
 
       <div className="main-content">
@@ -68,10 +85,12 @@ const HotelsPage = () => {
               <img src={hotel.image} alt={hotel.name} />
               <div className="details">
                 <h3>{hotel.name}</h3>
-                <div className="rating">Rating: {hotel.rating}</div>
-                <div className="price">Price: {hotel.price}</div>
-                <button className="view-deal">View Deal</button>
+                <div className="rating">{hotel.rating} </div>
+                 <div className="price"><b>{hotel.price} </b> <br/> <h6>For 1 Night Stay</h6> </div>
+                <button className="view-deal">View Deal</button> 
+              
               </div>
+             
             </div>
           ))}
         </div>

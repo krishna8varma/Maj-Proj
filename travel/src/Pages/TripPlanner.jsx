@@ -7,16 +7,20 @@ import img1 from '../Assets/pg5img1.jpg';
 import img2 from '../Assets/pg5img2.jpg'
 import img3 from '../Assets/pg5img3.jpg'
 import img4 from '../Assets/pg5img4.jpg'
+import { IoIosArrowForward } from "react-icons/io";
+import { FiBookmark } from "react-icons/fi";
+import { IoLocationSharp } from "react-icons/io5";
+
 const TripPlanPage = () => {
   const [expandedDay, setExpandedDay] = useState(null);
 
   const tripPlanData = [
     {
-      day: 'Day 1',
-      date: 'April 10, 2024',
+      day: 'Saturday , ',
+      date: 'April 6th',
       sections: [
         {
-          title: 'Morning',
+         
           places: [
             {
               image: img1,
@@ -41,7 +45,7 @@ const TripPlanPage = () => {
           ],
         },
         {
-          title: 'Afternoon',
+        
           places: [
             {
               image: img4,
@@ -66,7 +70,7 @@ const TripPlanPage = () => {
           ],
         },
         {
-          title: 'Night',
+          
           places: [
             {
               image: 'place3.jpg',
@@ -93,8 +97,8 @@ const TripPlanPage = () => {
       ],
     },
     {
-      day: 'Day 2',
-      date: 'April 11, 2024',
+      day: 'Saturday, ',
+      date: 'April 6th',
       sections: [
         // Add sections for Day 2 as needed
       ],
@@ -111,23 +115,23 @@ const TripPlanPage = () => {
       <Navbar />
 
       <div className="selection-bar">
-        <div className="transport">Transport</div>
-        <Link to="/HotelsPage"><div className="hotels">Hotels</div></Link>
-        <div className="trip-planner selected">Trip Planner</div>
+        <button className="transport">Transport</button>
+        <Link to="/HotelsPage"><button className="hotels">Hotels</button></Link>        <button className="trip-planner">Trip Planner</button>
       </div>
 
       <div className="main-content">
         <div className="left-half">
           <h2>
-            Your travel plan is ready
-            <span className="bookmark">🔖</span>
+            Your Travel Plan Is Ready !
+            <span className='bookmark'></span><FiBookmark />
           </h2>
           <ul className="date-list">
             {tripPlanData.map((day, index) => (
               <li key={day.date}>
                 <div className="date" onClick={() => handleExpandDay(index)}>
-                  <div className="day">{day.day}</div>
-                  <div className="date-text">{day.date}</div>
+                  <div className="day"><span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span> {day.day}
+                  <span className="date-text">{day.date}</span>
+                  </div>
                 </div>
                 {expandedDay === index && (
                   <ul className="sections-list">
