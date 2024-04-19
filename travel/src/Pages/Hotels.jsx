@@ -84,7 +84,7 @@ const HotelsPage = () => {
             <div className="hotel-box" key={hotel.id}>
               <img src={hotel.image} alt={hotel.name} />
               <div className="details">
-                <h3>{hotel.name}</h3>
+                <h3 className='heading'>{hotel.name}</h3>
                 <div className="rating">{hotel.rating} </div>
                  <div className="price"><b>{hotel.price} </b> <br/> <h6>For 1 Night Stay</h6> </div>
                 <button className="view-deal">View Deal</button> 

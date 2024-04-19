@@ -18,23 +18,23 @@ const Page2 = () => {
                     <div className="content2">
                         <div className="title">
                             <h1 className="title">Discover Activities: Find Your Perfect Adventure!</h1>
-                            <p className="dates">Start Date: 06 Arp 2024 - End Date: 10 Arp 2024</p>
+                            <p className="dates">Start Date: <span className="dates">06 Arp 2024</span> - End Date: <span className="dates">10 Arp 2024</span></p>
                         </div>
                     </div>
                     <div className="button-container2">
                         <div className="black-box">
-                            <button className="button2">Button 1</button>
-                            <button className="button2">Button 2</button>
-                            <button className="button2">Button 3</button>
-                            <button className="button2">Button 4</button>
-                            <button className="button2">Button 1</button>
-                            <button className="button2">Button 2</button>
-                            <button className="button2">Button 3</button>
-                            <button className="button2">Button 4</button>
+                            <button className="button2">Beach Activities</button>
+                            <button className="button2">Water Sports</button>
+                            <button className="button2">Boat Cruises</button>
+                            <button className="button2">Trekking and Nature Trails</button>
+                            <button className="button2">Shopping</button>
+                            <button className="button2">Cultural Events and Festivals</button>
+                            <button className="button2">Yoga and Wellness Retreats</button>
+                            <button className="button2">Explore Portuguese Heritage</button>
                             {/* Add more buttons as needed */}
                         </div>
-                        <div className="btn2">
-                    <Link to="/HotelsPage"> <button className="btn2">NEXT</button></Link>
+                        <div >
+                    <Link to="/HotelsPage"> <button className="btn2">Next</button></Link>
                     </div>
                     </div>
                     

@@ -15,7 +15,7 @@ const Data = [{
     imgSrc: manali,
     destTitle: 'Manali',
     Location: "India",
-    description: 'Manali is a town, near Kullu town in Kullu district in the Indian state of Himachal Pradesh.[2] It is situated in the northern end of the Kullu Valley, formed by the Beas River. ',
+    // description: 'Manali is a town, near Kullu town in Kullu district in the Indian state of Himachal Pradesh.[2] It is situated in the northern end of the Kullu Valley, formed by the Beas River. ',
 
 },
 {
@@ -23,7 +23,7 @@ const Data = [{
     imgSrc: goa,
     destTitle: 'Goa',
     Location: "India",
-    description: 'Goa, state of India, comprising a mainland district on the country’s southwestern coast and an offshore island. It is located about 250 miles (400 km) south of Mumbai (Bombay). ',
+    // description: 'Goa, state of India, comprising a mainland district on the country’s southwestern coast and an offshore island. It is located about 250 miles (400 km) south of Mumbai (Bombay). ',
 
 
 },
@@ -32,7 +32,7 @@ const Data = [{
     imgSrc: paris,
     destTitle: 'Paris',
     Location: "France",
-    description: 'Paris, capital of France, is one of the most important and influential cities in the world. In terms of tourism, Paris is the second most visited city in Europe after London. ',
+    // description: 'Paris, capital of France, is one of the most important and influential cities in the world. In terms of tourism, Paris is the second most visited city in Europe after London. ',
 
 }
 
@@ -70,34 +70,34 @@ const Main = () => {
             <div className="secTitle">
                 <h3 className="title">You're always a short detour from an</h3>
                 <h2 className="line2">Extraordinary Place</h2>
+                <hr className="line1"/>
             </div>
 
             <div className="seeContent grid">
                 {
                     Data.map(({ id, imgSrc, destTitle, description, Location }) => {
                         return (
+                        <div className="cards">
                             <div key={id} className="singleDestination">
                                 <div className="imageDiv">
                                     <img src={imgSrc} alt={destTitle} />
                                 </div>
                                 <div className="cardInfo">
                                     <h4 className="destTitle">{destTitle}</h4>
-                                    <span className="continent flex">
+                                    {/* <span className="continent">
                                         <HiOutlineLocationMarker className="icon" />
                                         <span className="name">
                                             {Location}
                                         </span>
-                                    </span>
-                                    <div className="desc">
-                                        <p>{description}</p>
-
-                                    </div>
-                                    <button >
+                                    </span> */}
+                                    
+                                    <button className="cardbutton" >
                                         Start Trip
                                     </button>
 
                                 </div>
                             </div>
+                        </div>
                         )
                     })
                 }

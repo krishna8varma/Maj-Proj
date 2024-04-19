@@ -41,7 +41,7 @@ const removeNavbar = () =>{
             <a href="#" className='navLink'>Packages</a>
         </li>
        
-       <button className='btn'>
+       <button className='btnnav'>
         <a href="#" >Plan now</a>
        </button>
         </ul>

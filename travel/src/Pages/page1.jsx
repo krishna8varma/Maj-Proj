@@ -7,7 +7,10 @@ import img4 from '../Assets/friends.png';
 import Footer from "../Components/Footer/footer";
 import './page1.css';
 import { Link } from "react-router-dom";
+
+
 const Page1 = () => {
+
     return (
         <section className="page1">
             <div>
@@ -19,7 +22,7 @@ const Page1 = () => {
                 <div className="background-image"></div>
                 <div className="content">
                     <h1>Who are you travelling with?</h1>
-                    <p>Start Date: 06 Arp 2024 - End Date: 10 Arp 2024</p>
+                    <p>Start Date: <span className="dates">06 Arp 2024</span> - End Date: <span className="dates">10 Arp 2024</span></p>
                     <div className="button-container">
                         <div className="icon">
                             <button className="but"><img src={img1} alt="Button 1" /> <p>Wondering solo</p></button>
@@ -34,7 +37,7 @@ const Page1 = () => {
                         <button className="but"> <img src={img4} alt="Button 4" /><p>Traveling with friends</p></button>
                         </div>
                     </div>
-                   <Link to="/Page2"> <button className="btn">NEXT</button></Link>
+                   <Link to="/Page2"> <button className="btnpagg1">Next</button></Link>
                 </div>
                 
             </div>
