@@ -10,6 +10,8 @@ import img1 from '../../Assets/adventure.png';
 import img2 from '../../Assets/flight.png';
 import img3 from '../../Assets/tourguide.png';
 import img4 from '../../Assets/beach.png';
+import { Link } from "react-router-dom";
+
 const Data = [{
     id: 1,
     imgSrc: manali,
@@ -90,11 +92,11 @@ const Main = () => {
                                             {Location}
                                         </span>
                                     </span> */}
-                                    
+                                    <Link to="/TripPlanner">
                                     <button className="cardbutton" >
                                         Start Trip
                                     </button>
-
+                                    </Link>
                                 </div>
                             </div>
                         </div>

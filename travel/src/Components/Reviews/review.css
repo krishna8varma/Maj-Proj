@@ -12,19 +12,19 @@
 .reviewTitle{
     font-size: 3.3rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 3rem;
     color:rgb(84, 83, 83);
     justify-content: center;
     text-align: center;
     text-align: center;
     width: 100%;
     position: relative;
-    top:4rem;
+    top:11rem;
+    
     
 }
 .reviewDesc{
     position: relative;
-    top:6.5rem;
+    top:12.5rem;
     text-align: center;
     position: relative;
     font-weight: 200;
@@ -71,7 +71,7 @@ button{
 }
 .seeContentR{
    justify-content: center; 
-   margin-top: 80px;
+   margin-top: 180px;
    position: relative;
   left: 60px;
   margin-bottom: -20rem;
@@ -105,7 +105,7 @@ button{
             }
         }
         .cardInfo{
-           
+         
            padding: 1rem; 
            .destTitle{
             color: var(--black);
@@ -148,5 +148,5 @@ button{
   left: 32%;
   height: 2px;
   background-color:#F7D660 ;
-  top: 6.5rem;
+  top: 12.5rem;
 }

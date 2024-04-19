@@ -72,17 +72,17 @@ const Page1 = () => {
                     <p>Start Date: <span className="dates">{startingDate}</span> - End Date: <span className="dates">{endingDate} </span></p>
                     <form onSubmit={handleCompanySubmit}></form>
                     <div className="button-container">
-                        <div className="icon">
-                            <button className="but"><img src={img1} alt="Button 1" onClick={() => handleOptionSelect("Solo")}/> <p>Wondering solo</p></button>
+                        <div className="icon" onClick={() => handleOptionSelect("Solo")}>
+                            <button className="but"><img src={img1} alt="Button 1" /> <p>Wondering solo</p></button>
                         </div>
-                        <div className="icon">
-                        <button className="but"><img src={img2} alt="Button 2" onClick={() => handleOptionSelect("Couple")} /><p>Holidaying as a couple</p></button>
+                        <div className="icon" onClick={() => handleOptionSelect("Couple")}>
+                        <button className="but"><img src={img2} alt="Button 2"  /><p>Holidaying as a couple</p></button>
                         </div>
-                        <div className="icon">
-                        <button className="but"> <img src={img3} alt="Button 3" onClick={() => handleOptionSelect("Family")} /><p>Vacationing with family</p></button>
+                        <div className="icon" onClick={() => handleOptionSelect("Family")}>
+                        <button className="but"> <img src={img3} alt="Button 3"  /><p>Vacationing with family</p></button>
                         </div>
-                        <div className="icon">
-                        <button className="but"> <img src={img4} alt="Button 4" onClick={() => handleOptionSelect("Friends")} /><p>Traveling with friends</p></button>
+                        <div className="icon" onClick={() => handleOptionSelect("Friends")}>
+                        <button className="but"> <img src={img4} alt="Button 4"  /><p>Traveling with friends</p></button>
                         </div>
                     </div>
                    <button className="btnpagg1" onClick={handleCompanySubmit}>Next</button>

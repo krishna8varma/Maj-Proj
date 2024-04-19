@@ -48,7 +48,7 @@
     }
    img{
         position :absolute;
-        height:104%;
+        height:125%;
         width: 100%;
         top: 0;
         bottom: 0;
@@ -61,7 +61,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 104%;
+        height: 125%;
         background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity (last value) as needed */
     }
    
@@ -183,8 +183,8 @@
         font-weight: 500;
         font-size: 18px;
         border: none;
-        
-        
+        margin-top: 4rem;
+        margin-left: 1.5rem;
     } 
     a{
         color: white;

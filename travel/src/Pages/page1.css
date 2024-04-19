@@ -39,7 +39,7 @@
 
     display: flex;
     justify-content:space-between;
-   
+    height: 28rem;
     
     margin-top: 3rem;
     
@@ -117,11 +117,13 @@
   border-radius: 34px;
   text-align: center;
   color: aliceblue;
-   margin-top: 1rem;
+   margin-top: -4rem;
    background:  #028BB2;
    z-index: 1;
   font-weight: 500;
   font-size: 18px;
   border: none;
-  margin-bottom: 1.5rem;
+  position: relative;
+  top: -5rem;  
+  width: 10rem;
 }

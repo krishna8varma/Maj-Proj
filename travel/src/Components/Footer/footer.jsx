@@ -10,10 +10,10 @@ const footer=()=> {
     return (
         <div className="Footer">
             <div className="footerinfo a">
-            <p >Logo</p>
+            <p className="logoname">LOGO</p>
             </div>
             <div className="footerinfo b">
-            <p >@2024 All rights reserved.</p>
+            <p className="info">@2024 All rights reserved.</p>
             </div>
             <div className="footerinfo">
             <div className="footerIcons c">
