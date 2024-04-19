@@ -58,13 +58,13 @@ const HotelsPage = () => {
     // },
   ];
 
-  const MyComponent = ({ condition }) => {
-    if (condition) {
-        return <div>This is rendered if condition is true.</div>;
-    } else {
-        return <div>This is rendered if condition is false.</div>;
-    }
-}
+//   const MyComponent = ({ condition }) => {
+//     if (condition) {
+//         return <div>This is rendered if condition is true.</div>;
+//     } else {
+//         return <div>This is rendered if condition is false.</div>;
+//     }
+// }
 
   return (
     <div className="hotels-page">

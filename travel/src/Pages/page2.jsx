@@ -3,9 +3,14 @@ import Navbar from "../Components/Navbar/navbar";
 import './page2.css';
 import Footer from "../Components/Footer/footer";
 import { Link } from "react-router-dom";
-
+import { useLocation } from 'react-router-dom';
 
 const Page2 = () => {
+  
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    const startingDate = queryParams.get('startingDate');
+    const endingDate = queryParams.get('endingDate');
     return (
 
         <>
@@ -18,7 +23,7 @@ const Page2 = () => {
                     <div className="content2">
                         <div className="title">
                             <h1 className="title">Discover Activities: Find Your Perfect Adventure!</h1>
-                            <p className="dates">Start Date: <span className="dates">06 Arp 2024</span> - End Date: <span className="dates">10 Arp 2024</span></p>
+                            <p className="dates">Start Date: <span className="dates">{startingDate}</span> - End Date: <span className="dates">{endingDate}</span></p>
                         </div>
                     </div>
                     <div className="button-container2">

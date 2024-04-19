@@ -70,7 +70,7 @@ const Review = () => {
                     })
                 }
                 <div className="rcard">
-                    <img src={Reviewcard} muted autoPlay loop type="Reviewcard/jpg"></img>
+                    <img src={Reviewcard} muted autoPlay loop type="Reviewcard/jpg" alt="Ratings"></img>
 
                 </div>
             </div>

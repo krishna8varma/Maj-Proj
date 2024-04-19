@@ -176,13 +176,15 @@
         text-align: center;
         color: aliceblue;
          width: 20rem;
-         margin-top: -2rem;
+         margin-top: -1rem;
          background:  #028BB2;
          z-index: 1;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 500;
         font-size: 18px;
         border: none;
+        
+        
     } 
     a{
         color: white;

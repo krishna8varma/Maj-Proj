@@ -1,16 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import './home.css';
-import video from '../../Assets/video.mp4';
+import axios from "axios";
+// import video from '../../Assets/video.mp4';
 import { IoLocationOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import bg from '../../Assets/bg.jpg';
-
+import { useNavigate } from 'react-router-dom';
 
 const Home=()=> {
+    const [startingLocation, setStartingLocation] = useState("");
+    const [endingDestination, setEndingDestination] = useState("");
+    const [startingDate, setStartingDate] = useState("");
+    const [endingDate, setEndingDate] = useState("");
+    const formData = {
+        startingLocation,
+        endingDestination,
+        startingDate,
+        endingDate,
+    };
+    const navigate = useNavigate();
+    const handleFormSubmit = async (event) => {
+
+        event.preventDefault();
+        try {
+            const response = await axios.post("http://localhost:5000/", formData);
+            console.log("Data successfully posted to the server!", response.data);
+            const url = `/Page1?startingLocation=${formData.startingLocation}&endingDestination=${formData.endingDestination}&startingDate=${formData.startingDate}&endingDate=${formData.endingDate}`;
+            navigate(url);
+        } catch (error) {
+            console.error("Error posting data:", error);
+        }
+    };
+
+
     return (
         <section className='home'>
             <div className="overlay"></div>
-            <img src={bg} muted autoPlay loop type="bg/jpg"></img>
+            <img src={bg} muted autoPlay loop type="bg/jpg" alt="bgimage"></img>
             <div className="homeContent container">
                 <div className="textDiv">
                     <span className="smallText">
@@ -18,12 +44,19 @@ const Home=()=> {
                     </span>
                     <h1>Search your Holiday</h1>
                 </div>
+                
                 <div className="cardDiv">
+                <form onSubmit={handleFormSubmit}>
                   <div className="col1">
                     <div className="destinationInput">
                         <label htmlFor="city">Starting Location:</label>
                         <div className="input flex">
-                            <input type="text" placeholder="Enter name here" />
+                            <input type="text"
+                                    id="startingLocation"
+                                    name="startingLocation"
+                                    placeholder="Enter starting location"
+                                    value={startingLocation}
+                                    onChange={(e) => setStartingLocation(e.target.value)}/>
                             <span className="locicon"><IoLocationOutline /></span>
                         </div>
                     
@@ -31,7 +64,11 @@ const Home=()=> {
                   <div className="dateInput">
                   <label htmlFor="date">Starting Date:</label>
                         <div className="input flex">
-                            <input type="date" />
+                            <input  type="date"
+                                    id="startingDate"
+                                    name="startingDate"
+                                    value={startingDate}
+                                    onChange={(e) => setStartingDate(e.target.value)} />
                            
                         </div>
                    
@@ -43,7 +80,12 @@ const Home=()=> {
                         <label htmlFor="city">Ending Destination:</label>
                         
                         <div className="input flex">
-                            <input type="text" placeholder="Enter name here"/>
+                            <input  type="text"
+                                    id="endingDestination"
+                                    name="endingDestination"
+                                    placeholder="Enter ending destination"
+                                    value={endingDestination}
+                                    onChange={(e) => setEndingDestination(e.target.value)}/>
                             <span className="locicon"><IoLocationOutline /></span>
                         </div>
                     
@@ -55,18 +97,25 @@ const Home=()=> {
                     <div className="dateInput">
                         <label htmlFor="date">Ending Date:</label>
                         <div className="input flex">
-                            <input type="date" />
+                            <input  type="date"
+                                    id="endingDate"
+                                    name="endingDate"
+                                    value={endingDate}
+                                    onChange={(e) => setEndingDate(e.target.value)} />
                            
                         </div>
                     
                     </div>
                     </div>
-                   
+                     <div className="startButton">
+                       <button className="propbut" type="submit" >Start Trip </button>
                 </div>
-                <div className="startButton">
-                       <Link to="/Page1"> <button className="propbut"  >Start Trip </button></Link>
+                    </form>
                 </div>
+               
+              
             </div>
+           
             </section>
     )
 }

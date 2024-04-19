@@ -5,7 +5,7 @@ import MapComponent from '../Components/Map/map'; // Assuming you have a Map com
 import './TripPlanPage.css'; // Import the corresponding CSS file
 import img1 from '../Assets/pg5img1.jpg';
 import img2 from '../Assets/pg5img2.jpg'
-import img3 from '../Assets/pg5img3.jpg'
+// import img3 from '../Assets/pg5img3.jpg'
 import img4 from '../Assets/pg5img4.jpg'
 import hotel_a from '../Assets/hotel_a.jpg'
 import { IoIosArrowForward } from "react-icons/io";
@@ -180,7 +180,7 @@ const TripPlanPage = () => {
                               </li>
                               
                             ))}
-                            <p className='slidearrow'><MdArrowForwardIos /></p>
+                          <Link to="/HotelsPage">  <p className='slidearrow'><MdArrowForwardIos /></p></Link>
                           </ul>
                         )}
                       </li>

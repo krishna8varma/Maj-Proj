@@ -1,6 +1,6 @@
 import React from "react";
 import './main.css';
-import { HiOutlineLocationMarker } from "react-icons/hi";
+// import { HiOutlineLocationMarker } from "react-icons/hi";
 
 // import Main1 from '../../Assets/Main1.jpg';
 import manali from '../../Assets/manali.jpg';
