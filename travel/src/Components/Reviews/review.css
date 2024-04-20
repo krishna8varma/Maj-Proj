@@ -10,15 +10,21 @@
     }
 }
 .reviewTitle{
+    font-size: 3.3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(84, 83, 83);
+    justify-content: center;
     text-align: center;
-padding: 2rem;
-padding-bottom: 1.5rem;
-font-size: 30px;
-position: relative;
-z-index: 2;
-font-weight:bolder;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top:11rem;
+    
+    
 }
 .reviewDesc{
+    position: relative;
+    top:12.5rem;
     text-align: center;
     position: relative;
     font-weight: 200;
@@ -65,6 +71,10 @@ button{
 }
 .seeContentR{
    justify-content: center; 
+   margin-top: 180px;
+   position: relative;
+  left: 60px;
+  margin-bottom: -20rem;
    
      .singleDestination{
         height:100%;
@@ -73,13 +83,10 @@ button{
         row-gap: 2 rem;
         border-radius: 10px;
         align-items: center;
-        box-shadow: 0 2px 4px rgba(140, 140, 141, 0.6);
-        overflow: hidden;
-        &:hover{
-            background: rgba(204, 202, 202, 0.914);
-            box-shadow: 0 2px 4px rgba(140, 140, 141, 0.6);
-            transition: .3s ease;
-        }
+        width: 70%;
+        position: relative;
+        top:3rem;
+
         .imageDiv{
             height: 180px;
             width: 100%;
@@ -98,7 +105,7 @@ button{
             }
         }
         .cardInfo{
-            
+         
            padding: 1rem; 
            .destTitle{
             color: var(--black);
@@ -123,4 +130,23 @@ button{
         }
 
      }
+}
+.rcard{
+    position: relative;
+    bottom: 25rem;
+    left: 70rem;
+    display: flex;
+    height: 400px;
+    width: 300px;
+}
+.lin{
+    border: none;
+   margin-top: 0.5rem;
+  width: 35%;
+  justify-content: center;
+  position: relative;
+  left: 32%;
+  height: 2px;
+  background-color:#F7D660 ;
+  top: 12.5rem;
 }

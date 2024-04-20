@@ -4,6 +4,7 @@
     margin:0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 :root{
     --PrimaryColor: hsl(199,100%,33%);
@@ -63,4 +64,8 @@ input{
 body{
     background-color: var(--body);
     
+}
+.footer{
+    position:relative;
+    margin-top: 16.5rem;
 }

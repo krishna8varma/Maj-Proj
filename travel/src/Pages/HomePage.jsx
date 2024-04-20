@@ -16,7 +16,9 @@ const HomePage =()=>{
         <Home/>
         <Main/>
         <Reviews/>
+        <div className='footer'>
         <Footer/>
+        </div>
         </>
     )
 }

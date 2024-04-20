@@ -1,6 +1,6 @@
 .home-container {
     position: relative;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@
   }
   
   .content {
-  margin-top: 70px;
+     margin-top: 100px;
     z-index: 1;
     text-align: center;
     color: rgb(242, 241, 241);
@@ -30,7 +30,7 @@
       }
       p{
         font-size: 1rem;
-        padding-top: 40px;
+        padding-top: 20px;
       }
   }
  
@@ -39,9 +39,9 @@
 
     display: flex;
     justify-content:space-between;
-   
+    height: 28rem;
     
-    margin-top: 4.5rem;
+    margin-top: 3rem;
     
     
    
@@ -88,10 +88,42 @@
     height: 20rem;
     background-color: #f8f9fa;
     margin: 20px;
-  
+    margin-top: -0.5rem;
     
+  
   }
   .but:hover{
-    background-color: grey;
+    background-color: #aad6e1;
     transform: scale(1.1);
+
+   
+}
+.but:active, 
+.but:focus {
+  background-color: #aad6e1; /* Color when button is clicked or selected */
+  color: #f0ecec;
+  text-decoration: none;
+  
+}
+
+.dates{
+  color: rgb(227, 210, 14);
+}
+
+.btnpagg1{
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 34px;
+  text-align: center;
+  color: aliceblue;
+   margin-top: -4rem;
+   background:  #028BB2;
+   z-index: 1;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  position: relative;
+  top: -5rem;  
+  width: 10rem;
 }

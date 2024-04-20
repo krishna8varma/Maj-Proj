@@ -2,8 +2,36 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background: linear-gradient(to left, #91D2E4, #D3F8E2);
+     scroll-behavior: smooth;
   }
   
+  .transport , .hotels, .trip-planner{
+    background-color: transparent;
+   color: #000000;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   
+  }
+
+  .trip-planner :active,button:focus {
+    text-decoration: underline;
+
+   
+ }
+
+h2{
+  color: #000000;
+  font-size: 30px;
+}
+
+ .bookmark{
+  position: relative;
+  margin-left: 15rem;
+  
+ } 
+
   .main-content {
     display: flex;
     flex: 1;
@@ -28,20 +56,29 @@
   }
   
   .selection-bar div {
+    padding: 8px 12px;
     cursor: pointer;
-    padding: 8px 16px;
-    border-radius: 5px;
+    border-radius: 8px;
+   
+    
   }
   
-  .selected {
-    background-color: #007bff;
+  /* .selected {
+   
     color: white;
-  }
+  } */
   
   /* Date list styles */
   .date-list {
-    list-style-type: none;
-    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+    padding: 10px;
+    box-shadow: #bbb;
+    border-radius: 8px;
+    border: 1px solid #D8D8D8;
+    background: #e6e6e6;
+  
+   
   }
   
   .date {
@@ -51,13 +88,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #366960;
   }
   
+  .day{
+    font-size: medium;
+  }
+
   .date-text {
     font-size: 0.9rem;
-    color: #555;
+    color: #366960;
+    margin-bottom: 20px;
+    font-size: medium;
   }
   
+  .loc{
+    color: black;
+  }
+
   /* Sections list styles */
   .sections-list {
     list-style-type: none;
@@ -69,25 +117,72 @@
     margin-bottom: 5px;
   }
   
+h3{
+  position: relative;
+  top : -0.5rem;
+  margin-left: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  color: #444444;
+}
+
+.dayTime{
+  position: relative;
+  top: 0.8rem;
+  margin-left: 37.7rem;
+  height: 1.4rem;
+  background-color: #366960;
+  width: 5.5rem;
+  color: #f0f0f0;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: smaller;
+}
+
+.slidearrow{
+  position: relative;
+  top : 6rem;
+  margin-left: 4rem;
+  font-size: 50px;
+  color: #444444;
+}
+.slidearrow:hover{
+  color: grey;
+   transform: scale(1.1);
+}
+
   /* Place and restaurant cards styles */
-  .place-card,
-  .restaurant-card {
+  .place-card
+  {
     display: flex;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin-bottom: 30px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 10rem;
+    border-radius: 8px;
+    border: 1px solid  className='type';
+    background: #FFF;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 1rem;
+  margin-right: 1rem;
   }
   
-  .place-card img,
-  .restaurant-card img {
+  .place-card img
+  {
     width: 120px;
     height: 120px;
     object-fit: cover;
+    margin-top: 1.1rem;
+    margin-left: 1rem;
+    margin-bottom: 30px;
+    border-radius: 5px;
   }
   
   .place-details,
   .restaurant-details {
+    margin-top: 1rem;
+    margin-left: 1rem;
     flex: 1;
     padding: 10px;
   }
@@ -95,6 +190,41 @@
   .place-details h4,
   .restaurant-details h4 {
     margin-bottom: 5px;
+  }
+
+  .type{
+       margin-left: 22rem;
+       position: relative;
+       bottom:1.5rem;
+       background-color: #D8D8D8 ;
+       justify-content: center;
+       text-align: center;
+       border-radius: 20px;
+       height: 1.8rem;
+       width: 8rem;
+       font-size:smaller;
+       font-weight: 200;
+       padding-top: 0.2rem;
+  }
+
+  .timing{
+      font-size: smaller;
+      font-weight: 300;
+      position: relative;
+      top: -1rem;
+  }
+  
+  .visit
+  {
+    font-size: smaller;
+      font-weight: 300;
+      position: relative;
+      top: 0.3rem;
+  }
+  
+
+  .starRating{
+    margin-left: 26rem;
   }
   
   .restaurant-details p {
@@ -118,22 +248,41 @@
   
   /* Restaurant card styles */
   .restaurant-card {
-    flex: 1 0 calc(33.33% - 10px); /* Adjust width based on the number of cards per row */
+     flex: 1 0 calc(33.33% - 10px); /*Adjust width based on the number of cards per row */
     max-width: calc(33.33% - 10px); /* Adjust max width based on the number of cards per row */
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 15rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid  className='type';
+    background: #FFF;
+    margin-left: 1rem;
   }
   
   .restaurant-card img {
-    width: 100%;
-    height: 120px;
+    width:192px;
+    height: 200px;
     object-fit: cover;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    
+    
   }
   
+.rating1{
+  font-size: small;
+  text-align: center;
+  justify-content: center;
+}
+
   .restaurant-details {
+    width: 11rem;
+    text-align: center;
+    justify-content: center;
     flex: 1;
     padding: 10px;
+    margin-top : 0.2rem ;
   }

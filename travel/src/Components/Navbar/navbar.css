@@ -34,19 +34,23 @@
     }
 }
 
-.btn{
+.btnnav{
     margin-top: .5rem;
     padding: .5rem;
     position: relative;
     bottom : .2rem;
-    background-color: rgb(8, 71, 107);
+    background-color: #028BB2;
     padding: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
     border-radius: 20px;
     text-align: center;
     color: aliceblue;
-    border-color: white;
+   font-weight: 600;
+
+    a{
+        color: #f0f0f0;
+    }
 }
 
 @media screen and (max-width: 768px) {

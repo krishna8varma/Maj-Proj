@@ -11,6 +11,7 @@ import Page2 from './Pages/page2';
 import HomePage from './Pages/HomePage';
 import HotelsPage from './Pages/Hotels';
 import TripPlanner from './Pages/TripPlanner';
+
 const App =()=>{
     return(
         <>

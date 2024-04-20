@@ -3,6 +3,8 @@ import './review.css';
 import img1 from '../../Assets/adi.png';
 import img2 from '../../Assets/shradha.png';
 import img3 from '../../Assets/ramesh.png';
+import Reviewcard from '../../Assets/Reviewcard.png';
+
 const Data = [{
     id: 1,
     imgSrc: img1,
@@ -34,6 +36,7 @@ const Review = () => {
             <div className="reviewHead">
                 <h3 className="reviewTitle">Reviews and Testimonials</h3>
                 <p className="reviewDesc">“Read some of our latest testimonials from people about their trip experience with us.”</p>
+                <hr className="lin" />
             </div>
             <div className="seeContentR grid">
                 {
@@ -60,10 +63,16 @@ const Review = () => {
 
 
                                 </div>
+                               
                             </div>
+                            
                         )
                     })
                 }
+                <div className="rcard">
+                    <img src={Reviewcard} muted autoPlay loop type="Reviewcard/jpg" alt="Ratings"></img>
+
+                </div>
             </div>
         </section>
     )
