@@ -13,6 +13,7 @@ import HotelsPage from './Pages/Hotels';
 import TripPlanner from './Pages/TripPlanner';
 
 const App =()=>{
+   
     return(
         <>
          

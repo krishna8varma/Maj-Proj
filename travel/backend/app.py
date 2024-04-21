@@ -2,10 +2,10 @@ from flask import Flask, jsonify, request
 import requests
 import gemini
 import weather
-
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 data={}
 
 @app.route('/start', methods=['POST','GET'])
@@ -62,7 +62,20 @@ def trip_planner():
         tripPlan[f'Day {i+1}']['weather']=weather_data[f'Day {i+1}']
     return jsonify(tripPlan), 200
    
-    
+@app.route('/selected-activities', methods=['GET','POST'])
+def selected_activities():
+    if request.method == 'GET':
+        activities=gemini.get_activities(data['endingDestination'],data['tripType'])
+        return jsonify({'activities': activities}),200
+
+    elif request.method == 'POST':
+        request_data = request.json
+        data['selected_activities']=request_data['selected_activities']
+        return jsonify({'message': 'POST request received'}),200
+
+    else:
+        # If other HTTP methods are not supported, return an error
+        return jsonify({'error': 'Method not allowed'}), 405 
 
 '''
     else:

@@ -127,13 +127,13 @@ def planned_trip(destination,duration,type_of_trip,activities):
     return plan
 
 
-'''for code testing
-destination='kerela'
+#'''for code testing
+destination='nagpur'
 start_date='16-04-2024'
 end_date='20-04-2024'
 type_of_trip='solo'
 activities=get_activities(destination,type_of_trip)
 duration=get_travel_duration_days(start_date,end_date)
-tripPlan=planned_trip(destination,duration,type_of_trip,activities)
-print(tripPlan)
-print(activities)'''
+# tripPlan=planned_trip(destination,duration,type_of_trip,activities)
+# print(tripPlan)
+print(activities)

@@ -1,12 +1,48 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../Components/Navbar/navbar";
 import './page2.css';
 import Footer from "../Components/Footer/footer";
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
-
+import axios from "axios";
 const Page2 = () => {
-  
+    const [activities, setActivities] = useState([]);
+    const [selectedActivities, setSelectedActivities] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('http://localhost:5000/activities'); // Adjust the URL to your backend API endpoint
+                setActivities(response.data.activities);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    const handleActivitySelection = (activity) => {
+        setSelectedActivities((prevSelectedActivities) => {
+            if (prevSelectedActivities.includes(activity)) {
+                return prevSelectedActivities.filter((selectedActivity) => selectedActivity !== activity);
+            } else {
+                return [...prevSelectedActivities, activity];
+            }
+        });
+    };
+
+    const handleSubmit = async () => {
+        try {
+            const response = await axios.post('http://localhost:5000/selected-activities', {
+                selected_activities: selectedActivities,
+            });
+            console.log('Data successfully posted selected_buttons:', response.data);
+        } catch (error) {
+            console.error('Error posting data:', error);
+        }
+    };
+
+
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
     const startingDate = queryParams.get('startingDate');
@@ -17,7 +53,7 @@ const Page2 = () => {
 
             <Navbar />
             <section className="page2">
-                
+
                 <div className="home-container2">
                     <div className="background-image"></div>
                     <div className="content2">
@@ -27,25 +63,26 @@ const Page2 = () => {
                         </div>
                     </div>
                     <div className="button-container2">
+
                         <div className="black-box">
-                            <button className="button2">Beach Activities</button>
-                            <button className="button2">Water Sports</button>
-                            <button className="button2">Boat Cruises</button>
-                            <button className="button2">Trekking and Nature Trails</button>
-                            <button className="button2">Shopping</button>
-                            <button className="button2">Cultural Events and Festivals</button>
-                            <button className="button2">Yoga and Wellness Retreats</button>
-                            <button className="button2">Explore Portuguese Heritage</button>
-                            {/* Add more buttons as needed */}
+                            <div className="activities-list">
+                                {activities.map((activity, index) => (
+                                    <button key={index}
+                                    className={selectedActivities.includes(activity) ? 'button2_selected' : 'button2'}
+                                    onClick={() => handleActivitySelection(activity)} >
+                                        {activity}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
                         <div >
-                    <Link to="/HotelsPage"> <button className="btn2">Next</button></Link>
+                            <Link to="/HotelsPage"> <button className="btn2" onClick={handleSubmit}>Next</button></Link>
+                        </div>
                     </div>
-                    </div>
-                    
+
                 </div>
-                
-     
+
+
 
                 <Footer />
             </section>

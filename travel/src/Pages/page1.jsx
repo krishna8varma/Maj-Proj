@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios"
+import axios from "axios";
 import Navbar from "../Components/Navbar/navbar";
 import img1 from '../Assets/solo.png';
 import img2 from '../Assets/couple.png';
@@ -21,7 +21,7 @@ const Page1 = () => {
     const startingDate = queryParams.get('startingDate');
     const endingDate = queryParams.get('endingDate');
     // const [submitted, setSubmitted] = useState(false);
-    const [selectedOption, setSelectedOption] = useState("");
+    const [tripType, setSelectedOption] = useState("");
   
 
     const handleOptionSelect = (option) => {
@@ -38,16 +38,15 @@ const Page1 = () => {
         // }
         
         const companyFormData = {
-            selectedOption,   //startingDate and endingDate arnt needed as it was sent earlier
-            startingDate,
-            endingDate,
+            tripType, 
+         
         };
         const response = await axios.post("http://localhost:5000/tripType", companyFormData);
         try {
             if (response.status === 200) {
-                console.log("Data successfully posted Company to the server!");
+                console.log("Data successfully posted tripType to the server!");
                 // Navigate to the next page after successful post
-                const url = `/Page2?&startingDate=${companyFormData.startingDate}&endingDate=${companyFormData.endingDate}`;
+                const url = `/Page2?&startingDate=${startingDate}&endingDate=${endingDate}`;
               navigate(url);
             } else {
                 console.error("Failed to post data to the server.");
