@@ -23,7 +23,7 @@ const Home=()=> {
 
         event.preventDefault();
         try {
-            const response = await axios.post("http://localhost:5000/", formData);
+            const response = await axios.post("http://localhost:5000/start", formData);
             console.log("Data successfully posted to the server!", response.data);
             const url = `/Page1?startingLocation=${formData.startingLocation}&endingDestination=${formData.endingDestination}&startingDate=${formData.startingDate}&endingDate=${formData.endingDate}`;
             navigate(url);
