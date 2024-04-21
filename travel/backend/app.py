@@ -6,19 +6,6 @@ import weather
 
 app = Flask(__name__)
 
-# Define the required OAuth scopes
-
-# Use 'credentials' to authenticate API requests with Google services
-# Example: Use the credentials with a Google Cloud client library
-# For example, to use Cloud Storage API:
-# from google.cloud import storage
-# client = storage.Client(credentials=credentials)
-# bucket = client.get_bucket('your-bucket-name')
-# blobs = bucket.list_blobs()
-# for blob in blobs:
-#     print(blob.name)
-
-
 data={}
 
 @app.route('/start', methods=['POST','GET'])
@@ -40,19 +27,18 @@ def start():
 def tripType():
     request_data=request.json
     data['tripType']=request_data['tripType']
-    return 200
+    return jsonify({'message': 'Data posted Successfully'}),200
 
 @app.route('/activities', methods=['GET','POST'])
 def recommend_activities():
     if request.method == 'GET':
         activities=gemini.get_activities(data['endingDestination'],data['tripType'])
         return jsonify({'activities': activities}),200
-        #return jsonify(data)
 
     elif request.method == 'POST':
         request_data = request.json
         data['selected_activities']=request_data['selected_activities']
-        return jsonify({'message': 'POST request received'})
+        return jsonify({'message': 'POST request received'}),200
 
     else:
         # If other HTTP methods are not supported, return an error

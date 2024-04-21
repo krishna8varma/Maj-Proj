@@ -38,11 +38,11 @@ const Page1 = () => {
         // }
         
         const companyFormData = {
-            selectedOption,
+            selectedOption,   //startingDate and endingDate arnt needed as it was sent earlier
             startingDate,
             endingDate,
         };
-        const response = await axios.post("http://localhost:5000/", companyFormData);
+        const response = await axios.post("http://localhost:5000/tripType", companyFormData);
         try {
             if (response.status === 200) {
                 console.log("Data successfully posted Company to the server!");
