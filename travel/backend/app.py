@@ -32,7 +32,7 @@ def tripType():
 @app.route('/activities', methods=['GET','POST'])
 def recommend_activities():
     if request.method == 'GET':
-        activities=gemini.get_activities(data['endingDestination'],data['tripType'])
+        activities=gemini.get_activities(data['endingDestination'],data['tripType']) 
         return jsonify({'activities': activities}),200
 
     elif request.method == 'POST':
