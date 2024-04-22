@@ -33,7 +33,7 @@ const Page2 = () => {
 
     const handleSubmit = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/selected-activities', {
+            const response = await axios.post('http://localhost:5000/activities', {
                 selected_activities: selectedActivities,
             });
             console.log('Data successfully posted selected_buttons:', response.data);

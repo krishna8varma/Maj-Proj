@@ -18,7 +18,7 @@ if gemini_key is None:
 
 
 def get_travel_duration_days(start_date,end_date):
-    date_format = '%d-%m-%Y'
+    date_format = '%Y-%m-%d'
 
 
     # Convert start_date_str and end_date_str to datetime objects
@@ -129,8 +129,8 @@ def planned_trip(destination,duration,type_of_trip,activities):
 
 #'''for code testing
 destination='nagpur'
-start_date='16-04-2024'
-end_date='20-04-2024'
+start_date='2024-04-25'
+end_date='2024-04-30'
 type_of_trip='solo'
 activities=get_activities(destination,type_of_trip)
 duration=get_travel_duration_days(start_date,end_date)
