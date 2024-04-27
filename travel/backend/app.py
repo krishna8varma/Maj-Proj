@@ -32,7 +32,7 @@ def tripType():
 @app.route('/activities', methods=['GET','POST'])
 def recommend_activities():
     if request.method == 'GET':
-        activities=gemini.get_activities(data['endingDestination'],data['tripType'])
+        activities=gemini.get_activities(data['endingDestination'],data['tripType']) 
         return jsonify({'activities': activities}),200
 
     elif request.method == 'POST':
@@ -53,30 +53,11 @@ def trip_planner():
     selected_activities=data['selected_activities']
     duration=gemini.get_travel_duration_days(start_date,end_date)
     
-    weather_data=weather.get_weather_data(destination,start_date,duration)
+    #weather_data=weather.get_weather_data(destination,start_date,duration)
     tripPlan=gemini.planned_trip(destination,duration,type_of_trip,selected_activities)
     
     #add weather_data to tripPlan        
-    tripPlan['AQI']=weather.get_aqi_id(destination)
-    for i in range(duration):
-        tripPlan[f'Day {i+1}']['weather']=weather_data[f'Day {i+1}']
-    return jsonify(tripPlan), 200
-   
-@app.route('/selected-activities', methods=['GET','POST'])
-def selected_activities():
-    if request.method == 'GET':
-        activities=gemini.get_activities(data['endingDestination'],data['tripType'])
-        return jsonify({'activities': activities}),200
-
-    elif request.method == 'POST':
-        request_data = request.json
-        data['selected_activities']=request_data['selected_activities']
-        return jsonify({'message': 'POST request received'}),200
-
-    else:
-        # If other HTTP methods are not supported, return an error
-        return jsonify({'error': 'Method not allowed'}), 405 
-
+    return jsonify({'tripPlan': tripPlan, 'weather': None}), 200
 '''
     else:
         # Return error response if request does not contain JSON data
@@ -91,6 +72,3 @@ def selected_activities():
 
 if __name__=='__main__':
     app.run(debug=True)
-
-
-
