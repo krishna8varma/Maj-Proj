@@ -8,7 +8,7 @@ load_dotenv()
 
 weather_key=os.getenv('weather_key')
 
-def get_aqi_id(destination): #function call is pending
+def get_aqi_id(destination):
     base_url="https://api.weatherapi.com/v1/current.json"
     params = {
             "key": weather_key,
@@ -27,7 +27,7 @@ def get_weather_data(destination,start_date,duration):
    
     # Initialize list to store forecast data
     forecast_data = {}
-
+    start_date = datetime.strptime(start_date, '%Y-%m-%d')
     # Get aqi index
     aqi_index=get_aqi_id(destination)
     forecast_data['AQI']=aqi_index
@@ -64,3 +64,8 @@ def get_weather_data(destination,start_date,duration):
 
 
     return forecast_data
+
+'''destination='nagpur'
+start_date='2024-04-10'
+end_date='2024-04-15'
+print(get_weather_data(destination,start_date,5))'''
