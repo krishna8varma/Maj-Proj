@@ -6,7 +6,7 @@
      scroll-behavior: smooth;
   }
   
-  .transport , .hotels, .trip-planner{
+  .transport , .hotels, .trip-planner,.foodbtn{
     background-color: transparent;
    color: #000000;
    border: none;
@@ -26,10 +26,18 @@ h2{
   font-size: 30px;
 }
 
- .bookmark{
+ .save{
   position: relative;
-  margin-left: 15rem;
-  
+  color: #038CB3;
+  cursor: pointer;
+ } 
+
+ .refresh{
+  position: relative;
+  margin-right: 1.5rem;
+  margin-left: 13rem;
+  color: #038CB3;
+  cursor: pointer;
  } 
 
   .main-content {

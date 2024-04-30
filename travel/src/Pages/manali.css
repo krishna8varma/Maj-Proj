@@ -1,0 +1,266 @@
+.manali{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(to left, #91D2E4, #D3F8E2);
+     scroll-behavior: smooth;
+  }
+  
+  .transport , .hotels, .trip-planner,.foodbtn{
+    background-color: transparent;
+   color: #000000;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   
+  }
+
+  .trip-planner :active,button:focus {
+    text-decoration: underline;
+
+   
+ }
+
+h2{
+  color: #000000;
+  font-size: 30px;
+}
+
+ .save{
+  position: relative;
+  color: #038CB3;
+  cursor: pointer;
+ } 
+
+ .refresh{
+  position: relative;
+  margin-right: 1.5rem;
+  margin-left: 13rem;
+  color: #038CB3;
+  cursor: pointer;
+ } 
+
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .left-half {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .right-half {
+    flex: 1;
+  }
+  
+  /* Selection bar styles */
+  .selection-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .selection-bar div {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+   
+    
+  }
+  
+  /* .selected {
+   
+    color: white;
+  } */
+  
+  /* Date list styles */
+  .date-list {
+    margin-top: 28px;
+    padding:10px;
+    box-shadow: #bbb;
+    border-radius: 8px;
+    border: 1px solid #D8D8D8;
+    background: #e6e6e6;
+    justify-content:space-evenly;
+    
+  }
+  
+  .date {
+    cursor: pointer;
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #366960;
+  }
+  
+  .day{
+    font-size: medium;
+  }
+
+  .date-text {
+    font-size: 0.9rem;
+    color: #366960;
+    margin-bottom: 24px;
+    font-size: medium;
+  }
+  
+  .loc{
+    color: black;
+  }
+
+  /* Sections list styles */
+  .sections-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .sections-list h3 {
+    margin-bottom: 5px;
+  }
+  
+h3{
+  position: relative;
+  top : -0.5rem;
+  margin-left: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  color: #444444;
+}
+
+.dayTime{
+  position: relative;
+  top: 0.8rem;
+  margin-left: 37.7rem;
+  height: 1.4rem;
+  background-color: #366960;
+  width: 5.5rem;
+  color: #f0f0f0;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: smaller;
+}
+
+.slidearrow{
+  position: relative;
+  top : 6rem;
+  margin-left: 4rem;
+  font-size: 50px;
+  color: #444444;
+}
+.slidearrow:hover{
+  color: grey;
+   transform: scale(1.1);
+}
+
+  /* Place and restaurant cards styles */
+  .place-card
+  {
+    display: flex;
+    margin-bottom: 30px;
+    overflow: hidden;
+    height: 10rem;
+    border-radius: 8px;
+    border: 1px solid  className='type';
+    background: #FFF;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 1rem;
+  margin-right: 1rem;
+  }
+  
+  .place-card img
+  {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-top: 1.1rem;
+    margin-left: 1rem;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+  
+  .place-details {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .place-details h4 {
+    margin-bottom: 5px;
+    width: 17rem;
+    height: 2.3rem;
+  }
+
+.naming{
+    width: 17rem;
+    height: 2rem;
+}
+
+  .type{
+       margin-left: 21rem;
+       position: relative;
+       bottom:1.5rem;
+       background-color: #D8D8D8 ;
+       justify-content: center;
+       text-align: center;
+       border-radius: 20px;
+       height: 1.8rem;
+       width: 10rem;
+       font-size:smaller;
+       font-weight: 200;
+       padding-top: 0.2rem;
+  }
+
+  .timing{
+      font-size: smaller;
+      font-weight: 300;
+      position: relative;
+      top: -1rem;
+      width: 25rem;
+      height: 2rem;
+  }
+  
+  .visit
+  {
+    font-size: smaller;
+      font-weight: 300;
+      position: relative;
+      top: -0.5rem;
+  }
+  
+
+  .starRating{
+    margin-left: 26rem;
+  }
+  
+  
+  
+  /* Map styles */
+  .map {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #ccc;
+  }
+ 
+ 
+  
+  
+  
+.starRating{
+   position: relative;
+   top:-1.5rem;
+   right: 2rem;
+  font-size: medium;
+  text-align: center;
+  justify-content: center;
+}
+
+ 

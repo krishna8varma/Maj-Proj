@@ -60,7 +60,7 @@ def trip_planner():
     tripPlan['AQI']=weather.get_aqi_id(destination)
     for i in range(duration):
         tripPlan[f'Day {i+1}']['weather']=weather_data[f'Day {i+1}']
-    return jsonify(tripPlan), 200
+    return jsonify({'tripPlan': tripPlan}), 200
    
 @app.route('/selected-activities', methods=['GET','POST'])
 def selected_activities():

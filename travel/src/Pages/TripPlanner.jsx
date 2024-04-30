@@ -1,21 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
 import Navbar from '../Components/Navbar/navbar'; // Assuming you have a Navbar component
 import MapComponent from '../Components/Map/map'; // Assuming you have a Map component
 import './TripPlanPage.css'; // Import the corresponding CSS file
-import img1 from '../Assets/pg5img1.jpg';
-import img2 from '../Assets/pg5img2.jpg'
+import img1 from '../Assets/d2img1.jpg';
+import img2 from '../Assets/food1.jpg';
 // import img3 from '../Assets/pg5img3.jpg'
-import img4 from '../Assets/pg5img4.jpg'
+import img4 from '../Assets/d1img1.jpg'
 import hotel_a from '../Assets/hotel_a.jpg'
 import { IoIosArrowForward } from "react-icons/io";
 import { FiBookmark } from "react-icons/fi";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdArrowForwardIos } from "react-icons/md";
-
+import axios from 'axios';
+import { IoMdRefresh } from "react-icons/io";
 
 const TripPlanPage = () => {
   const [expandedDay, setExpandedDay] = useState(null);
+  const [tripPlan, settripPlan] = useState(null);
 
   const tripPlanData = [
     {
@@ -23,7 +25,7 @@ const TripPlanPage = () => {
       date: 'April 6th',
       sections: [
         {
-          title : 'Lunch',
+          
           title1 : 'Morning',
           places: [
             {
@@ -37,23 +39,10 @@ const TripPlanPage = () => {
           ],
 
         
-          restaurants: [
-            
-            {
-              image: img2,
-              name: 'Fine Dining Place',
-              rating: 4.6,
-            },
-            {
-              image: hotel_a,
-              name: 'Local Cafe',
-              rating: 4.2,
-            },
-            // Add more restaurants as needed
-          ],
+         
         },
         {
-          title : 'Tea or Coffee',
+          
           title1 : 'Afternoon',
           places: [
             {
@@ -65,22 +54,10 @@ const TripPlanPage = () => {
               visit : '1 PM'
             },
           ],
-          restaurants: [
-            {
-              image: hotel_a,
-              name: 'Beachside Grill',
-              rating: 4.5,
-            },
-            {
-              image: img2,
-              name: 'Italian Trattoria',
-              rating: 4.3,
-            },
-            // Add more restaurants as needed
-          ],
+         
         },
         {
-          title : 'Dinner',
+          
           title1 : 'Night',
           places: [
             {
@@ -92,19 +69,7 @@ const TripPlanPage = () => {
               visit : '6 PM'
             },
           ],
-          restaurants: [
-            {
-              image: img2,
-              name: 'Sushi Bar',
-              rating: 4.4,
-            },
-            {
-              image: hotel_a,
-              name: 'Steakhouse',
-              rating: 4.7,
-            },
-            // Add more restaurants as needed
-          ],
+         
         },
       ],
     },
@@ -118,6 +83,20 @@ const TripPlanPage = () => {
     // Add more days as needed
   ];
 
+  useEffect(() => {
+    const fetchData = async () => {
+        try {
+            const response = await axios.get('http://localhost:5000/trip'); // Adjust the URL to your backend API endpoint
+            settripPlan(response.data.tripPlan);
+            console.log(tripPlan);
+        } catch (error) {
+
+            console.error('Error fetching data:', error);
+        }
+    };
+
+    fetchData();
+}, []);
   const handleExpandDay = (dayIndex) => {
     setExpandedDay(expandedDay === dayIndex ? null : dayIndex);
   };
@@ -128,14 +107,18 @@ const TripPlanPage = () => {
 
       <div className="selection-bar">
         <button className="transport">Transport</button>
-        <Link to="/HotelsPage"><button className="hotels">Hotels</button></Link>        <button className="trip-planner">Trip Planner</button>
+        <Link to="/HotelsPage"><button className="hotels">Hotels</button></Link>        
+        <button className="trip-planner">Trip Planner</button>
+        <Link to="/FoodPage"><button className="foodbtn">Food</button></Link> 
       </div>
 
       <div className="main-content">
         <div className="left-half">
           <h2>
             Your Travel Plan Is Ready !
-            <span className='bookmark'></span><FiBookmark />
+            <span className='refresh'>  <IoMdRefresh /></span>
+            <span className='save'><FiBookmark /></span>
+            
           </h2>
           <ul className="date-list">
             {tripPlanData.map((day, index) => (
@@ -167,7 +150,7 @@ const TripPlanPage = () => {
                           </ul>
                         )}
                          <h3>{section.title}</h3>
-                        {section.restaurants && (
+                        {/* {section.restaurants && (
     
                           <ul className="restaurants-list">
                             {section.restaurants.map((restaurant, restaurantIndex) => (
@@ -182,7 +165,7 @@ const TripPlanPage = () => {
                             ))}
                           <Link to="/HotelsPage">  <p className='slidearrow'><MdArrowForwardIos /></p></Link>
                           </ul>
-                        )}
+                        )} */}
                       </li>
                     ))}
                   </ul>

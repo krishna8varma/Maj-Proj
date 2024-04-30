@@ -1,0 +1,146 @@
+
+
+.foodpage {
+    width: 100%;
+    height: 100vh; /* Set the height of the page */
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left, #91D2E4, #D3F8E2);
+     scroll-behavior: smooth;
+  }
+
+  .transport , .hotelSelected , .trip-planner , .foodbtn{
+    background-color: transparent;
+   color: #000000;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   
+  }
+
+  .foodbtn :active,button:focus {
+    text-decoration: underline;
+
+   
+ }
+
+  .selection-bar {
+     margin-left: 350px;
+    margin-right: 100px;
+    margin-top : 80px;
+    margin-bottom: 2px;
+    height: 50px;
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 36px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    
+  }
+  
+  .selection-bar > div {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+   
+    
+  }
+  
+   .selection-bar > .selected {
+     background-color: #f3f6f9; /*Selected item background color */
+    color: white;
+  } 
+
+.mainContent{
+    flex: 1;
+    display: flex;
+    overflow: hidden; /* Prevent content from overflowing */
+    background-color: #f0f0f0;
+    margin-top: 1rem;
+}
+
+
+.hotelss{
+    flex: 1;
+    overflow-y: auto; /* Add scrollbar when content overflows vertically */
+    padding: 10px;
+   display: flex;
+  width: 50%;
+   flex-wrap: wrap;
+   justify-content:space-around;
+}
+
+.heading{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 300;
+    width: 10rem;
+    margin-left: 10px;
+    line-height: 1.5rem;
+    height: 20px;
+    position: relative;
+    top: 10px;
+
+    
+  }
+  .food-box {
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 11px;
+    box-shadow: #bbb;
+    border-radius: 10px;
+    border: 1px solid #D8D8D8;
+    background: #FFF;
+    height: 18rem;
+     width: 37%;
+
+    /* &:hover{
+     
+          transform: scale(1.1);
+   
+     } */
+  }
+
+ .star{
+    position: relative;
+    left: 70%;
+ }
+
+  .Rating{
+    margin-top : -1.5rem;
+    margin-left: 10px;
+   position: relative;
+   left: 75%;
+      height: 2rem;
+      width: 2rem;
+      color: #000000;
+      font-size: 15px;
+     
+   }
+ 
+   .details {
+    flex: 1;
+    
+  }
+
+  .food-box img {
+    width:100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+
+  .Map{
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #91D2E4;
+  }
+
+
+ 

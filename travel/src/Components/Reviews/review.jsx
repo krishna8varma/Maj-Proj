@@ -3,6 +3,7 @@ import './review.css';
 import img1 from '../../Assets/adi.png';
 import img2 from '../../Assets/shradha.png';
 import img3 from '../../Assets/ramesh.png';
+import img4 from '../../Assets/greta.png';
 import Reviewcard from '../../Assets/Reviewcard.png';
 
 const Data = [{
@@ -29,6 +30,14 @@ const Data = [{
     Rating: 5.0,
     description: "I used this trip planner for my recent vacation, and I couldn't be happier with the experience! It made organizing my itinerary a breeze, and the suggestions for activities and accommodations were spot on. Highly recommended!",
 
+},
+{
+    id: 4,
+   imgSrc:img4,
+    destTitle: 'Greta Williams',
+    Rating: 4.7,
+    description: "I've tried several trip planning tools, but none match the convenience and flexibility of this website. It made organizing my vacation a breeze!"
+
 }]
 const Review = () => {
     return (
@@ -48,7 +57,7 @@ const Review = () => {
                              </div> */}
                                 <div className="cardInfo">
                                     <div className="userImg">
-                                    <h4 className="destTitle"><img src={imgSrc} alt="#"/>{destTitle}</h4>
+                                    <h4 className="destTitle"><img src={imgSrc} alt="#"/> {destTitle}</h4>
                                     </div>
 
                                         <span class="fa fa-star checked"></span>
