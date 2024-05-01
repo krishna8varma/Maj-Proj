@@ -18,7 +18,7 @@ import { IoMdRefresh } from "react-icons/io";
 const TripPlanPage = () => {
   const [expandedDay, setExpandedDay] = useState(null);
   const [tripPlanData, setTripPlan] = useState(null);
-
+  const [selectedLocation, setSelectedLocation] = useState(null);
 useEffect(() => {
     const fetchTripPlan = async () => {
         try {
@@ -32,73 +32,18 @@ useEffect(() => {
 
     fetchTripPlan();
 }, []);
-  // const tripPlanData = [
-  //   {
-  //     day: 'Saturday , ',
-  //     date: 'April 6th',
-  //     sections: [
-  //       {
-          
-  //         title1 : 'Morning',
-  //         places: [
-  //           {
-  //             image: img1,
-  //             name: 'Rohtang Pass',
-  //             type: 'Mountain Pass',
-  //             openingHours: '9:00 AM - 5:00 PM',
-  //             rating: 8.5,
-  //             visit : '10 AM'
-  //           },
-  //         ],
+ 
+  const handlePlaceClick = (location) => {
+    setSelectedLocation(location);
+    console.log(selectedLocation);
+};
 
-        
-         
-  //       },
-  //       {
-          
-  //         title1 : 'Afternoon',
-  //         places: [
-  //           {
-  //             image: img4,
-  //             name: 'Central Park',
-  //             type: 'Park',
-  //             openingHours: '6:00 AM - 10:00 PM',
-  //             rating: 9.0,
-  //             visit : '1 PM'
-  //           },
-  //         ],
-         
-  //       },
-  //       {
-          
-  //         title1 : 'Night',
-  //         places: [
-  //           {
-  //             image: img2 ,
-  //             name: 'Café Terrace',
-  //             type: 'Café',
-  //             openingHours: '3:00 PM - 6:00 PM',
-  //             rating: 8.2,
-  //             visit : '6 PM'
-  //           },
-  //         ],
-         
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     day: 'Saturday, ',
-  //     date: 'April 6th',
-  //     sections: [
-  //       // Add sections for Day 2 as needed
-  //     ],
-  //   },
-  //   // Add more days as needed
-  // ];
   const handleExpandDay = (dayIndex) => {
     setExpandedDay(expandedDay === dayIndex ? null : dayIndex);
   };
+  
 
+  
   const renderTripPlan = () => {
     if (!tripPlanData) {
         return <div className="loadingTripData"><p>Please wait! Loading...</p></div>;
@@ -120,7 +65,7 @@ useEffect(() => {
             { sectionIndex["Place Name"]&& (
               <ul className="places-list">
                
-                  <li key={sectionIndex} className="place-card">
+                  <li key={sectionIndex} className="place-card" onClick={() => handlePlaceClick(sectionIndex["location"])}>
                     <img src={sectionIndex.image} alt={sectionIndex["Place Name"]} />
                     <div className="place-details">
                       <h4>{sectionIndex ["Place Name"]}</h4>
@@ -171,7 +116,7 @@ useEffect(() => {
           
         </div>
         <div className="right-half">
-          <MapComponent/>
+          <MapComponent selectedLocation={selectedLocation}/>
         </div>
       </div>
     </div>
