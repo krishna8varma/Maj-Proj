@@ -17,90 +17,134 @@ import { IoMdRefresh } from "react-icons/io";
 
 const TripPlanPage = () => {
   const [expandedDay, setExpandedDay] = useState(null);
-  const [tripPlan, settripPlan] = useState(null);
+  const [tripPlanData, setTripPlan] = useState(null);
 
-  const tripPlanData = [
-    {
-      day: 'Saturday , ',
-      date: 'April 6th',
-      sections: [
-        {
-          
-          title1 : 'Morning',
-          places: [
-            {
-              image: img1,
-              name: 'Rohtang Pass',
-              type: 'Mountain Pass',
-              openingHours: '9:00 AM - 5:00 PM',
-              rating: 8.5,
-              visit : '10 AM'
-            },
-          ],
-
-        
-         
-        },
-        {
-          
-          title1 : 'Afternoon',
-          places: [
-            {
-              image: img4,
-              name: 'Central Park',
-              type: 'Park',
-              openingHours: '6:00 AM - 10:00 PM',
-              rating: 9.0,
-              visit : '1 PM'
-            },
-          ],
-         
-        },
-        {
-          
-          title1 : 'Night',
-          places: [
-            {
-              image: img2 ,
-              name: 'Café Terrace',
-              type: 'Café',
-              openingHours: '3:00 PM - 6:00 PM',
-              rating: 8.2,
-              visit : '6 PM'
-            },
-          ],
-         
-        },
-      ],
-    },
-    {
-      day: 'Saturday, ',
-      date: 'April 6th',
-      sections: [
-        // Add sections for Day 2 as needed
-      ],
-    },
-    // Add more days as needed
-  ];
-
-  useEffect(() => {
-    const fetchData = async () => {
+useEffect(() => {
+    const fetchTripPlan = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/trip'); // Adjust the URL to your backend API endpoint
-            settripPlan(response.data.tripPlan);
-            console.log(tripPlan);
+            const response = await axios.get('http://localhost:5000/trip');
+            console.log('Trip Plan Data:', response.data);
+            setTripPlan(response.data); // Assuming tripPlan is a state variable
         } catch (error) {
-
-            console.error('Error fetching data:', error);
+            console.error('Error fetching trip plan:', error);
         }
     };
 
-    fetchData();
+    fetchTripPlan();
 }, []);
+  // const tripPlanData = [
+  //   {
+  //     day: 'Saturday , ',
+  //     date: 'April 6th',
+  //     sections: [
+  //       {
+          
+  //         title1 : 'Morning',
+  //         places: [
+  //           {
+  //             image: img1,
+  //             name: 'Rohtang Pass',
+  //             type: 'Mountain Pass',
+  //             openingHours: '9:00 AM - 5:00 PM',
+  //             rating: 8.5,
+  //             visit : '10 AM'
+  //           },
+  //         ],
+
+        
+         
+  //       },
+  //       {
+          
+  //         title1 : 'Afternoon',
+  //         places: [
+  //           {
+  //             image: img4,
+  //             name: 'Central Park',
+  //             type: 'Park',
+  //             openingHours: '6:00 AM - 10:00 PM',
+  //             rating: 9.0,
+  //             visit : '1 PM'
+  //           },
+  //         ],
+         
+  //       },
+  //       {
+          
+  //         title1 : 'Night',
+  //         places: [
+  //           {
+  //             image: img2 ,
+  //             name: 'Café Terrace',
+  //             type: 'Café',
+  //             openingHours: '3:00 PM - 6:00 PM',
+  //             rating: 8.2,
+  //             visit : '6 PM'
+  //           },
+  //         ],
+         
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     day: 'Saturday, ',
+  //     date: 'April 6th',
+  //     sections: [
+  //       // Add sections for Day 2 as needed
+  //     ],
+  //   },
+  //   // Add more days as needed
+  // ];
   const handleExpandDay = (dayIndex) => {
     setExpandedDay(expandedDay === dayIndex ? null : dayIndex);
   };
 
+  const renderTripPlan = () => {
+    if (!tripPlanData) {
+        return <p>Loading trip plan...</p>;
+    }
+
+    return <div className="trip-plan">
+    {Object.entries(tripPlanData.tripPlan).map(([day, index])=> (
+  <li key={index}>
+    <div className="date" onClick={() => handleExpandDay(index)}>
+      <div className="day"><span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span> 
+      <span className="date-text">{day}</span>
+      </div>
+    </div>
+    {expandedDay === index && (
+      <ul className="sections-list">
+        {Object.entries(index).map(([section, sectionIndex]) => (
+          <li key={sectionIndex}>
+            <div className='dayTime'><p >{section}</p></div>
+            { sectionIndex["Place Name"]&& (
+              <ul className="places-list">
+               
+                  <li key={sectionIndex} className="place-card">
+                    <img src={sectionIndex.image} alt={sectionIndex["Place Name"]} />
+                    <div className="place-details">
+                      <h4>{sectionIndex ["Place Name"]}</h4>
+                        <div className='type'><p>{sectionIndex["Activity Type"].join(', ')}</p></div>  
+                      <p className='timing'>Opening Hours: {sectionIndex ["Opening Hours"].join(' - ')}</p>
+                      {/* <p className='visit'>Visit Around : {place.visit}</p> */}
+                      <p className='starRating'><span class="fa fa-star checked"> </span> {sectionIndex["Rating"]}</p>
+                    </div>
+                  </li>
+              
+              </ul>
+            )}
+             
+            
+          </li>
+        ))}
+      </ul>
+    )}
+  </li>
+))}
+  </div>
+};
+
+ 
   return (
     <div className="trip-plan-page">
       <Navbar />
@@ -120,59 +164,10 @@ const TripPlanPage = () => {
             <span className='save'><FiBookmark /></span>
             
           </h2>
-          <ul className="date-list">
-            {tripPlanData.map((day, index) => (
-              <li key={day.date}>
-                <div className="date" onClick={() => handleExpandDay(index)}>
-                  <div className="day"><span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span> {day.day}
-                  <span className="date-text">{day.date}</span>
-                  </div>
-                </div>
-                {expandedDay === index && (
-                  <ul className="sections-list">
-                    {day.sections.map((section, sectionIndex) => (
-                      <li key={sectionIndex}>
-                        <div className='dayTime'><p >{section.title1}</p></div>
-                        {section.places && (
-                          <ul className="places-list">
-                            {section.places.map((place, placeIndex) => (
-                              <li key={placeIndex} className="place-card">
-                                <img src={place.image} alt={place.name} />
-                                <div className="place-details">
-                                  <h4>{place.name}</h4>
-                                    <div className='type'><p>{place.type}</p></div>  
-                                  <p className='timing'>Opening Hours: {place.openingHours}</p>
-                                  <p className='visit'>Visit Around : {place.visit}</p>
-                                  <p className='starRating'><span class="fa fa-star checked"> </span> {place.rating}</p>
-                                </div>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-                         <h3>{section.title}</h3>
-                        {/* {section.restaurants && (
-    
-                          <ul className="restaurants-list">
-                            {section.restaurants.map((restaurant, restaurantIndex) => (
-                              <li key={restaurantIndex} className="restaurant-card">
-                                <img src={restaurant.image} alt={restaurant.name} />
-                                <div className="restaurant-details">
-                                  <h4>{restaurant.name}</h4>
-                                  <p className='rating1'><span class="fa fa-star checked"></span> {restaurant.rating}</p>
-                                </div>
-                              </li>
-                              
-                            ))}
-                          <Link to="/HotelsPage">  <p className='slidearrow'><MdArrowForwardIos /></p></Link>
-                          </ul>
-                        )} */}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
+           <ul>
+            {renderTripPlan()}
+            </ul>
+           
           
         </div>
         <div className="right-half">
@@ -183,3 +178,58 @@ const TripPlanPage = () => {
   );
 };
 export default TripPlanPage;
+// {Object.entries(tripPlanData.tripPlan).map(([day, index])=> (
+//   <li key={index}>
+//     <div className="date" onClick={() => handleExpandDay(index)}>
+//       <div className="day"><span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span> {day}
+//       <span className="date-text">{day}</span>
+//       </div>
+//     </div>
+//     {expandedDay === index && (
+//       <ul className="sections-list">
+//         {Object.entries.map(([section, sectionIndex]) => (
+//           <li key={sectionIndex}>
+//             <div className='dayTime'><p >{section}</p></div>
+//             {section.places && (
+//               <ul className="places-list">
+//                 {Object.entries.map(([place, placeIndex]) => (
+//                   <li key={placeIndex} className="place-card">
+//                     <img src={place.image} alt={place.name} />
+//                     <div className="place-details">
+//                       <h4>{place ["Place Name"]}</h4>
+//                         <div className='type'><p>{place ["Activity Type"]}</p></div>  
+//                       <p className='timing'>Opening Hours: {place ["Opening Hours"]}</p>
+//                       {/* <p className='visit'>Visit Around : {place.visit}</p> */}
+//                       <p className='starRating'><span class="fa fa-star checked"> </span> {place["Rating"]}</p>
+//                     </div>
+//                   </li>
+//                 ))}
+//               </ul>
+//             )}
+             
+            
+//           </li>
+//         ))}
+//       </ul>
+//     )}
+//   </li>
+// ))}
+// {Object.entries(tripPlanData.tripPlan).map(([day, dayData]) => (
+    
+      
+//   <div key={day} className="day"  onClick={() => handleExpandDay(day)}>
+//     <h2>{day}</h2>
+//     {Object.entries(dayData).map(([time, timeData]) => (
+//       <div key={time} className="time">
+//         <h3>{time}</h3>
+//         <div className="place">
+//           <h4>{timeData["Place Name"]}</h4>
+//           <p>Rating: {timeData["Rating"]}</p>
+//           <p>Activity Type: {timeData["Activity Type"]}</p>
+//           <p>Opening Hours: {timeData["Opening Hours"]}</p>
+//           <p>Location: {timeData["location"]}</p>
+//         </div>
+//       </div>
+//     ))}
+//   </div>
+// ))}
