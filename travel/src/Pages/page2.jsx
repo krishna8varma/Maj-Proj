@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import axios from "axios";
 const Page2 = () => {
-    const [activities, setActivities] = useState([]);
+    const [activities, setActivities] = useState(null);
     const [selectedActivities, setSelectedActivities] = useState([]);
     useEffect(() => {
         const fetchData = async () => {
@@ -42,7 +42,21 @@ const Page2 = () => {
         }
     };
 
-
+  const renderactivities=()=>{
+    if (!activities) {
+        return  <div className="loading"> <p>Loading Activity list...</p></div>
+    }
+    return <div className="">
+    {activities.map((activity, index) => (
+        <button key={index}
+        className={selectedActivities.includes(activity) ? 'button2_selected' : 'button2'}
+        onClick={() => handleActivitySelection(activity)} >
+            {activity}
+        </button>
+       
+    ))}
+     </div>
+  }
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
     const startingDate = queryParams.get('startingDate');
@@ -66,13 +80,7 @@ const Page2 = () => {
 
                         <div className="black-box">
                             <div className="activities-list">
-                                {activities.map((activity, index) => (
-                                    <button key={index}
-                                    className={selectedActivities.includes(activity) ? 'button2_selected' : 'button2'}
-                                    onClick={() => handleActivitySelection(activity)} >
-                                        {activity}
-                                    </button>
-                                ))}
+                                {renderactivities()};
                             </div>
                         </div>
                         <div >

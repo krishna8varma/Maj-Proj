@@ -101,7 +101,7 @@ useEffect(() => {
 
   const renderTripPlan = () => {
     if (!tripPlanData) {
-        return <p>Loading trip plan...</p>;
+        return <div className="loadingTripData"><p>Please wait! Loading...</p></div>;
     }
 
     return <div className="trip-plan">
