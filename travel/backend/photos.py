@@ -1,21 +1,24 @@
+from bs4 import BeautifulSoup
 import requests
-import json
 
-# Replace 'YOUR_PEXELS_API_KEY' with your actual Pexels API key
-API_KEY = 'TQm7Vcrl2SoasurgPQ7Z6Hc1AriXVS9yXk6FkcO8Sb3CdWW2wY96xz1s'
-SEARCH_QUERY = 'Taj Mahal'
-URL = f'https://api.pexels.com/v1/search?query={SEARCH_QUERY}&per_page=1'
+def get_photo(query):
+    url = f"https://search.brave.com/images?q={query}"
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
 
-headers = {
-    'Authorization': API_KEY
-}
+    # Send an HTTP GET request to the URL
+    response = requests.get(url,headers=headers)
 
-response = requests.get(URL, headers=headers)
+    # Parse the HTML content of the webpage
+    soup = BeautifulSoup(response.content, 'html.parser')
 
-# Check if the request was successful
-if response.status_code == 200:
-    data = response.json()
-    # Pretty print the JSON response
-    print(json.dumps(data, indent=4))
-else:
-    print(f"Failed to retrieve data: {response.status_code}") #src small
+    # Find the first <img> element with class='my-image'
+    img_element = soup.find('img', class_='svelte-1s3j0rg')
+
+    # Extract the 'src' attribute of the image if found
+    if img_element:
+        image_url = img_element['src']
+        return image_url
+    else:
+        return ""
+
+#SEARCH_QUERY = 'Taj Mahal'
