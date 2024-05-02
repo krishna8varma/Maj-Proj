@@ -6,6 +6,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
+
 data={}
 
 @app.route('/start', methods=['POST','GET'])
@@ -58,17 +59,22 @@ def trip_planner():
     
     #add weather_data to tripPlan        
     return jsonify({'tripPlan': tripPlan, 'weather': None}), 200
-'''
-    else:
-        # Return error response if request does not contain JSON data
-        error_message = {'error': 'Request must contain JSON data'}
-        return jsonify(error_message), 400
-        
-    elif request.method == 'GET':
-        # Handle GET request
-        data = {'message': 'This is a GET request'}
-        return jsonify(data)'''
 
+@app.route('/hotels', methods=['GET'])
+def hotels():
+    try:
+        hotel_list=gemini.get_hotels(data['endingDestination'],data['tripType'])
+        return jsonify({'Hotels' : hotel_list}),200
+    except:
+        return jsonify({'error' : "failed"}),400
+    
+@app.route('/food', methods=['GET'])
+def food():
+    try:
+        food=gemini.get_food(data['endingDestination'])
+        return jsonify({'food' : food}),200
+    except:
+        return jsonify({'error' : "failed"}),400
 
 if __name__=='__main__':
     app.run(debug=True)

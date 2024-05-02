@@ -1,0 +1,169 @@
+{
+    "Hotels": [
+        {
+            "hotel_name": "The Corinthians Resort & Club",
+            "hotel_page": "https://g.page/corinthiansresort?share",
+            "location": [
+                73.8726,
+                18.5287
+            ],
+            "photo": "https://images.pexels.com/photos/19826114/pexels-photo-19826114.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹5,000 - ₹10,000",
+            "rating": 4.5
+        },
+        {
+            "hotel_name": "JW Marriott Hotel Pune",
+            "hotel_page": "https://g.page/jwmarriottpune?share",
+            "location": [
+                73.8899,
+                18.5238
+            ],
+            "photo": "https://images.pexels.com/photos/10568576/pexels-photo-10568576.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹10,000 - ₹15,000",
+            "rating": 4.7
+        },
+        {
+            "hotel_name": "The Ritz-Carlton, Pune",
+            "hotel_page": "https://g.page/ritzcarltonpune?share",
+            "location": [
+                73.8978,
+                18.5227
+            ],
+            "photo": "https://images.pexels.com/photos/12714005/pexels-photo-12714005.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹15,000 - ₹20,000",
+            "rating": 4.9
+        },
+        {
+            "hotel_name": "Hyatt Regency Pune & Residences",
+            "hotel_page": "https://g.page/hyattregenc Pune?share",
+            "location": [
+                73.8696,
+                18.5133
+            ],
+            "photo": "https://images.pexels.com/photos/12714005/pexels-photo-12714005.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹7,000 - ₹12,000",
+            "rating": 4.6
+        },
+        {
+            "hotel_name": "Conrad Pune",
+            "hotel_page": "https://g.page/conradpune?share",
+            "location": [
+                73.8963,
+                18.5217
+            ],
+            "photo": "https://images.pexels.com/photos/18496443/pexels-photo-18496443.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹10,000 - ₹15,000",
+            "rating": 4.7
+        },
+        {
+            "hotel_name": "Courtyard by Marriott Pune Hinjewadi",
+            "hotel_page": "https://g.page/courtyardpunehinjewadi?share",
+            "location": [
+                73.7671,
+                18.5937
+            ],
+            "photo": "https://images.pexels.com/photos/19828824/pexels-photo-19828824.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹4,000 - ₹8,000",
+            "rating": 4.3
+        },
+        {
+            "hotel_name": "Lemon Tree Premier City Center Pune",
+            "hotel_page": "https://g.page/lemontreepremierpune?share",
+            "location": [
+                73.8404,
+                18.5221
+            ],
+            "photo": "https://images.pexels.com/photos/5845500/pexels-photo-5845500.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹3,000 - ₹6,000",
+            "rating": 4.2
+        },
+        {
+            "hotel_name": "The Westin Pune Koregaon Park",
+            "hotel_page": "https://g.page/westinpune?share",
+            "location": [
+                73.8834,
+                18.5303
+            ],
+            "photo": "https://images.pexels.com/photos/22043103/pexels-photo-22043103.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹8,000 - ₹13,000",
+            "rating": 4.6
+        },
+        {
+            "hotel_name": "Four Points by Sheraton Pune, Hinjewadi",
+            "hotel_page": "https://g.page/fourpointspune?share",
+            "location": [
+                73.7694,
+                18.5884
+            ],
+            "photo": "https://images.pexels.com/photos/3550274/pexels-photo-3550274.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹4,000 - ₹8,000",
+            "rating": 4.1
+        },
+        {
+            "hotel_name": "The Pride Hotel, Pune",
+            "hotel_page": "https://g.page/pridehotelpune?share",
+            "location": [
+                73.8528,
+                18.5357
+            ],
+            "photo": "https://images.pexels.com/photos/19817375/pexels-photo-19817375.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹5,000 - ₹10,000",
+            "rating": 4.2
+        },
+        {
+            "hotel_name": "Novotel Pune Viman Nagar Road",
+            "hotel_page": "https://g.page/novotelpune?share",
+            "location": [
+                73.9101,
+                18.5603
+            ],
+            "photo": "https://images.pexels.com/photos/19851408/pexels-photo-19851408.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹4,000 - ₹8,000",
+            "rating": 4.1
+        },
+        {
+            "hotel_name": "Holiday Inn Pune Hinjewadi",
+            "hotel_page": "https://g.page/holidayinnhinjewadi?share",
+            "location": [
+                73.7673,
+                18.5937
+            ],
+            "photo": "https://images.pexels.com/photos/322483/pexels-photo-322483.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹3,000 - ₹6,000",
+            "rating": 4.0
+        },
+        {
+            "hotel_name": "Ginger Pune - Wakad",
+            "hotel_page": "https://g.page/gingerwakad?share",
+            "location": [
+                73.7986,
+                18.536
+            ],
+            "photo": "https://images.pexels.com/photos/19854248/pexels-photo-19854248.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹2,000 - ₹4,000",
+            "rating": 3.9
+        },
+        {
+            "hotel_name": "ibis Pune Viman Nagar",
+            "hotel_page": "https://g.page/ibisviman?share",
+            "location": [
+                73.9108,
+                18.5595
+            ],
+            "photo": "https://images.pexels.com/photos/19798721/pexels-photo-19798721.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹3,000 - ₹6,000",
+            "rating": 4.0
+        },
+        {
+            "hotel_name": "DoubleTree by Hilton Pune - Chinchwad",
+            "hotel_page": "https://g.page/doubletreepune?share",
+            "location": [
+                73.7943,
+                18.5814
+            ],
+            "photo": "https://images.pexels.com/photos/11128617/pexels-photo-11128617.jpeg?auto=compress&cs=tinysrgb&h=130",
+            "price_range": "₹4,000 - ₹8,000",
+            "rating": 4.1
+        }
+    ]
+}
