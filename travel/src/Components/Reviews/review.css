@@ -105,9 +105,10 @@ button{
             }
         }
         .cardInfo{
-         
+          line-height: 1.8rem;
            padding: 1rem; 
            .destTitle{
+            
             color: var(--black);
             font-size: 1.25rem;
 
@@ -118,11 +119,12 @@ button{
               .name{
                 font-weight: 300;
                 font-size: 14px;
+               
               }
               .desc{
                 font-size: 13.5px;
                 font-weight: 200;
-
+               
               }
             
 
@@ -133,7 +135,7 @@ button{
 }
 .rcard{
     position: relative;
-    bottom: 25rem;
+    bottom: 31rem;
     left: 70rem;
     display: flex;
     height: 400px;

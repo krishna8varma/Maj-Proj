@@ -58,24 +58,24 @@ const HotelsPage = () => {
     // },
   ];
 
-//   const MyComponent = ({ condition }) => {
-//     if (condition) {
-//         return <div>This is rendered if condition is true.</div>;
-//     } else {
-//         return <div>This is rendered if condition is false.</div>;
-//     }
-// }
+  //   const MyComponent = ({ condition }) => {
+  //     if (condition) {
+  //         return <div>This is rendered if condition is true.</div>;
+  //     } else {
+  //         return <div>This is rendered if condition is false.</div>;
+  //     }
+  // }
 
   return (
     <div className="hotels-page">
       <Navbar />
 
       <div className="selection-bar">
-      
-           <button className="transport">Transport</button>
-          <button className="hotelSelected">Hotels</button>
-          <Link to="/TripPlanner"> <button className="trip-planner">Trip Planner</button></Link>
-       
+
+        <button className="transport">Transport</button>
+        <button className="hotelSelected">Hotels</button>
+        <Link to="/TripPlanner"> <button className="trip-planner">Trip Planner</button></Link>
+        <Link to="/FoodPage"><button className="foodbtn">Food</button></Link>
       </div>
 
       <div className="main-content">
@@ -85,18 +85,20 @@ const HotelsPage = () => {
               <img src={hotel.image} alt={hotel.name} />
               <div className="details">
                 <h3 className='heading'>{hotel.name}</h3>
-                <div className="rating">{hotel.rating} </div>
-                 <div className="price"><b>{hotel.price} </b> <br/> <h6>For 1 Night Stay</h6> </div>
-                <button className="view-deal">View Deal</button> 
-              
+                <div className="rating">
+                   <span class="fa fa-star checked"></span> {hotel.rating}
+                </div>
+                <div className="price"><b>{hotel.price} </b> <br /> <h6>For 1 Night Stay</h6> </div>
+                <button className="view-deal">View Deal</button>
+
               </div>
-             
+
             </div>
           ))}
         </div>
         <div className="map">
           {/* Display of map */}
-        <Map/>
+          <Map />
         </div>
       </div>
     </div>

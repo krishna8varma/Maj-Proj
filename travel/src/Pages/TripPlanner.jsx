@@ -1,202 +1,180 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
 import Navbar from '../Components/Navbar/navbar'; // Assuming you have a Navbar component
 import MapComponent from '../Components/Map/map'; // Assuming you have a Map component
 import './TripPlanPage.css'; // Import the corresponding CSS file
-import img1 from '../Assets/pg5img1.jpg';
-import img2 from '../Assets/pg5img2.jpg'
+import img1 from '../Assets/d2img1.jpg';
+import img2 from '../Assets/food1.jpg';
 // import img3 from '../Assets/pg5img3.jpg'
-import img4 from '../Assets/pg5img4.jpg'
+import img4 from '../Assets/d1img1.jpg'
 import hotel_a from '../Assets/hotel_a.jpg'
 import { IoIosArrowForward } from "react-icons/io";
 import { FiBookmark } from "react-icons/fi";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdArrowForwardIos } from "react-icons/md";
-
+import axios from 'axios';
+import { IoMdRefresh } from "react-icons/io";
 
 const TripPlanPage = () => {
   const [expandedDay, setExpandedDay] = useState(null);
+  const [tripPlanData, setTripPlan] = useState(null);
+  const [selectedLocation, setSelectedLocation] = useState(null);
+useEffect(() => {
+    const fetchTripPlan = async () => {
+        try {
+            const response = await axios.get('http://localhost:5000/trip');
+            console.log('Trip Plan Data:', response.data);
+            setTripPlan(response.data); // Assuming tripPlan is a state variable
+        } catch (error) {
+            console.error('Error fetching trip plan:', error);
+        }
+    };
 
-  const tripPlanData = [
-    {
-      day: 'Saturday , ',
-      date: 'April 6th',
-      sections: [
-        {
-          title : 'Lunch',
-          title1 : 'Morning',
-          places: [
-            {
-              image: img1,
-              name: 'Rohtang Pass',
-              type: 'Mountain Pass',
-              openingHours: '9:00 AM - 5:00 PM',
-              rating: 8.5,
-              visit : '10 AM'
-            },
-          ],
-
-        
-          restaurants: [
-            
-            {
-              image: img2,
-              name: 'Fine Dining Place',
-              rating: 4.6,
-            },
-            {
-              image: hotel_a,
-              name: 'Local Cafe',
-              rating: 4.2,
-            },
-            // Add more restaurants as needed
-          ],
-        },
-        {
-          title : 'Tea or Coffee',
-          title1 : 'Afternoon',
-          places: [
-            {
-              image: img4,
-              name: 'Central Park',
-              type: 'Park',
-              openingHours: '6:00 AM - 10:00 PM',
-              rating: 9.0,
-              visit : '1 PM'
-            },
-          ],
-          restaurants: [
-            {
-              image: hotel_a,
-              name: 'Beachside Grill',
-              rating: 4.5,
-            },
-            {
-              image: img2,
-              name: 'Italian Trattoria',
-              rating: 4.3,
-            },
-            // Add more restaurants as needed
-          ],
-        },
-        {
-          title : 'Dinner',
-          title1 : 'Night',
-          places: [
-            {
-              image: img2 ,
-              name: 'Café Terrace',
-              type: 'Café',
-              openingHours: '3:00 PM - 6:00 PM',
-              rating: 8.2,
-              visit : '6 PM'
-            },
-          ],
-          restaurants: [
-            {
-              image: img2,
-              name: 'Sushi Bar',
-              rating: 4.4,
-            },
-            {
-              image: hotel_a,
-              name: 'Steakhouse',
-              rating: 4.7,
-            },
-            // Add more restaurants as needed
-          ],
-        },
-      ],
-    },
-    {
-      day: 'Saturday, ',
-      date: 'April 6th',
-      sections: [
-        // Add sections for Day 2 as needed
-      ],
-    },
-    // Add more days as needed
-  ];
+    fetchTripPlan();
+}, []);
+ 
+  const handlePlaceClick = (location) => {
+    setSelectedLocation(location);
+    console.log(selectedLocation);
+};
 
   const handleExpandDay = (dayIndex) => {
     setExpandedDay(expandedDay === dayIndex ? null : dayIndex);
   };
+  
 
+  
+  const renderTripPlan = () => {
+    if (!tripPlanData) {
+        return <div className="loadingTripData"><p>Please wait! Loading...</p></div>;
+    }
+
+    return <div className="trip-plan">
+    {Object.entries(tripPlanData.tripPlan).map(([day, index])=> (
+  <li key={index}>
+    <div className="date" onClick={() => handleExpandDay(index)}>
+      <div className="day"><span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span> 
+      <span className="date-text">{day}</span>
+      </div>
+    </div>
+    {expandedDay === index && (
+      <ul className="sections-list">
+        {Object.entries(index).map(([section, sectionIndex]) => (
+          <li key={sectionIndex}>
+            <div className='dayTime'><p >{section}</p></div>
+            { sectionIndex["Place Name"]&& (
+              <ul className="places-list">
+               
+                  <li key={sectionIndex} className="place-card" onClick={() => handlePlaceClick(sectionIndex["location"])}>
+                    <img src={sectionIndex.image} alt={sectionIndex["Place Name"]} />
+                    <div className="place-details">
+                      <h4>{sectionIndex ["Place Name"]}</h4>
+                        <div className='type'><p>{sectionIndex["Activity Type"].join(', ')}</p></div>  
+                      <p className='timing'>Opening Hours: {sectionIndex ["Opening Hours"].join(' - ')}</p>
+                      {/* <p className='visit'>Visit Around : {place.visit}</p> */}
+                      <p className='starRating'><span class="fa fa-star checked"> </span> {sectionIndex["Rating"]}</p>
+                    </div>
+                  </li>
+              
+              </ul>
+            )}
+             
+            
+          </li>
+        ))}
+      </ul>
+    )}
+  </li>
+))}
+  </div>
+};
+
+ 
   return (
     <div className="trip-plan-page">
       <Navbar />
 
       <div className="selection-bar">
         <button className="transport">Transport</button>
-        <Link to="/HotelsPage"><button className="hotels">Hotels</button></Link>        <button className="trip-planner">Trip Planner</button>
+        <Link to="/HotelsPage"><button className="hotels">Hotels</button></Link>        
+        <button className="trip-planner">Trip Planner</button>
+        <Link to="/FoodPage"><button className="foodbtn">Food</button></Link> 
       </div>
 
       <div className="main-content">
         <div className="left-half">
           <h2>
             Your Travel Plan Is Ready !
-            <span className='bookmark'></span><FiBookmark />
+            <span className='refresh'>  <IoMdRefresh /></span>
+            <span className='save'><FiBookmark /></span>
+            
           </h2>
-          <ul className="date-list">
-            {tripPlanData.map((day, index) => (
-              <li key={day.date}>
-                <div className="date" onClick={() => handleExpandDay(index)}>
-                  <div className="day"><span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span> {day.day}
-                  <span className="date-text">{day.date}</span>
-                  </div>
-                </div>
-                {expandedDay === index && (
-                  <ul className="sections-list">
-                    {day.sections.map((section, sectionIndex) => (
-                      <li key={sectionIndex}>
-                        <div className='dayTime'><p >{section.title1}</p></div>
-                        {section.places && (
-                          <ul className="places-list">
-                            {section.places.map((place, placeIndex) => (
-                              <li key={placeIndex} className="place-card">
-                                <img src={place.image} alt={place.name} />
-                                <div className="place-details">
-                                  <h4>{place.name}</h4>
-                                    <div className='type'><p>{place.type}</p></div>  
-                                  <p className='timing'>Opening Hours: {place.openingHours}</p>
-                                  <p className='visit'>Visit Around : {place.visit}</p>
-                                  <p className='starRating'><span class="fa fa-star checked"> </span> {place.rating}</p>
-                                </div>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-                         <h3>{section.title}</h3>
-                        {section.restaurants && (
-    
-                          <ul className="restaurants-list">
-                            {section.restaurants.map((restaurant, restaurantIndex) => (
-                              <li key={restaurantIndex} className="restaurant-card">
-                                <img src={restaurant.image} alt={restaurant.name} />
-                                <div className="restaurant-details">
-                                  <h4>{restaurant.name}</h4>
-                                  <p className='rating1'><span class="fa fa-star checked"></span> {restaurant.rating}</p>
-                                </div>
-                              </li>
-                              
-                            ))}
-                          <Link to="/HotelsPage">  <p className='slidearrow'><MdArrowForwardIos /></p></Link>
-                          </ul>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
+           <ul>
+            {renderTripPlan()}
+            </ul>
+           
           
         </div>
         <div className="right-half">
-          <MapComponent/>
+          <MapComponent selectedLocation={selectedLocation}/>
         </div>
       </div>
     </div>
   );
 };
 export default TripPlanPage;
+// {Object.entries(tripPlanData.tripPlan).map(([day, index])=> (
+//   <li key={index}>
+//     <div className="date" onClick={() => handleExpandDay(index)}>
+//       <div className="day"><span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span> {day}
+//       <span className="date-text">{day}</span>
+//       </div>
+//     </div>
+//     {expandedDay === index && (
+//       <ul className="sections-list">
+//         {Object.entries.map(([section, sectionIndex]) => (
+//           <li key={sectionIndex}>
+//             <div className='dayTime'><p >{section}</p></div>
+//             {section.places && (
+//               <ul className="places-list">
+//                 {Object.entries.map(([place, placeIndex]) => (
+//                   <li key={placeIndex} className="place-card">
+//                     <img src={place.image} alt={place.name} />
+//                     <div className="place-details">
+//                       <h4>{place ["Place Name"]}</h4>
+//                         <div className='type'><p>{place ["Activity Type"]}</p></div>  
+//                       <p className='timing'>Opening Hours: {place ["Opening Hours"]}</p>
+//                       {/* <p className='visit'>Visit Around : {place.visit}</p> */}
+//                       <p className='starRating'><span class="fa fa-star checked"> </span> {place["Rating"]}</p>
+//                     </div>
+//                   </li>
+//                 ))}
+//               </ul>
+//             )}
+             
+            
+//           </li>
+//         ))}
+//       </ul>
+//     )}
+//   </li>
+// ))}
+// {Object.entries(tripPlanData.tripPlan).map(([day, dayData]) => (
+    
+      
+//   <div key={day} className="day"  onClick={() => handleExpandDay(day)}>
+//     <h2>{day}</h2>
+//     {Object.entries(dayData).map(([time, timeData]) => (
+//       <div key={time} className="time">
+//         <h3>{time}</h3>
+//         <div className="place">
+//           <h4>{timeData["Place Name"]}</h4>
+//           <p>Rating: {timeData["Rating"]}</p>
+//           <p>Activity Type: {timeData["Activity Type"]}</p>
+//           <p>Opening Hours: {timeData["Opening Hours"]}</p>
+//           <p>Location: {timeData["location"]}</p>
+//         </div>
+//       </div>
+//     ))}
+//   </div>
+// ))}

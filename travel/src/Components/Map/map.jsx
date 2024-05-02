@@ -1,26 +1,37 @@
-import React from 'react';
-import GoogleMapReact from 'google-map-react';
+import React, { useEffect, useRef } from 'react';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+const parseLocation = (locationString) => {
+  const [lat, lng] = locationString.split(',').map(parseFloat);
+  return { lat, lng };}
+const Map = ({ selectedLocation }) => {
+  const mapRef = useRef(null);
 
-const MapComponent = ({ center, zoom }) => {
+  useEffect(() => {
+    if (selectedLocation && mapRef.current) {
+      mapRef.current.panTo({
+        lat: parseFloat(selectedLocation[0]),
+        lng: parseFloat(selectedLocation[1]),
+      });
+    }
+  }, [selectedLocation]);
+
   return (
-    <div style={{ height: '100%', width: '100%' }}>
-      <GoogleMapReact
-        bootstrapURLKeys={{ key: 'AIzaSyA4AvOjg-H-DV4ZrKzhflFtmefi7RwMBzk' }}
-        defaultCenter={center}
-        defaultZoom={zoom}
+    <LoadScript googleMapsApiKey="AIzaSyA4AvOjg-H-DV4ZrKzhflFtmefi7RwMBzk">
+      <GoogleMap
+        mapContainerStyle={{ width: '100%', height: '100%' }}
+        center={{ lat: 21.7679, lng: 78.8718 }} // Default center
+        zoom={10}
+        onLoad={(map) => {
+          mapRef.current = map;
+          console.log(selectedLocation)
+        }}
       >
-        {/* Add markers or other map elements here */}
-      </GoogleMapReact>
-    </div>
+        {selectedLocation && (
+          <Marker position={{ lat: parseFloat(selectedLocation[0]), lng: parseFloat(selectedLocation[1]) }} />
+        )}
+      </GoogleMap>
+    </LoadScript>
   );
 };
 
-MapComponent.defaultProps = {
-  center: {
-    lat: 51.5074, // Default latitude (e.g., London)
-    lng: -0.1278, // Default longitude (e.g., London)
-  },
-  zoom: 10, // Default zoom level
-};
-
-export default MapComponent;
+export default Map;

@@ -5,7 +5,7 @@ import './main.css';
 // import Main1 from '../../Assets/Main1.jpg';
 import manali from '../../Assets/manali.jpg';
 import goa from '../../Assets/goa.jpg';
-import paris from '../../Assets/paris.jpg';
+import varanasi from '../../Assets/varanasi.jpg';
 import img1 from '../../Assets/adventure.png';
 import img2 from '../../Assets/flight.png';
 import img3 from '../../Assets/tourguide.png';
@@ -16,29 +16,34 @@ const Data = [{
     id: 1,
     imgSrc: manali,
     destTitle: 'Manali',
-    Location: "India",
-    // description: 'Manali is a town, near Kullu town in Kullu district in the Indian state of Himachal Pradesh.[2] It is situated in the northern end of the Kullu Valley, formed by the Beas River. ',
-
+    link : '/ManaliPage'
 },
 {
     id: 2,
     imgSrc: goa,
     destTitle: 'Goa',
-    Location: "India",
-    // description: 'Goa, state of India, comprising a mainland district on the country’s southwestern coast and an offshore island. It is located about 250 miles (400 km) south of Mumbai (Bombay). ',
-
+    link : '/GoaPage'
 
 },
 {
     id: 3,
-    imgSrc: paris,
-    destTitle: 'Paris',
-    Location: "France",
-    // description: 'Paris, capital of France, is one of the most important and influential cities in the world. In terms of tourism, Paris is the second most visited city in Europe after London. ',
-
+    imgSrc: varanasi,
+    destTitle: 'Varanasi',
+    link : '/VaranasiPage'
 }
-
 ]
+const list = ({ Data }) => {
+    const handleClick = () => {
+      // Programmatically navigate to the page associated with the item
+      window.location.href = Data.link;
+    };
+  
+    return (
+      <button onClick={handleClick}>{Data.link}</button>
+    );
+  };
+
+
 const Main = () => {
     return (
         <section className="main container section">
@@ -77,7 +82,7 @@ const Main = () => {
 
             <div className="seeContent grid">
                 {
-                    Data.map(({ id, imgSrc, destTitle, description, Location }) => {
+                    Data.map(({ id, imgSrc, destTitle,link }) => {
                         return (
                         <div className="cards">
                             <div key={id} className="singleDestination">
@@ -86,16 +91,8 @@ const Main = () => {
                                 </div>
                                 <div className="cardInfo">
                                     <h4 className="destTitle">{destTitle}</h4>
-                                    {/* <span className="continent">
-                                        <HiOutlineLocationMarker className="icon" />
-                                        <span className="name">
-                                            {Location}
-                                        </span>
-                                    </span> */}
-                                    <Link to="/TripPlanner">
-                                    <button className="cardbutton" >
-                                        Start Trip
-                                    </button>
+                                    <Link to={link}>
+                                    <button className="cardbutton"> Start Trip </button>
                                     </Link>
                                 </div>
                             </div>

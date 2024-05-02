@@ -122,3 +122,8 @@ background-image {
  font-weight: 500;
 
 }
+.loading{
+  font-weight: 3rem;
+  color: #f0ecec;
+  font-size: 3rem;
+}
