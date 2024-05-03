@@ -63,7 +63,7 @@ def get_hotels(destination,type_of_trip):
         2. Type of stay: {type_of_trip}
     Output: json format which contains a list of hotels with the following fields:
         1. Hotel name
-        2. location=list[Longitude, latitude]
+        2. location=list[latitude, longitude]
         3. Rating of hotel
         4. Price per night (in range)
         5. Google hotel page(provided link should be short)"""
@@ -100,7 +100,7 @@ def get_food(destination):
     p1=f"""Give me list of 15 restaurants and cafes(food places) in {destination}
     Output:raw json format which contains a list of restaurants and cafes(food places) with the following fields:
         1. Restaurant Name
-        2. location=list[Longitude, latitude]
+        2. location=list[latitude, longitude]
         3. Rating
         4. Food Served
     output format: start with [ char. don't assign any name to the list also don't include backslash and any escape char"""
@@ -123,32 +123,31 @@ def planned_trip(destination,duration,type_of_trip,activities):
     4. Activities (Trekking, Skiing, Rafting, Paragliding, Camping, Shopping)"""
     p3=f"""Output: json format which contains day wise itinerary plan for {duration} days with a mix of mentioned activities based on preferences and each day contains three sections (morning, afternoon and evening). Each section should contain only one nearby place name along with following fields:"""
     p4="""1. Place name(should be short with maximun 3 words)
-    2. location=list[Longitude, latitude]
+    2. precise geolocation=list[latitude, longitude]
     3. Opening Hours(options are ['08:00', '17:00'] or ['24 hours'])
     4. Rating of the place
     5. Activity type(include only 2 activities)
-
     output format:
     start with { char and don't assign any name to the dictionary
     {
         "Day 1": {
             "Morning": {
                 "Place Name": "Solang Valley",
-                "location": ["longitude", "latitude"],
+                "place geolocation": [latitude, longitude],
                 "Opening Hours": [IN time, OUT time],
                 "Rating": 4.7,
                 "Activity Type": ["Paragliding,"Zorbing"]
             },
             "Afternoon": {
                 "Place Name": "Rohtang Pass",
-                "location": ["longitude", "latitude"],
+                "place geolocation": [latitude, longitude],
                 "Opening Hours": [08:00, 17:00],
                 "Rating": 4.5,
-                "Activity Type": ["Photography","Snow Activities" ]
+                "Activity Type": ["Photography", "Snow Activities"]
             },
             "Evening": {
                 "Place Name": "Old Manali",
-                "location": ["longitude", "latitude"],
+                "place geolocation": [latitude, longitude],
                 "Opening Hours": [IN time, OUT time],
                 "Rating": 4.4,
                 "Activity Type": ["Drinks", "Live Music"]
@@ -182,13 +181,13 @@ def planned_trip(destination,duration,type_of_trip,activities):
         return {}
     else:
         #adding photos
-        for i in range(duration):
+        '''for i in range(duration):
             query=plan[f'Day {i+1}']['Morning']
             query['photo']=photos.get_photo(query['Place Name'])
             query=plan[f'Day {i+1}']['Afternoon']
             query['photo']=photos.get_photo(query['Place Name'])
             query=plan[f'Day {i+1}']['Evening']
-            query['photo']=photos.get_photo(query['Place Name'])
+            query['photo']=photos.get_photo(query['Place Name'])'''
         return plan
 
 #print(get_food(destination='pune'))
