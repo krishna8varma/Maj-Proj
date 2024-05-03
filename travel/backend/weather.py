@@ -68,4 +68,4 @@ def get_weather_data(destination,start_date,duration):
 '''destination='nagpur'
 start_date='2024-04-10'
 end_date='2024-04-15'
-print(get_weather_data(destination,start_date,5))'''
+#print(get_weather_data(destination,start_date,5))'''
