@@ -63,7 +63,7 @@ def get_hotels(destination,type_of_trip):
         2. Type of stay: {type_of_trip}
     Output: json format which contains a list of hotels with the following fields:
         1. Hotel name
-        2. location=list[Longitude, latitude]
+        2. location=list[latitude,Longitude]
         3. Rating of hotel
         4. Price per night (in range)
         5. Google hotel page(provided link should be short)"""
@@ -100,7 +100,7 @@ def get_food(destination):
     p1=f"""Give me list of 15 restaurants and cafes(food places) in {destination}
     Output:raw json format which contains a list of restaurants and cafes(food places) with the following fields:
         1. Restaurant Name
-        2. location=list[Longitude, latitude]
+        2. location=list[latitude,Longitude]
         3. Rating
         4. Food Served
     output format: start with [ char. don't assign any name to the list also don't include backslash and any escape char"""
@@ -123,7 +123,7 @@ def planned_trip(destination,duration,type_of_trip,activities):
     4. Activities (Trekking, Skiing, Rafting, Paragliding, Camping, Shopping)"""
     p3=f"""Output: json format which contains day wise itinerary plan for {duration} days with a mix of mentioned activities based on preferences and each day contains three sections (morning, afternoon and evening). Each section should contain only one nearby place name along with following fields:"""
     p4="""1. Place name(should be short with maximun 3 words)
-    2. location=list[Longitude, latitude]
+    2. location=list[latitude,Longitude]
     3. Opening Hours(options are ['08:00', '17:00'] or ['24 hours'])
     4. Rating of the place
     5. Activity type(include only 2 activities)
@@ -134,21 +134,21 @@ def planned_trip(destination,duration,type_of_trip,activities):
         "Day 1": {
             "Morning": {
                 "Place Name": "Solang Valley",
-                "location": ["longitude", "latitude"],
+                "location": [latitude,Longitude],
                 "Opening Hours": [IN time, OUT time],
                 "Rating": 4.7,
                 "Activity Type": ["Paragliding,"Zorbing"]
             },
             "Afternoon": {
                 "Place Name": "Rohtang Pass",
-                "location": ["longitude", "latitude"],
+                "location": [latitude,Longitude],
                 "Opening Hours": [08:00, 17:00],
                 "Rating": 4.5,
                 "Activity Type": ["Photography","Snow Activities" ]
             },
             "Evening": {
                 "Place Name": "Old Manali",
-                "location": ["longitude", "latitude"],
+                "location": [latitude,Longitude],
                 "Opening Hours": [IN time, OUT time],
                 "Rating": 4.4,
                 "Activity Type": ["Drinks", "Live Music"]
