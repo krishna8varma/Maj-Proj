@@ -47,7 +47,7 @@ useEffect(() => {
   const renderTripPlan = () => {
     if (!tripPlanData) {
         return <div className="loadingTripData loading-spinner">
-          {/* <p>Please wait! Loading...</p> */}
+        
           </div>;
     }
 
