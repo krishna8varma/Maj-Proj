@@ -174,7 +174,7 @@ def planned_trip(destination,duration,type_of_trip,activities):
     p=p1+p2+p3+p4
     response = model.generate_content(p)
     res1=response.text
-    print(res1)
+    # print(res1)
     plan=response_to_json(res1)  #plan is a python dict obj
     if plan==None:
         print("ERROR while converting trip plan to python object")

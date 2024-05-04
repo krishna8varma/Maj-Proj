@@ -34,8 +34,6 @@ h2{
 
  .refresh{
   position: relative;
-  margin-right: 1.5rem;
-  margin-left: 13rem;
   color: #038CB3;
   cursor: pointer;
  } 
@@ -112,6 +110,7 @@ h2{
   
   .loc{
     color: black;
+    
   }
 
   /* Sections list styles */
@@ -203,7 +202,7 @@ h3{
   .type{
        margin-left: 22rem;
        position: relative;
-       bottom:1.5rem;
+       bottom:4rem;
        background-color: #D8D8D8 ;
        justify-content: center;
        text-align: center;
@@ -222,22 +221,12 @@ h3{
       top: -1rem;
   }
   
-  .visit
-  {
-    font-size: smaller;
-      font-weight: 300;
-      position: relative;
-      top: 0.3rem;
-  }
-  
 
   .starRating{
     margin-left: 26rem;
   }
   
-  .restaurant-details p {
-    margin-bottom: 3px;
-  }
+ 
   
   /* Map styles */
   .map {
@@ -245,40 +234,10 @@ h3{
     height: 100%;
     border-left: 1px solid #ccc;
   }
-  .restaurants-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+ 
   
-  /* Restaurant card styles */
-  .restaurant-card {
-     flex: 1 0 calc(33.33% - 10px); /*Adjust width based on the number of cards per row */
-    max-width: calc(33.33% - 10px); /* Adjust max width based on the number of cards per row */
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 15rem;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid  className='type';
-    background: #FFF;
-    margin-left: 1rem;
-  }
-  
-  .restaurant-card img {
-    width:192px;
-    height: 200px;
-    object-fit: cover;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    
-    
-  }
+
+
   
 .rating1{
   font-size: small;
@@ -286,15 +245,27 @@ h3{
   justify-content: center;
 }
 
-  .restaurant-details {
-    width: 11rem;
-    text-align: center;
-    justify-content: center;
-    flex: 1;
-    padding: 10px;
-    margin-top : 0.2rem ;
-  }
-  .loadingTripData{
-    font-weight: 4rem;
+  /* .loadingTripData{
+    position: relative;
+    top : 2rem;
+   
     font-size: 2rem;
+  } */
+
+  .loading-spinner {
+    position: relative;
+    top : 2rem;
+    left: 3rem;
+    border: 5px solid transparent; /* Light grey */
+    border-top: 5px solid #91D2E4; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
   }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
