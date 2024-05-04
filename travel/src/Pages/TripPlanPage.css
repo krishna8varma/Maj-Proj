@@ -203,15 +203,15 @@ h3{
   }
 
   .type{
-        margin-left: 22rem;
+      
        position: relative;
-       bottom:4rem;
+       top:2.8rem;
        background-color: #D8D8D8 ;
        justify-content: center;
        text-align: center;
        border-radius: 20px;
        height: 1.8rem;
-       width: 8rem;
+       width: 15rem;
        font-size:smaller;
        font-weight: 200;
        padding-top: 0.2rem; 

@@ -71,7 +71,7 @@ useEffect(() => {
                     <img src={sectionIndex.image} alt={sectionIndex["Place Name"]} />
                     <div className="place-details">
                       <h4>{sectionIndex ["Place Name"]}</h4>
-                        <div className='type'><p>{sectionIndex["Activity Type"].join(', ')}</p></div>  
+                        <div className='type'><p>{sectionIndex["Activity Type"].join('  ')}</p></div>  
                       <p className='timing'>Opening Hours: {sectionIndex ["Opening Hours"].join(' - ')}</p>
                       {/* <p className='visit'>Visit Around : {place.visit}</p> */}
                       <p className='starRating'><span class="fa fa-star checked"> </span> {sectionIndex["Rating"]}</p>
