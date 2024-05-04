@@ -190,16 +190,17 @@ def planned_trip(destination,duration,type_of_trip,activities):
             query['photo']=photos.get_photo(query['Place Name'])'''
         return plan
 
-#print(get_food(destination='pune'))
-#'''for code testing
+
+'''for code testing
 destination='nagpur'
 start_date='2024-04-25'
 end_date='2024-04-30'
 type_of_trip='solo'
+print(get_food(destination='pune'))
 #print(get_hotels(destination,type_of_trip))
 activities=get_activities(destination,type_of_trip)
 duration=get_travel_duration_days(start_date,end_date)
 tripPlan=planned_trip(destination,duration,type_of_trip,activities)
 #print(type(activities))
-# print(tripPlan)
-#print(activities)
+print(tripPlan)
+#print(activities)'''
