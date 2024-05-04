@@ -18,7 +18,6 @@ def get_photo(query):
     if img_element:
         image_url = img_element['src']
         return image_url
-    else:
-        return ""
+    else: return ''
 
 #SEARCH_QUERY = 'Taj Mahal'

@@ -54,16 +54,16 @@ def trip_planner():
     selected_activities=data['selected_activities']
     duration=gemini.get_travel_duration_days(start_date,end_date)
     
-    #weather_data=weather.get_weather_data(destination,start_date,duration)
+    weather_data=weather.get_weather_data(destination,start_date,duration)
     tripPlan=gemini.planned_trip(destination,duration,type_of_trip,selected_activities)
     
     #add weather_data to tripPlan        
-    return jsonify({'tripPlan': tripPlan, 'weather': None}), 200
+    return jsonify({'tripPlan': tripPlan, 'weather': weather_data}), 200
 
 @app.route('/hotels', methods=['GET'])
 def hotels():
     try:
-        hotel_list=gemini.get_hotels(data['endingDestination'],data['tripType'])
+        hotel_list=gemini.get_hotels(data['endingDestination'],data['tripType'])       
         return jsonify({'Hotels' : hotel_list}),200
     except:
         return jsonify({'error' : "failed"}),400
