@@ -33,6 +33,7 @@ const App =()=>{
                <Route path="/ManaliPage" element={<ManaliPage />} />
                <Route path="/GoaPage" element={<GoaPage />} />
                <Route path="/VaranasiPage" element={<VaranasiPage />} />
+               
            </Routes>
        </Router>
        

@@ -4,6 +4,8 @@ import {MdOutlineTravelExplore} from 'react-icons/md'
 import {IoCloseCircle} from 'react-icons/io5'
 import { TbGridDots } from "react-icons/tb";
 
+
+
 const Navbar = () => {
     const [active, setActive] = useState('navBar')
     //function to toggle navbar
@@ -37,13 +39,13 @@ const removeNavbar = () =>{
             <a href="/" className='navLink'>Home</a>
         </li>
         
-        <li className='navItem'>
-            <a href="#" className='navLink'>Packages</a>
-        </li>
+        
        
-       <button className='btnnav'>
-        <a href="#" >Plan now</a>
-       </button>
+        
+            <button className='btnnav'>
+          Explore
+         </button>
+       
         </ul>
        
 

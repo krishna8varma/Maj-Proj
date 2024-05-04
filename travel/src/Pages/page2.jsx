@@ -44,7 +44,7 @@ const Page2 = () => {
 
   const renderactivities=()=>{
     if (!activities) {
-        return  <div className="loading"> <p>Loading Activity list...</p></div>
+        return  <div className="loading spinner"></div>
     }
     return <div className="">
     {activities.map((activity, index) => (
@@ -80,7 +80,7 @@ const Page2 = () => {
 
                         <div className="black-box">
                             <div className="activities-list">
-                                {renderactivities()};
+                                {renderactivities()}
                             </div>
                         </div>
                         <div >
@@ -92,8 +92,9 @@ const Page2 = () => {
 
 
 
-                <Footer />
+                
             </section>
+            <Footer />
         </>
 
     )
