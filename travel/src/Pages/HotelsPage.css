@@ -18,9 +18,9 @@
    
   }
 
-  .hotelSelected :active,button:focus {
+  .hotelSelected :active,.hotelSelected:focus {
     text-decoration: underline;
-
+    color: #028BB2;
    
  }
 
@@ -70,13 +70,13 @@
   }
   .heading{
     color: #000000;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: medium;
-    width: 20rem;margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 13rem;
+    margin-left: 10px;
     line-height: 1.5rem;
-    height: 20px;
+    height: 2rem;
     position: relative;
-    top: 10px;
+    top: 1.3rem;
 
     
   }
@@ -106,7 +106,7 @@
  .rating{
   position: relative;
    top: 6rem;
-   left: -12.5rem;
+   left: -11.5rem;
     color: #000000;
     font-size: 15px;
     justify-content: center;
@@ -115,7 +115,7 @@
  .price{
     position: relative;
     bottom:2rem;
-    left:360px;
+    left:16rem;
     font-size: large;
  }
 
@@ -165,7 +165,7 @@
     font-size: small;
     justify-content: center;
     position: relative;
-    left: 360px;
+    left: 18rem;
     top: 2rem;
   }
   
@@ -186,10 +186,9 @@
   .hotels-list::-webkit-scrollbar-thumb:hover {
     background-color: #bbb;
   }
-  .loading-spinner {
-    position: relative;
-    top : 2rem;
-    left: 3rem;
+  .loading-spinner1 {
+    margin-top: 2rem;
+    margin-left:45%;
     border: 5px solid transparent; /* Light grey */
     border-top: 5px solid #91D2E4; /* Blue */
     border-radius: 50%;
@@ -201,4 +200,15 @@
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  }
+
+  .styling{
+    line-height: 2.5rem;
+    font-weight:bold;
+    color:dimgray;
+    font-size:25px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }

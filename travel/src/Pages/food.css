@@ -18,12 +18,13 @@
    
   }
 
-  .foodbtn :active,button:focus {
+  .foodbtn :active,  .foodbtn:focus {
     text-decoration: underline;
 
    
  }
 
+ 
   .selection-bar {
     margin-left: 350px;
     margin-right: 100px;
@@ -152,8 +153,9 @@
   margin-left: 1rem;
 }
 .spinner {
+  margin-top: 2rem;
   border: 5px solid #f3f3f3; /* Light grey */
-  border-top: 5px solid #3498db; /* Blue */
+  border-top: 5px solid #91D2E4; /* Blue */
   border-radius: 50%;
   width: 50px;
   height: 50px;

@@ -39,8 +39,8 @@ const HotelsPage = () => {
       if (errorFlag) {
         window.location.reload();
       }
-      return <div className="loadingTripData"><p>Please wait! Loading Hotels for you...</p> <br />
-        <div className="loading-spinner"></div></div>
+      return <div className="loadingTripData"><p className='styling'>Please wait! <br /> Loading Hotels for you...</p> <br />
+        <div className="loading-spinner1"></div></div>
     }
     return <div className="">
       {Object.entries(hotelsData.Hotels).map(([hotel, index]) => (

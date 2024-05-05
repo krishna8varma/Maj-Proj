@@ -45,9 +45,10 @@ const list = ({ Data }) => {
 
 
 const Main = () => {
+    
     return (
         <section className="main container section">
-            <div className="division">
+            <div  className="division">
 
 
 

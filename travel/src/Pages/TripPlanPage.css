@@ -15,14 +15,16 @@
    
   }
 
-  .trip-planner :active,button:focus {
+  .trip-planner :active,.trip-planner:focus {
     text-decoration: underline #028BB2;
-
+ 
    
  }
 
+
+ 
 h2{
-  color: #000000;
+  color: black;
   font-size: 30px;
 }
 
@@ -211,7 +213,7 @@ h3{
        text-align: center;
        border-radius: 20px;
        height: 1.8rem;
-       width: 15rem;
+       width: 19rem;
        font-size:smaller;
        font-weight: 200;
        padding-top: 0.2rem; 
@@ -255,10 +257,10 @@ h3{
     font-size: 2rem;
   } */
 
-  .loading-spinner {
+  .loading-spinner2 {
     position: relative;
-    top : 2rem;
-    left: 3rem;
+    top : 4rem;
+    margin-left: 20%;
     border: 5px solid transparent; /* Light grey */
     border-top: 5px solid #91D2E4; /* Blue */
     border-radius: 50%;

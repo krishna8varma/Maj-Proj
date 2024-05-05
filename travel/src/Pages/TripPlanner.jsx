@@ -61,7 +61,7 @@ useEffect(() => {
         }
         window.location.reload();
       }
-        return <div className="loadingTripData loading-spinner">
+        return <div className="loadingTripData loading-spinner2">
         
           </div>;
     }

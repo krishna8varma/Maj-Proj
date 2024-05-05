@@ -85,8 +85,8 @@ const FoodPage = () => {
             if (errorFlag) {
               window.location.reload(); 
               }
-            return <div className="loadingTripData"><p>Please wait! Loading Food Details...</p> <br />
-            <div className="loading-spinner"></div></div>
+            return <div className="loadingTripData"><p className='styling'>Please wait! <br /> Loading Food Details...</p> <br />
+            <div className="spinner"></div></div>
         }
         return <div className="hotelss">
           {Object.entries(foodData.food).map(([food,hotel])=> (
@@ -99,7 +99,7 @@ const FoodPage = () => {
                         <span class="fa fa-star checked"></span>
                     </div>
                     <p className="Rating"> {hotel["Rating"]} </p>
-                    <p className="foodtype"> {hotel["Food Served"]} </p>
+                    <p className="foodtype"> {hotel["Food Served"]}</p>
                 </div>
                 
                 </div> 
