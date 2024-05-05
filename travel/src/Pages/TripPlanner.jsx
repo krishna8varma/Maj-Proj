@@ -3,30 +3,34 @@ import { Link } from "react-router-dom";
 import Navbar from '../Components/Navbar/navbar'; // Assuming you have a Navbar component
 import MapComponent from '../Components/Map/map'; // Assuming you have a Map component
 import './TripPlanPage.css'; // Import the corresponding CSS file
-import img1 from '../Assets/d2img1.jpg';
-import img2 from '../Assets/food1.jpg';
+// import img1 from '../Assets/d2img1.jpg';
+// import img2 from '../Assets/food1.jpg';
 // import img3 from '../Assets/pg5img3.jpg'
-import img4 from '../Assets/d1img1.jpg'
-import hotel_a from '../Assets/hotel_a.jpg'
+// import img4 from '../Assets/d1img1.jpg'
+// import hotel_a from '../Assets/hotel_a.jpg'
 import { IoIosArrowForward } from "react-icons/io";
 import { FiBookmark } from "react-icons/fi";
 import { IoLocationSharp } from "react-icons/io5";
-import { MdArrowForwardIos } from "react-icons/md";
+// import { MdArrowForwardIos } from "react-icons/md";
 import axios from 'axios';
 import { IoMdRefresh } from "react-icons/io";
 
 const TripPlanPage = () => {
   const [expandedDay, setExpandedDay] = useState(null);
   const [tripPlanData, setTripPlan] = useState(null);
-  const [selectedLocation, setSelectedLocation] = useState(null);
+  const [selectedLocation, setSelectedLocation] = useState([28,78]);
+  const [errorFlag, seterrorFlag] = useState(false);
+
 useEffect(() => {
     const fetchTripPlan = async () => {
         try {
             const response = await axios.get('http://localhost:5000/trip');
+          
             console.log('Trip Plan Data:', response.data);
             setTripPlan(response.data); // Assuming tripPlan is a state variable
         } catch (error) {
-            console.error('Error fetching trip plan:', error);
+            seterrorFlag(true);
+            // console.error('Error fetching trip plan:', error);
         }
     };
 
@@ -45,7 +49,18 @@ useEffect(() => {
 
   
   const renderTripPlan = () => {
+    const count =0;
+    
     if (!tripPlanData) {
+      
+      if(errorFlag){
+        count++;
+        if (count==5){
+          <div className="">Internal Server Error! Please try again after some time.</div>
+          return;
+        }
+        window.location.reload();
+      }
         return <div className="loadingTripData loading-spinner">
         
           </div>;
@@ -66,12 +81,12 @@ useEffect(() => {
             <div className='dayTime'><p >{section}</p></div>
             { sectionIndex["Place Name"]&& (
               <ul className="places-list">
-               
-                  <li key={sectionIndex} className="place-card" onClick={() => handlePlaceClick(sectionIndex["location"])}>
+                <div onClick={() => handlePlaceClick(sectionIndex["location"])}></div>
+                  <li key={sectionIndex} className="place-card" onClick={() => handlePlaceClick(sectionIndex["Place_location"])}>
                     <img src={sectionIndex.image} alt={sectionIndex["Place Name"]} />
                     <div className="place-details">
                       <h4>{sectionIndex ["Place Name"]}</h4>
-                        <div className='type'><p>{sectionIndex["Activity Type"].join('  ')}</p></div>  
+                        <div className='type'><p>{sectionIndex["Activity Type"].join(' - ')}</p></div>  
                       <p className='timing'>Opening Hours: {sectionIndex ["Opening Hours"].join(' - ')}</p>
                       {/* <p className='visit'>Visit Around : {place.visit}</p> */}
                       <p className='starRating'><span class="fa fa-star checked"> </span> {sectionIndex["Rating"]}</p>
@@ -107,7 +122,7 @@ useEffect(() => {
         <div className="left-half">
           <h2>
             Your Travel Plan Is Ready !
-            <span className='refresh'>  <IoMdRefresh /></span>
+           <a href="/tripPlanner"><span className='refresh'>  <IoMdRefresh /></span></a> 
             <span className='save'><FiBookmark /></span>
             
           </h2>

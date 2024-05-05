@@ -85,12 +85,12 @@ def get_hotels(destination,type_of_trip):
     if hotel_list is None:
         raise ConversionError("Failed to convert gemini response")
     img_hotel=photos.get_photo(f"hotels {destination}")
-    for i in hotel_list:
-        name=i["hotel_name"]
-        loc=geocoding.get_geolocation(name)
-        if loc != []:
-            i['location']=loc
-        i['image']=random.choice(img_hotel)
+    # for i in hotel_list:
+    #     name=i["hotel_name"]
+    #     loc=geocoding.get_geolocation(name)
+    #     if loc != []:
+    #         i['location']=loc
+    #     i['image']=random.choice(img_hotel)
     return hotel_list        
 
 def get_food(destination): 
@@ -107,12 +107,12 @@ def get_food(destination):
     if fc is None:
         raise ConversionError("Failed to convert gemini response")
     img_fc=photos.get_photo(f"Restuarants in {destination}")
-    for i in fc:
-        name=i["Restaurant Name"]
-        loc=geocoding.get_geolocation(name)
-        if loc != []:
-            i['location']=loc
-        i['image']=random.choice(img_fc)
+    # for i in fc:
+    #     name=i["Restaurant Name"]
+    #     loc=geocoding.get_geolocation(name)
+    #     if loc != []:
+    #         i['location']=loc
+    #     i['image']=random.choice(img_fc)
     return fc
 
 def planned_trip(destination,duration,type_of_trip,activities): 
@@ -183,13 +183,13 @@ def planned_trip(destination,duration,type_of_trip,activities):
         raise ConversionError("Failed to convert gemini response")
     #adding photos
     places_imgs=photos.get_photo(f"places to visit in {destination}")
-    for i in range(duration):
-        query=plan[f'Day {i+1}']['Morning']
-        query['image']=random.choice(places_imgs)
-        query=plan[f'Day {i+1}']['Afternoon']
-        query['image']=random.choice(places_imgs)
-        query=plan[f'Day {i+1}']['Evening']
-        query['image']=random.choice(places_imgs)
+    # for i in range(duration):
+    #     query=plan[f'Day {i+1}']['Morning']
+    #     query['image']=random.choice(places_imgs)
+    #     query=plan[f'Day {i+1}']['Afternoon']
+    #     query['image']=random.choice(places_imgs)
+    #     query=plan[f'Day {i+1}']['Evening']
+    #     query['image']=random.choice(places_imgs)
     return plan
 
 

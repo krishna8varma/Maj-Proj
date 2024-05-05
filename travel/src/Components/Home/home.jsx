@@ -20,7 +20,10 @@ const Home=()=> {
     };
     const navigate = useNavigate();
     const handleFormSubmit = async (event) => {
-
+        if(formData.startingDate==0 || formData.endingDestination==0 || formData.endingDate==0 || formData.startingDate==0){
+            alert('Please fill all the feilds!');
+            return
+        }
         event.preventDefault();
         try {
             const response = await axios.post("http://localhost:5000/start", formData);

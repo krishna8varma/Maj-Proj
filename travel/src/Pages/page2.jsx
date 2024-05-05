@@ -32,6 +32,10 @@ const Page2 = () => {
     };
 
     const handleSubmit = async () => {
+        if(!selectedActivities){
+            alert("Please select some of the activities!");
+            return;
+        }
         try {
             const response = await axios.post('http://localhost:5000/activities', {
                 selected_activities: selectedActivities,

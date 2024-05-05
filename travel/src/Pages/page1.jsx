@@ -37,10 +37,15 @@ const Page1 = () => {
         //     return;
         // }
         
+        
         const companyFormData = {
             tripType, 
          
         };
+        if(!companyFormData.tripType){
+            alert("Please select who you are travelling with!");
+            return;
+        }
         const response = await axios.post("http://localhost:5000/tripType", companyFormData);
         try {
             if (response.status === 200) {
