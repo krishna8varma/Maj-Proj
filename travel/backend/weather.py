@@ -19,7 +19,7 @@ def get_aqi_id(destination):
     if response.status_code == 200:
         data = response.json()
         index = data['current']['air_quality']['us-epa-index']
-        return index
+        return index,[data['location']['lat'], data['location']['lon']]
 
 
 def get_weather_data(destination,start_date,duration):
@@ -29,9 +29,9 @@ def get_weather_data(destination,start_date,duration):
     forecast_data = {}
     start_date = datetime.strptime(start_date, '%Y-%m-%d')
     # Get aqi index
-    aqi_index=get_aqi_id(destination)
+    aqi_index,location=get_aqi_id(destination)
     forecast_data['AQI']=aqi_index
-
+    forecast_data['location']=location
     # Retrieve forecast data for next 'days' days (including today)
     for day in range(duration):
         target_date = start_date + timedelta(days=day)

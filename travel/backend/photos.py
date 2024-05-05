@@ -12,12 +12,10 @@ def get_photo(query):
     soup = BeautifulSoup(response.content, 'html.parser')
 
     # Find the first <img> element with class='my-image'
-    img_element = soup.find('img', class_='svelte-1s3j0rg')
+    img_element = soup.find_all('img', class_='svelte-1s3j0rg')
 
     # Extract the 'src' attribute of the image if found
-    if img_element:
-        image_url = img_element['src']
-        return image_url
-    else: return ''
+    image_urls = [img['src'] for img in img_element]
+    return image_urls
 
 #SEARCH_QUERY = 'Taj Mahal'

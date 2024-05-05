@@ -1,0 +1,25 @@
+{
+    "destinationLocation": [
+        18.53,
+        73.87
+    ],
+    "duration": 6,
+    "endingDate": "2024-05-15",
+    "endingDestination": "pune",
+    "selected_activities": [
+        "amusement park",
+        "hiking",
+        "clubbing",
+        "bike ride",
+        "shopping",
+        "museum",
+        "temple",
+        "picnic",
+        "live music",
+        "wildlife sanctuary",
+        "cooking class"
+    ],
+    "startingDate": "2024-05-10",
+    "startingLocation": "nagpur",
+    "tripType": "solo"
+}

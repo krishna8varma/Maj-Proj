@@ -1,0 +1,637 @@
+{
+    "tripPlan": {
+        "Day 1": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Hiking",
+                    "Picnic"
+                ],
+                "Opening Hours": [
+                    "24 hours"
+                ],
+                "Place Name": "Sinhagad Fort",
+                "Place_location": [
+                    18.4621,
+                    73.409
+                ],
+                "Rating": 4.7,
+                "image": "https://imgs.search.brave.com/FwO096QEuPx2Cb4J_E3nCPA50L6O-vcEJGw-ImUUUNQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dG91cm15aW5kaWEu/Y29tL2Jsb2cvL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzA2/L011bWJhaS1NYWhh/YmFsZXNod2FyLVdl/ZWtlbmQtVG91ci5q/cGc"
+            },
+            "Evening": {
+                "Activity Type": [
+                    "Live Music",
+                    "Clubbing"
+                ],
+                "Opening Hours": [
+                    "18:00",
+                    "02:00"
+                ],
+                "Place Name": "1000 Oaks",
+                "Place_location": [
+                    18.563,
+                    73.8559
+                ],
+                "Rating": 4.4,
+                "image": "https://imgs.search.brave.com/zqTSh5_CkeFMthttYKCy9q0ZzsiyNaZW52kHdvfPICQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly95MjBp/bmRpYS5pbi93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wNC8x/OC1Ub3AtVG91cmlz/dC1QbGFjZXMtdG8t/VmlzaXQtaW4tUHVu/ZS0yMDI0LUJlc3Qt/VG91cmlzdC1BdHRy/YWN0aW9uLWUxNzE0/MTMxMTAyODMxLmpw/ZWc"
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Amusement Park",
+                    "Shopping"
+                ],
+                "Opening Hours": [
+                    "11:00",
+                    "19:00"
+                ],
+                "Place Name": "Adlabs Imagica",
+                "Place_location": [
+                    18.7251,
+                    73.3661
+                ],
+                "Rating": 4.5,
+                "image": "https://imgs.search.brave.com/eZu4EjeC-o0DCklmGTicE05VRFooAiQAQLeRzX5FRJk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ibG9n/LnRob21hc2Nvb2su/aW4vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDUvaW1nLTMt/My1lMTUyNzA2MTY5/MTc0My0xLmpwZw"
+            }
+        },
+        "Day 2": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Picnic",
+                    "Bike Ride"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "18:00"
+                ],
+                "Place Name": "Pune Okayama Friendship Garden",
+                "Place_location": [
+                    18.5784,
+                    73.8789
+                ],
+                "Rating": 4.6,
+                "image": "https://imgs.search.brave.com/Mc-GuopeYAVHrInrwMhAUWUMgQWljRqqmT1ME-kTrUM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4t/djIudGhlY3VsdHVy/ZXRyaXAuY29tLzEw/eC93cC1jb250ZW50/L3VwbG9hZHMvMjAx/OC8wMS90aGUtc2Nl/bmljLXBhc2hhbi1s/YWtlLXBhc2hhbi1w/dW5lLndlYnA"
+            },
+            "Evening": {
+                "Activity Type": [
+                    "Clubbing",
+                    "Live Music"
+                ],
+                "Opening Hours": [
+                    "24 hours"
+                ],
+                "Place Name": "Koregaon Park",
+                "Place_location": [
+                    18.5367,
+                    73.8892
+                ],
+                "Rating": 4.4,
+                "image": "https://imgs.search.brave.com/fdrzPGcDKJbuNTGgBenaUtFOLYcoH6EVNTy49N6NWvU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ibG9n/LnRob21hc2Nvb2su/aW4vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDUvaW1nLTIw/LWUxNTI3MDYzMTU2/MjA1LTEuanBn"
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Museum",
+                    "Shopping"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "17:00"
+                ],
+                "Place Name": "Mahatma Phule Museum",
+                "Place_location": [
+                    18.5185,
+                    73.8519
+                ],
+                "Rating": 4.5,
+                "image": "https://imgs.search.brave.com/6FfpVtGpXXWRT5318Zes62-kI_gneypLZcwSbrYDnys/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDMvc2V2ZW4t/d29uZGVycy1kcmVh/bS1wYXJrLXNoYWh1/LWNvbGxlZ2Utcm9h/ZC1wdW5lLXRvdXJp/c3QtYXR0cmFjdGlv/bi0xNXBicDZ3Lmpw/Zw"
+            }
+        },
+        "Day 3": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Wildlife Sanctuary",
+                    "Picnic"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "17:00"
+                ],
+                "Place Name": "Bharti Vidyapeeth Wildlife Sanctuary",
+                "Place_location": [
+                    18.8487,
+                    73.7621
+                ],
+                "Rating": 4.3,
+                "image": "https://imgs.search.brave.com/-jJ2QT8KVw7fPGuAyZ98EFQ1yZiUxk9XXAzIzNwX3Ro/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJhd2VsbC5pbi9p/bWFnZXMvaXRpbmVy/YXJ5L21haW4vc20v/cHVuZV8yX2RheV90/cmlwX3NtLmpwZw"
+            },
+            "Evening": {
+                "Activity Type": [
+                    "Shopping",
+                    "Live Music"
+                ],
+                "Opening Hours": [
+                    "24 hours"
+                ],
+                "Place Name": "FC Road",
+                "Place_location": [
+                    18.5248,
+                    73.8572
+                ],
+                "Rating": 4.2,
+                "image": "https://imgs.search.brave.com/X92c9sriAFT6dLewqVu6Ta8DGxAkspxhyFVEWLKYCQI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtYmxvZy50cmVl/Ym8uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE2LzAxL0xh/bC1NYWhhbC5qcGc"
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Temple",
+                    "Shopping"
+                ],
+                "Opening Hours": [
+                    "24 hours"
+                ],
+                "Place Name": "Shreemant Dagdusheth Halwai Ganpati",
+                "Place_location": [
+                    18.5157,
+                    73.8557
+                ],
+                "Rating": 4.9,
+                "image": "https://imgs.search.brave.com/Mc-GuopeYAVHrInrwMhAUWUMgQWljRqqmT1ME-kTrUM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4t/djIudGhlY3VsdHVy/ZXRyaXAuY29tLzEw/eC93cC1jb250ZW50/L3VwbG9hZHMvMjAx/OC8wMS90aGUtc2Nl/bmljLXBhc2hhbi1s/YWtlLXBhc2hhbi1w/dW5lLndlYnA"
+            }
+        },
+        "Day 4": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Temple",
+                    "Live Music"
+                ],
+                "Opening Hours": [
+                    "24 hours"
+                ],
+                "Place Name": "Osho International Meditation Resort",
+                "Place_location": [
+                    18.7446,
+                    73.7264
+                ],
+                "Rating": 4.7,
+                "image": "https://imgs.search.brave.com/sSeyJzPT5rq723OrcqJFWyPOy3NOUeSbNEXrXV61BVk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dG91cm15aW5kaWEu/Y29tL2Jsb2cvL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE1LzA4/L211bHNoaS1kYW0t/cHVuZS5qcGc"
+            },
+            "Evening": {
+                "Activity Type": [
+                    "Clubbing",
+                    "Live Music"
+                ],
+                "Opening Hours": [
+                    "19:00",
+                    "03:00"
+                ],
+                "Place Name": "Xion",
+                "Place_location": [
+                    18.5378,
+                    73.8872
+                ],
+                "Rating": 4.6,
+                "image": "https://imgs.search.brave.com/sSeyJzPT5rq723OrcqJFWyPOy3NOUeSbNEXrXV61BVk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dG91cm15aW5kaWEu/Y29tL2Jsb2cvL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE1LzA4/L211bHNoaS1kYW0t/cHVuZS5qcGc"
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Picnic",
+                    "Bike Ride"
+                ],
+                "Opening Hours": [
+                    "24 hours"
+                ],
+                "Place Name": "Peshwe Park",
+                "Place_location": [
+                    18.5087,
+                    73.8682
+                ],
+                "Rating": 4.2,
+                "image": "https://imgs.search.brave.com/X5i6dG7ArfIQ1F8Quto7zAi8Jscw2StVymhizGNUf70/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9wdW5l/dG91cmlzbS5jby5p/bi9pbWFnZXMvL3Rv/dXJpc3QtcGxhY2Vz/L3BhdGFsZXNod2Fy/LWNhdmUtdGVtcGxl/LXB1bmUvcGF0YWxl/c2h3YXItY2F2ZS10/ZW1wbGUtcHVuZS1p/bmRpYS10b3VyaXNt/LWhpc3RvcnkuanBn"
+            }
+        },
+        "Day 5": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Picnic",
+                    "Bike Ride"
+                ],
+                "Opening Hours": [
+                    "24 hours"
+                ],
+                "Place Name": "Indrayani River",
+                "Place_location": [
+                    18.4731,
+                    73.8422
+                ],
+                "Rating": 4.3,
+                "image": "https://imgs.search.brave.com/qio84kYU1R5vZmWiXJXXOwvXX1_W7zYmuF50JtgFQaY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJhd2VsbC5pbi9p/bWFnZXMvcGljcy9Q/dW5lX2xvY2FsLmpw/Zw"
+            },
+            "Evening": {
+                "Activity Type": [
+                    "Clubbing",
+                    "Live Music"
+                ],
+                "Opening Hours": [
+                    "19:00",
+                    "03:00"
+                ],
+                "Place Name": "High Spirits",
+                "Place_location": [
+                    18.5336,
+                    73.8808
+                ],
+                "Rating": 4.5,
+                "image": "https://imgs.search.brave.com/AHP7ycf_TYocxyT5s-1Buo-D0Q1uEYoQY3JHD5GWcDk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9keW5h/bWljLnRvdXJ0cmF2/ZWx3b3JsZC5jb20v/YmxvZ19pbWFnZXMv/dG9wLTIyLXBhY2Vz/LXRvLXZpc2l0LWlu/LXB1bmUtMjAxNjEw/MjQwNTIzNTAuanBn"
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Museum",
+                    "Shopping"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "18:00"
+                ],
+                "Place Name": "Aga Khan Palace",
+                "Place_location": [
+                    18.5434,
+                    73.8967
+                ],
+                "Rating": 4.4,
+                "image": "https://imgs.search.brave.com/QCBvDXZDXdvgAlLCyjfyTNjr_CeL8n8axvOEnscv-NU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ibG9n/LnRob21hc2Nvb2su/aW4vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDUvVGFwb2xh/LWUxNTI3MDYyNTQz/ODM4LTEuanBn"
+            }
+        },
+        "Day 6": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Picnic",
+                    "Bike Ride"
+                ],
+                "Opening Hours": [
+                    "24 hours"
+                ],
+                "Place Name": "Empress Garden",
+                "Place_location": [
+                    18.5164,
+                    73.8234
+                ],
+                "Rating": 4.2,
+                "image": "https://imgs.search.brave.com/5_rZSZx9VA4K0vcNCPC-B0T-CwvB1Pg-HFVigGT3MCc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3Lnpp/bmdidXMuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjIvMDcvTGFsLU1h/aGFsLTEuanBnP3Jl/c2l6ZT0xMDI0LDc2/OCZzc2w9MQ"
+            },
+            "Evening": {
+                "Activity Type": [
+                    "Shopping",
+                    "Live Music"
+                ],
+                "Opening Hours": [
+                    "11:00",
+                    "20:00"
+                ],
+                "Place Name": "Balewadi High Street",
+                "Place_location": [
+                    18.5823,
+                    73.7781
+                ],
+                "Rating": 4.3,
+                "image": "https://imgs.search.brave.com/sSPazlW1Wq4eekf6xO9GNNzH5C8z_JGrAZDYxo3g9i8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtbmV3cy5ob3Vz/aW5nLmNvbS9uZXdz/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIy/LzA2LzIxMDkwNzAw/L1RvcC0xMC1wbGFj/ZXMtdG8tdmlzaXQt/aW4tUHVuZS1hbmQt/dGhpbmdzLXRvLWRv/LTAyLmpwZw"
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Cooking Class",
+                    "Shopping"
+                ],
+                "Opening Hours": [
+                    "09:00",
+                    "14:00"
+                ],
+                "Place Name": "Cooking Class @ MasterChef India",
+                "Place_location": [
+                    18.5321,
+                    73.8859
+                ],
+                "Rating": 4.8,
+                "image": "https://imgs.search.brave.com/eZu4EjeC-o0DCklmGTicE05VRFooAiQAQLeRzX5FRJk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ibG9n/LnRob21hc2Nvb2su/aW4vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDUvaW1nLTMt/My1lMTUyNzA2MTY5/MTc0My0xLmpwZw"
+            }
+        }
+    }
+}
+
+
+//2nd response
+
+{
+    "tripPlan": {
+        "Day 1": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Exhibition",
+                    "Photography"
+                ],
+                "Opening Hours": [
+                    "09:30",
+                    "17:30"
+                ],
+                "Place Name": "Raja Dinkar Kelkar Museum",
+                "Place_location": [
+                    18.5156,
+                    73.8563
+                ],
+                "Rating": 4.5,
+                "image": "https://imgs.search.brave.com/6FfpVtGpXXWRT5318Zes62-kI_gneypLZcwSbrYDnys/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDMvc2V2ZW4t/d29uZGVycy1kcmVh/bS1wYXJrLXNoYWh1/LWNvbGxlZ2Utcm9h/ZC1wdW5lLXRvdXJp/c3QtYXR0cmFjdGlv/bi0xNXBicDZ3Lmpw/Zw"
+            },
+            "Evening": {
+                "Activity Type": [
+                    "Clubbing",
+                    "Live Music"
+                ],
+                "Opening Hours": [
+                    "12:00",
+                    "01:00"
+                ],
+                "Place Name": "Uptown Social",
+                "Place_location": [
+                    18.5196,
+                    73.8875
+                ],
+                "Rating": 4.1,
+                "image": "https://imgs.search.brave.com/vnIaK1mbLmja44uYTWlTGWPUkZ5wQGWkcTCJfowLG2g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9wdW5l/dG91cmlzbS5jby5p/bi9pbWFnZXMvL3Rv/dXJpc3QtcGxhY2Vz/L29zaG8tYXNocmFt/LXB1bmUvb3Noby1h/c2hyYW0tcHVuZS10/b3VyaXNtLWhvbGlk/YXlzLWNsb3NlZC1v/bi10aW1pbmdzLmpw/Zw"
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Shopping",
+                    "Bike Ride"
+                ],
+                "Opening Hours": [
+                    "08:00",
+                    "22:00"
+                ],
+                "Place Name": "Amanora Mall",
+                "Place_location": [
+                    18.5899,
+                    73.8665
+                ],
+                "Rating": 4.2,
+                "image": "https://imgs.search.brave.com/X5i6dG7ArfIQ1F8Quto7zAi8Jscw2StVymhizGNUf70/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9wdW5l/dG91cmlzbS5jby5p/bi9pbWFnZXMvL3Rv/dXJpc3QtcGxhY2Vz/L3BhdGFsZXNod2Fy/LWNhdmUtdGVtcGxl/LXB1bmUvcGF0YWxl/c2h3YXItY2F2ZS10/ZW1wbGUtcHVuZS1p/bmRpYS10b3VyaXNt/LWhpc3RvcnkuanBn"
+            }
+        },
+        "Day 2": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Hiking",
+                    "Religious"
+                ],
+                "Opening Hours": [
+                    "24 Hours"
+                ],
+                "Place Name": "Vetal Hill",
+                "Place_location": [
+                    18.5254,
+                    73.8905
+                ],
+                "Rating": 4.4,
+                "image": "https://imgs.search.brave.com/P-70CKE33WgkD1ejwjfyVw6s6FBX4eq_gKY2ogytSXg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zMy5h/cC1zb3V0aGVhc3Qt/MS5hbWF6b25hd3Mu/Y29tL2ltYWdlcy5k/ZWNjYW5jaHJvbmlj/bGUuY29tL2RjLUNv/dmVyLTY0cjhyYWF0/MjIwZ2EyN2h2ZjVj/cjdmNzMyLTIwMjMw/NDExMTgzNDU0Lk1l/ZGkuanBlZw"
+            },
+            "Evening": {
+                "Activity Type": [
+                    "Clubbing",
+                    "Food"
+                ],
+                "Opening Hours": [
+                    "11:00",
+                    "23:00"
+                ],
+                "Place Name": "Koregaon Park",
+                "Place_location": [
+                    18.5394,
+                    73.8671
+                ],
+                "Rating": 4.2,
+                "image": "https://imgs.search.brave.com/VLbJxjAJQblak0RwZCAijKmGqWNCGHvxtVyoxTuP5kg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMDMvUmFqaXYt/Z2FuZGhpLXpvb2xv/Z2ljYWwtcGFyay5q/cGc"
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Historical Interest",
+                    "Photography"
+                ],
+                "Opening Hours": [
+                    "08:00",
+                    "18:00"
+                ],
+                "Place Name": "Shaniwar Wada",
+                "Place_location": [
+                    18.5176,
+                    73.8538
+                ],
+                "Rating": 4.2,
+                "image": "https://imgs.search.brave.com/FwO096QEuPx2Cb4J_E3nCPA50L6O-vcEJGw-ImUUUNQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dG91cm15aW5kaWEu/Y29tL2Jsb2cvL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzA2/L011bWJhaS1NYWhh/YmFsZXNod2FyLVdl/ZWtlbmQtVG91ci5q/cGc"
+            }
+        },
+        "Day 3": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Shopping",
+                    "Food"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "22:00"
+                ],
+                "Place Name": "FC Road",
+                "Place_location": [
+                    18.5194,
+                    73.8764
+                ],
+                "Rating": 4.3,
+                "image": "https://imgs.search.brave.com/Ss1d8XhORqbyiG9Krrn14tvCN7i6RPOemMahzWMcyGk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/aGxpbWcuY29tL2lt/YWdlcy9zdG9yaWVz/LzMwMFgyMDAvMTAt/YmVzdC1wbGFjZXMt/dG8tdmlzaXQtbmVh/ci1zaGlyZGlfMTQ1/MTkwMzI1Nm0uanBn"
+            },
+            "Evening": {
+                "Activity Type": [
+                    "Clubbing",
+                    "Live Music"
+                ],
+                "Opening Hours": [
+                    "12:00",
+                    "00:00"
+                ],
+                "Place Name": "Roopali",
+                "Place_location": [
+                    18.5079,
+                    73.8649
+                ],
+                "Rating": 4.1,
+                "image": "https://imgs.search.brave.com/wqPYCUJplYgpnG3DlMZUBFJqijTqDoX3wKKlem-Cr8g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/aGxpbWcuY29tL2lt/YWdlcy9zdG9yaWVz/LzMwMFgyMDAvYmVz/dC1wbGFjZXMtdG8t/dmlzaXQtaW4tYXBy/aWwtaW4taW5kaWFf/MTQ0NjI2NTE0OW0u/anBn"
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Photography",
+                    "Heritage"
+                ],
+                "Opening Hours": [
+                    "09:00",
+                    "18:00"
+                ],
+                "Place Name": "Aga Khan Palace",
+                "Place_location": [
+                    18.5263,
+                    73.8614
+                ],
+                "Rating": 4.2,
+                "image": "https://imgs.search.brave.com/z7RMmPG6qLJtdDJMQ3dVr26N8g-zr33Ypdj8ruLyeoo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ibG9n/LnRob21hc2Nvb2su/aW4vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDUvaW1nLTkt/My1lMTUyNzA2MjI1/MDExOC0xLmpwZw"
+            }
+        },
+        "Day 4": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Picnic",
+                    "Nature"
+                ],
+                "Opening Hours": [
+                    "09:00",
+                    "19:00"
+                ],
+                "Place Name": "Pune Okayama Friendship Garden",
+                "Place_location": [
+                    18.5303,
+                    73.8897
+                ],
+                "Rating": 4.3,
+                "image": "https://imgs.search.brave.com/QCBvDXZDXdvgAlLCyjfyTNjr_CeL8n8axvOEnscv-NU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ibG9n/LnRob21hc2Nvb2su/aW4vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDUvVGFwb2xh/LWUxNTI3MDYyNTQz/ODM4LTEuanBn"
+            },
+            "Evening": {
+                "Activity Type": [
+                    "Live Music",
+                    "Burgers"
+                ],
+                "Opening Hours": [
+                    "12:00",
+                    "01:00"
+                ],
+                "Place Name": "Hard Rock Cafe",
+                "Place_location": [
+                    18.5264,
+                    73.8792
+                ],
+                "Rating": 4.1,
+                "image": "https://imgs.search.brave.com/pefSskM86dasyUvzBNSviElfu3N8hTsTfF2de8nZG9U/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dG91cm15aW5kaWEu/Y29tL2Jsb2cvL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE1LzA4/L3B1bmUtY2l0eS12/aWV3LWZyb20tYXRv/cC12ZXRhbC1oaWxs/LmpwZw"
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Shopping",
+                    "Food"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "22:00"
+                ],
+                "Place Name": "Laxmi Road",
+                "Place_location": [
+                    18.5176,
+                    73.8466
+                ],
+                "Rating": 4.2,
+                "image": "https://imgs.search.brave.com/vnIaK1mbLmja44uYTWlTGWPUkZ5wQGWkcTCJfowLG2g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9wdW5l/dG91cmlzbS5jby5p/bi9pbWFnZXMvL3Rv/dXJpc3QtcGxhY2Vz/L29zaG8tYXNocmFt/LXB1bmUvb3Noby1h/c2hyYW0tcHVuZS10/b3VyaXNtLWhvbGlk/YXlzLWNsb3NlZC1v/bi10aW1pbmdzLmpw/Zw"
+            }
+        },
+        "Day 5": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Picnic",
+                    "Nature"
+                ],
+                "Opening Hours": [
+                    "24 Hours"
+                ],
+                "Place Name": "Bund Garden",
+                "Place_location": [
+                    18.5126,
+                    73.855
+                ],
+                "Rating": 4.3,
+                "image": "https://imgs.search.brave.com/3K8ElnyYcH2juSK85yflih_aMWhcY4dKhqhGql1A8vU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly95MjBp/bmRpYS5pbi93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wNC9p/c2tjb24tbnZjYy10/ZW1wbGUuanBlZw"
+            },
+            "Evening": {
+                "Activity Type": [
+                    "Live Music",
+                    "Clubbing"
+                ],
+                "Opening Hours": [
+                    "12:00",
+                    "00:00"
+                ],
+                "Place Name": "1000 Oaks",
+                "Place_location": [
+                    18.5841,
+                    73.9426
+                ],
+                "Rating": 4.1,
+                "image": "https://imgs.search.brave.com/5_rZSZx9VA4K0vcNCPC-B0T-CwvB1Pg-HFVigGT3MCc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3Lnpp/bmdidXMuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjIvMDcvTGFsLU1h/aGFsLTEuanBnP3Jl/c2l6ZT0xMDI0LDc2/OCZzc2w9MQ"
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Amusement Park",
+                    "Bike Ride"
+                ],
+                "Opening Hours": [
+                    "06:00",
+                    "22:00"
+                ],
+                "Place Name": "Balewadi Sports Complex",
+                "Place_location": [
+                    18.5555,
+                    73.8018
+                ],
+                "Rating": 4.2,
+                "image": "https://imgs.search.brave.com/7VLFtBpD-XAxu-jTIpHtqNSQqf-ga7MNVWA1J2FwDCk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ibG9n/LnRob21hc2Nvb2su/aW4vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDUvTWF0aGVy/YW5WaWV3LWUxNTI3/MDYyNjc3MzE5LTEu/anBn"
+            }
+        },
+        "Day 6": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Nature",
+                    "Photography"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "17:00"
+                ],
+                "Place Name": "Kondhwa Caves",
+                "Place_location": [
+                    18.4641,
+                    73.8388
+                ],
+                "Rating": 4.1,
+                "image": "https://imgs.search.brave.com/q7xU8FO7EeIKgtuiATJY0PGojg9rNZk-auyGGd6TsrQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ibG9n/LnRob21hc2Nvb2su/aW4vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDUvYW5kaGFy/YmFuXzExLTEuanBn"
+            },
+            "Evening": {
+                "Activity Type": [
+                    "Shopping",
+                    "Food"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "22:00"
+                ],
+                "Place Name": "Phoenix Market City",
+                "Place_location": [
+                    18.5456,
+                    73.8808
+                ],
+                "Rating": 4.3,
+                "image": "https://imgs.search.brave.com/qnNQWRMpAQzipJidbUSLVCDmnjRCi0_4nxbJjLLhWQE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly95MjBp/bmRpYS5pbi93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wNC9T/aGFuaXdhci1XYWRh/LmpwZWc"
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Hiking",
+                    "Photography"
+                ],
+                "Opening Hours": [
+                    "24 Hours"
+                ],
+                "Place Name": "Sinhagad Fort",
+                "Place_location": [
+                    18.4055,
+                    73.7967
+                ],
+                "Rating": 4.2,
+                "image": "https://imgs.search.brave.com/k6BNZkZlVniM7bX-SEX060xpN6arfr6F4gRph-qp-n0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJhd2VsbC5pbi9h/ZG1pbi9pbWFnZXMv/dGh1bWJzLzMzNjQ5/MTQyNlB1bmVfTWFp/bl90aHVtYi5qcGc"
+            }
+        }
+    }
+}
