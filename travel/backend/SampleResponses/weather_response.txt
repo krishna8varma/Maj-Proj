@@ -1,0 +1,47 @@
+{
+    "weather": {
+        "AQI": 3,
+        "Day 1": {
+            "condition": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "sunrise": "06:03 AM",
+            "sunset": "06:59 PM"
+        },
+        "Day 2": {
+            "condition": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "sunrise": "06:02 AM",
+            "sunset": "07:00 PM"
+        },
+        "Day 3": {
+            "condition": "Patchy rain nearby",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+            "sunrise": "06:02 AM",
+            "sunset": "07:00 PM"
+        },
+        "Day 4": {
+            "condition": "Patchy rain nearby",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+            "sunrise": "06:01 AM",
+            "sunset": "07:01 PM"
+        },
+        "Day 5": {
+            "condition": "Patchy rain nearby",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+            "sunrise": "06:01 AM",
+            "sunset": "07:01 PM"
+        },
+        "Day 6": {
+            "condition": "Patchy rain nearby",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+            "sunrise": "06:01 AM",
+            "sunset": "07:01 PM"
+        },
+        "location": [
+            18.53,
+            73.87
+        ]
+    }
+}
+
+//location:: default location of the destination

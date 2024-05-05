@@ -1,0 +1,169 @@
+{
+    "Hotels": [
+        {
+            "hotel_name": "Holiday Inn Express & Suites Pune Hinjewadi",
+            "hotel_page": "https://goo.gl/maps/R9H1kfn7vUdfcH7K6",
+            "image": "https://imgs.search.brave.com/IRqQlSLULYazCPPW6yQDLrCd1Y6CW4XLW3_ItVxoq6c/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZi5i/c3RhdGljLmNvbS94/ZGF0YS9pbWFnZXMv/aG90ZWwvc3F1YXJl/NjAwLzIzODM2Njg2/Mi53ZWJwP2s9ODkw/MDdiZGM1ZDcyNWY4/Mzk5MTE2Zjk2OGNh/ZDQyOTc3NjA1NjE5/ZTczMDc2YWNlMGEz/NTkwOTBjOTBjNjFj/OSZvPQ",
+            "location": [
+                18.5886,
+                73.7671
+            ],
+            "price_range": "₹2,500 - ₹5,000",
+            "rating": 4.0
+        },
+        {
+            "hotel_name": "The Corinthians Resort & Club",
+            "hotel_page": "https://goo.gl/maps/f8oCP5t7RmYeu29a6",
+            "image": "https://imgs.search.brave.com/FZ0Zryu_2xafdOsbA7xsWjgt3nClYO6ulTKSPxS0yDY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mYXN0/dWkuY2x0cHN0YXRp/Yy5jb20vaW1hZ2Uv/dXBsb2FkL3dfMjg4/LGhfMjQwLGZsX3By/b2dyZXNzaXZlLGVf/c2hhcnBlbjo4MCxj/X2ZpbGwsZHByXzIs/Zl9hdXRvLHFfNzUv/aG90ZWxzL3BsYWNl/cy9ob3RlbHMvY21z/LzI2NTUvMjY1NTcz/MC9pbWFnZXMvaW1h/Z2VfMjY1NTczMF9i/ZWU4YmMzOC05YjY2/LTRhYzUtODFiNy0z/MWJkMzFiMTM4YmEu/anBlZw",
+            "location": [
+                18.5609,
+                73.8352
+            ],
+            "price_range": "₹3,000 - ₹6,000",
+            "rating": 4.5
+        },
+        {
+            "hotel_name": "Hyatt Regency Pune & Residences",
+            "hotel_page": "https://goo.gl/maps/vdG4V5xYzU4L7uPi8",
+            "image": "https://imgs.search.brave.com/Fy5hWLvBGHEUiSO51ng6z0zf1UhXf74sJeJI_Wm8Ugk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mYXN0/dWkuY2x0cHN0YXRp/Yy5jb20vaW1hZ2Uv/dXBsb2FkL3dfMjg4/LGhfMjQwLGZsX3By/b2dyZXNzaXZlLGVf/c2hhcnBlbjo4MCxj/X2ZpbGwsZHByXzIs/Zl9hdXRvLHFfNzUv/aG90ZWxzL3BsYWNl/cy9ob3RlbHMvY21z/LzMxOTUvMzE5NTU3/L2ltYWdlcy9pbWFn/ZV8zMTk1NTdfY2E5/NmRiOGQtOTAzZC00/MDY5LThlNzAtZDRh/ODc1Yjc3N2YzLmpw/ZWc",
+            "location": [
+                18.5379,
+                73.8874
+            ],
+            "price_range": "₹4,000 - ₹8,000",
+            "rating": 4.6
+        },
+        {
+            "hotel_name": "JW Marriott Hotel Pune",
+            "hotel_page": "https://goo.gl/maps/Kd16pG4jXKrbdw3v5",
+            "image": "https://imgs.search.brave.com/3MT89RFsZiafDbSTDh-XgTHPvqwL5RygT0j1ipHCg5k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9yMWlt/Z2h0bGFrLm1tdGNk/bi5jb20vYnNsZmRp/MjY4cDc2dDExc3Rj/cGtlaHNoMDA0NC5q/cGc_Jm91dHB1dC1x/dWFsaXR5PTc1JmRv/d25zaXplPTI0Mzox/NjImY3JvcD0yNDM6/MTYyOzQ0LDAmb3V0/cHV0LWZvcm1hdD1q/cGc",
+            "location": [
+                18.5311,
+                73.8926
+            ],
+            "price_range": "₹5,000 - ₹10,000",
+            "rating": 4.7
+        },
+        {
+            "hotel_name": "The Ritz-Carlton, Pune",
+            "hotel_page": "https://goo.gl/maps/rXg3q8QefrbtgQ6Z7",
+            "image": "https://imgs.search.brave.com/Jqs5tRPevPSJ-Jz89U9KkciwNqwtRg6NqOJs9qpCgOM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9yMWlt/Z2h0bGFrLm1tdGNk/bi5jb20vNTNkMDgy/MzhkYmNmMTFlNzli/MzgwMjI0NTEwZjVl/NWIuanBnPyZvdXRw/dXQtcXVhbGl0eT03/NSZkb3duc2l6ZT0y/NDM6MTYyJmNyb3A9/MjQzOjE2MjswLDE1/Jm91dHB1dC1mb3Jt/YXQ9anBn",
+            "location": [
+                18.5467,
+                73.8992
+            ],
+            "price_range": "₹6,000 - ₹12,000",
+            "rating": 4.8
+        },
+        {
+            "hotel_name": "Lemon Tree Premier City Center Pune",
+            "hotel_page": "https://goo.gl/maps/SmkJ5bY3g3tU845j7",
+            "image": "https://imgs.search.brave.com/gn1hw1-__h1YXRsio9IfdzD8uiVSY4YSy4PCuLuF9Zs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnI5Y2RuLm5l/dC9yaW1nL2hpbWcv/NjIvNzYvNTEvZXhw/ZWRpYXYyLTM1MTE4/NC1hYTQ3YTMtODY3/NjE3LmpwZz93aWR0/aD0zMzUmaGVpZ2h0/PTI2OCZjcm9wPXRy/dWU",
+            "location": [
+                18.5326,
+                73.8625
+            ],
+            "price_range": "₹2,000 - ₹4,000",
+            "rating": 4.1
+        },
+        {
+            "hotel_name": "DoubleTree by Hilton Pune - Chinchwad",
+            "hotel_page": "https://goo.gl/maps/r6GT4Y4L168naR4K6",
+            "image": "https://imgs.search.brave.com/h3jOgCyAMo9Wb3P-OISugyna4jaNMyIyDqhtx4F5kRU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJ2bC1tZWRp/YS5jb20vbG9kZ2lu/Zy80MDAwMDAwLzM4/ODAwMDAvMzg3Nzkw/MC8zODc3ODYzLzdh/NTllMGQyX3kuanBn",
+            "location": [
+                18.6169,
+                73.7915
+            ],
+            "price_range": "₹2,500 - ₹5,000",
+            "rating": 4.2
+        },
+        {
+            "hotel_name": "Four Points by Sheraton Pune, Hinjewadi",
+            "hotel_page": "https://goo.gl/maps/u8jcf69EYYkM388s8",
+            "image": "https://imgs.search.brave.com/GYbLr66wJHLo5pR9wMo9KocGytR5TxLbjOuwpKIfdE8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnI5Y2RuLm5l/dC9yaW1nL2hpbWcv/MzkvYjEvM2QvZXhw/ZWRpYXYyLTM1MjYz/NS1mMzljY2EtMDM3/OTQ3LmpwZz93aWR0/aD0zMzUmaGVpZ2h0/PTI2OCZjcm9wPXRy/dWU",
+            "location": [
+                18.5919,
+                73.7766
+            ],
+            "price_range": "₹3,000 - ₹6,000",
+            "rating": 4.3
+        },
+        {
+            "hotel_name": "Ginger Pune - Wakad",
+            "hotel_page": "https://goo.gl/maps/X1FUrz2DJFX81ttK8",
+            "image": "https://imgs.search.brave.com/uLVNG6VnMw7uGb1oRw1UgsIbQPaDNanzFMmbrzxyqy0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDIvc2hhbnRh/aS1ob3RlbC1wdW5l/LWtiNjU5MjZ0Zmgu/anBn",
+            "location": [
+                "18.6075994",
+                "73.7515903"
+            ],
+            "price_range": "₹1,500 - ₹3,000",
+            "rating": 3.9
+        },
+        {
+            "hotel_name": "ibis Pune Hinjewadi",
+            "hotel_page": "https://goo.gl/maps/jX1gZCz45Q8P5s1r7",
+            "image": "https://imgs.search.brave.com/Uw0DThKb7N4Cf-i9bKOsoccKBicaQnM1kuO1NH4_4rE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJ2bC1tZWRp/YS5jb20vbG9kZ2lu/Zy83MDAwMDAwLzY2/NTAwMDAvNjY0NjMw/MC82NjQ2MjM1Lzcw/MzQyMTc0X3kuanBn",
+            "location": [
+                18.5818,
+                73.7852
+            ],
+            "price_range": "₹2,000 - ₹4,000",
+            "rating": 4.0
+        },
+        {
+            "hotel_name": "Novotel Pune Nagar Road",
+            "hotel_page": "https://goo.gl/maps/2m47gxiU2jWkj6sMA",
+            "image": "https://imgs.search.brave.com/0t6B3uPlMj6aoU6gXHovwxOGq8Wm8ezmcNIuUsHl7WE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZi5i/c3RhdGljLmNvbS94/ZGF0YS9pbWFnZXMv/aG90ZWwvc3F1YXJl/NjAwLzIwNjIyMTIw/My53ZWJwP2s9NmM1/NTg4YmRmYmQwNTNh/NTg5MGYwZTlmNzJj/ODY4NzcxMzU3ODY3/MWEwZjkzM2YyN2Vl/ZDAyZTE1Nzk0N2I4/OCZvPQ",
+            "location": [
+                18.5198,
+                73.8657
+            ],
+            "price_range": "₹2,500 - ₹5,000",
+            "rating": 4.1
+        },
+        {
+            "hotel_name": "Radisson Blu Pune Hinjewadi",
+            "hotel_page": "https://goo.gl/maps/PVGb2vUwbv7K8c6B9",
+            "image": "https://imgs.search.brave.com/y3iuX3lBaVF7UCLGh_aPR5UxEpFlRU8WQbOBB0S4afI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJ2bC1tZWRp/YS5jb20vbG9kZ2lu/Zy8zMDAwMDAwLzI2/OTAwMDAvMjY4Mjcw/MC8yNjgyNjg5LzY5/YmVkODI2X3kuanBn",
+            "location": [
+                18.5886,
+                73.7671
+            ],
+            "price_range": "₹3,000 - ₹6,000",
+            "rating": 4.2
+        },
+        {
+            "hotel_name": "Conrad Pune",
+            "hotel_page": "https://goo.gl/maps/qohpQ434ARhRhb3HA",
+            "image": "https://imgs.search.brave.com/_Q49rIDxwqpS_I01xtpOslr_WAWB7gl9ZP6I0Em83eI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnI5Y2RuLm5l/dC9yaW1nL2hpbWcv/YjMvZjEvODMvbGVv/bmFyZG8tMTM4MjE4/ODU4LTY4MzNfaG9f/MDNfcF8zMDAweDIy/NTBfTy02NjY4NTku/anBnP3dpZHRoPTMz/NSZoZWlnaHQ9MjY4/JmNyb3A9dHJ1ZQ",
+            "location": [
+                "18.5351646",
+                "73.8831426"
+            ],
+            "price_range": "₹4,000 - ₹8,000",
+            "rating": 4.6
+        },
+        {
+            "hotel_name": "The Leela Palace, Pune",
+            "hotel_page": "https://goo.gl/maps/X1FUrz2DJFX81ttK8",
+            "image": "https://imgs.search.brave.com/rBDqDBI63LvlkEF2xhZvApjcA4Gzt3aXf0bXgaemUDU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJ2bC1tZWRp/YS5jb20vaG90ZWxz/LzUwMDAwMDAvNDUy/MDAwMC80NTE3NTAw/LzQ1MTc0ODEvY2Fl/YTdkMWVfeS5qcGc",
+            "location": [
+                18.5311,
+                73.8926
+            ],
+            "price_range": "₹5,000 - ₹10,000",
+            "rating": 4.7
+        },
+        {
+            "hotel_name": "The Taj Mahal Palace, Pune",
+            "hotel_page": "https://goo.gl/maps/qohpQ434ARhRhb3HA",
+            "image": "https://imgs.search.brave.com/FGr-9gNP-5hnKjpRTon6WqpVD4s2IAcDcjvW5QZGluY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jYWNo/ZS5tYXJyaW90dC5j/b20vY29udGVudC9k/YW0vbWFycmlvdHQt/cmVuZGl0aW9ucy9Q/TlFNQy9wbnFtYy1m/aXRuZXNzLTAwNDIt/aG9yLXdpZGUuanBn/P291dHB1dC1xdWFs/aXR5PTcwJmludGVy/cG9sYXRpb249cHJv/Z3Jlc3NpdmUtYmls/aW5lYXImZG93bnNp/emU9MTMxOHB4Oio",
+            "location": [
+                18.5467,
+                73.8992
+            ],
+            "price_range": "₹6,000 - ₹12,000",
+            "rating": 4.8
+        }
+    ]
+}
