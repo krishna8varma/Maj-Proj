@@ -6,17 +6,26 @@
      scroll-behavior: smooth;
   }
   
-  .transport , .hotels, .trip-planner,.foodbtn{
+  .trip-planner1{
     background-color: transparent;
-   color: #000000;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: small;
+  }
+
+  .transport1 , .hotels1,.foodbtn1{
+    background-color: transparent;
+   color: #BABABA;
    border: none;
    outline: none;
    cursor: pointer;
-   
+   font-size: small;
   }
 
-  .trip-planner :active,button:focus {
-    text-decoration: underline;
+  .trip-planner1 :active,button:focus {
+    text-decoration: underline #028BB2 ;
 
    
  }
@@ -200,47 +209,52 @@ h3{
   }
 
 .naming{
-    width: 17rem;
+  width: 20rem;
     height: 2rem;
 }
 
-  .type{
-       margin-left: 21rem;
+  .type1{
+    display: inline-block;
        position: relative;
-       bottom:1.5rem;
+       top :2.5rem;
        background-color: #D8D8D8 ;
        justify-content: center;
        text-align: center;
        border-radius: 20px;
-       height: 1.8rem;
+      height: 1.7rem;
        width: 10rem;
        font-size:smaller;
        font-weight: 200;
        padding-top: 0.2rem;
   }
+  .type2{
+      display: inline-block;
+    position: relative;
+    top :2.5rem;
+    background-color: #D8D8D8 ;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    right: -1rem;
+    width: 10rem;
+    font-size:smaller;
+    font-weight: 200;
+    padding-top: 0.2rem;
+    height: 1.7rem;
+}
 
   .timing{
       font-size: smaller;
       font-weight: 300;
       position: relative;
-      top: -1rem;
+      top: -1.2rem;
       width: 25rem;
       height: 2rem;
   }
   
-  .visit
-  {
-    font-size: smaller;
-      font-weight: 300;
-      position: relative;
-      top: -0.5rem;
-  }
-  
 
-  .starRating{
-    margin-left: 26rem;
-  }
-  
+
+
   
   
   /* Map styles */
@@ -256,8 +270,8 @@ h3{
   
 .starRating{
    position: relative;
-   top:-1.5rem;
-   right: 2rem;
+   top:-6rem;
+   right: 0.1rem;
   font-size: medium;
   text-align: center;
   justify-content: center;

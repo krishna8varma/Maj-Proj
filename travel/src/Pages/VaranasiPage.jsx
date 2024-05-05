@@ -41,7 +41,8 @@ const Manalipage = () => {
                         {
                             image:d1i1,
                             name: 'Assi Ghat',
-                            type: 'Yoga Session',
+                            type1: 'Yoga Session',
+                            type2: 'Ghat Walks',
                             openingHours: '24 Hours',
                             rating: 4.5,
                             visit: '6:00 AM'
@@ -58,7 +59,8 @@ const Manalipage = () => {
                         {
                             image:d1i2,
                             name: 'Dashashwamedh Ghat',
-                            type: 'Evening Ritual',
+                            type1: 'Evening Ritual',
+                            type2: 'Wandering',
                             openingHours: '24 Hours',
                             rating: 4.7,
                             visit: '05:00 PM'
@@ -73,7 +75,8 @@ const Manalipage = () => {
                         {
                             image: d1i3,
                             name: 'Godowlia Market',
-                            type: 'Food Tour',
+                            type1: 'Food Tour',
+                            type2: 'Market',
                             openingHours: '10:00 AM - 10:00 PM',
                             rating: 4.2,
                             visit: '7:00 PM'
@@ -95,7 +98,8 @@ const Manalipage = () => {
                         {
                             image: d2i1,
                             name: 'Kashi Vishwanath Temple',
-                            type: 'Spiritual Visit',
+                            type1: 'Spiritual',
+                            type2: 'Temple Visit',
                             openingHours: ' 2:30 AM - 11:00 PM',
                             rating: 4.8,
                             visit: '9:00 AM'
@@ -112,7 +116,8 @@ const Manalipage = () => {
                         {
                             image:d2i2,
                             name: 'Ramnagar Fort',
-                            type: 'Historical Visit',
+                            type1: 'Historical Visit',
+                            type2: 'Sightseeing',
                             openingHours: '10:00 AM - 5:00 PM',
                             rating:4.0 ,
                             visit: '02:00 PM'
@@ -127,7 +132,8 @@ const Manalipage = () => {
                         {
                             image: d2i3,
                             name: 'Darbhanga Ghat',
-                            type: 'Photography',
+                            type1: 'Photography',
+                            type2: 'Exploring',
                             openingHours: '24 hours',
                             rating: 4.6,
                             visit: 'Sunset'
@@ -150,7 +156,8 @@ const Manalipage = () => {
                         {
                             image: d3i1,
                             name: 'Sarnath',
-                            type: 'Museum',
+                            type1: 'Museum',
+                            type2: 'Historical Sightseeing',
                             openingHours: 'Sunrise to Sunset',
                             rating: 4.5,
                             visit: ' 08:00 AM'
@@ -167,7 +174,8 @@ const Manalipage = () => {
                         {
                             image:d3i2,
                             name: 'Local Cooking Class',
-                            type: 'Cooking Class',
+                            type1: 'Cooking Class',
+                            type2: 'Exploring',
                             openingHours: 'Afternoon sessions',
                             rating:  4.5,
                             visit: ' 02:00 PM'
@@ -182,7 +190,8 @@ const Manalipage = () => {
                         {
                             image: d3i3,
                             name: 'Blue Lassi Shop',
-                            type: 'Yogurt Drink',
+                            type1: 'Yogurt Drink',
+                            type2: 'Market',
                             openingHours: '8:00 AM - 10:00 PM',
                             rating: 4.6,
                             visit: '06:00 PM'
@@ -204,7 +213,8 @@ const Manalipage = () => {
                         {
                             image: d4i1,
                             name: 'Banaras Hindu University Campus',
-                            type: 'Wandering',
+                            type1: 'Wandering',
+                            type2: 'University',
                             openingHours: '9:00 AM - 5:00 PM',
                             rating:  4.2,
                             visit: ' 10:00 AM'
@@ -221,7 +231,8 @@ const Manalipage = () => {
                         {
                             image: d4i2,
                             name: 'Sarai Mohana',
-                            type: 'Weaving',
+                            type1: 'Weaving',
+                            type2: 'Sightseeing',
                             openingHours: '10:00 AM - 6:00 PM',
                             rating: 4.0,
                             visit: '2:00 PM'
@@ -236,7 +247,8 @@ const Manalipage = () => {
                         {
                             image: d4i3,
                             name: 'New Vishwanath Temple (BHU)',
-                            type: 'Spiritual Visit',
+                            type1: 'Spiritual',
+                            type2: 'Temple Visit',
                             openingHours: ' 4:00 AM - 9:00 PM',
                             rating:4.7,
                             visit: '07:00 PM'
@@ -258,7 +270,8 @@ const Manalipage = () => {
                         {
                             image: d5i1,
                             name: 'Boat Ride on the Ganges',
-                            type: 'Boat Ride',
+                            type1: 'Boat Ride',
+                            type2: 'Sightseeing',
                             openingHours: '  09:00 AM - 05:00 PM',
                             rating: 4.7,
                             visit: ' Sunrise'
@@ -275,7 +288,8 @@ const Manalipage = () => {
                         {
                             image: d5i2,
                             name: 'Local Cricket Ground',
-                            type: 'Cricket',
+                            type1: 'Cricket',
+                            type2: 'Sports',
                             openingHours: 'Early Morning',
                             rating: 4.5,
                             visit: ' 6:00 AM'
@@ -290,7 +304,8 @@ const Manalipage = () => {
                         {
                             image:d5i3,
                             name: 'Farewell Dinner at Ganges-view Restaurant',
-                            type: 'Food Tour',
+                            type1: 'Food Tour',
+                            type2: 'Exploring',
                             openingHours: '7:00 PM onwards',
                             rating: 4.5,
                             visit: ' 08:00 PM'
@@ -310,11 +325,11 @@ const Manalipage = () => {
         <div className='manali'>
             <Navbar />
             <div className="selection-bar">
-                <button className="transport">Transport</button>
-                <Link to="/HotelsPage"><button className="hotels">Hotels</button></Link>
-                <Link to="/TripPlanner"><button className="trip-planner">Trip Planner</button></Link>
-                <Link to="/FoodPage"><button className="foodbtn">Food</button></Link>
-            </div>
+                <p className="transport1">Transport</p>
+                <p className="hotels1">Hotels</p>
+                <p className="trip-planner1">Trip Planner</p>
+                <p className="foodbtn1">Food</p>
+             </div>
 
             <div className="main-content">
                 <div className="left-half">
@@ -344,11 +359,13 @@ const Manalipage = () => {
                                                                 <img src={place.image} alt={place.name} />
                                                                 <div className="place-details">
                                                                     <h4 >{place.name}</h4>
-                                                                    <div className='type'><p>{place.type}</p></div>
+                                                                    <div className='type1'><p>{place.type1}</p></div>
+                                                                    <div className='type2'><p>{place.type2}</p></div>
                                                                     <p className='timing'>Opening Hours: {place.openingHours}</p>
-                                                                    <p className='visit'>Visit Around : {place.visit}</p>
                                                                     <p className='starRating'><span class="fa fa-star checked"> </span> {place.rating}</p>
-                                                                </div>
+                                                                    
+                                                                    {/* <p className='visit'>Visit Around : {place.visit}</p> */}
+                                                                     </div>
                                                             </li>
                                                         ))}
                                                     </ul>

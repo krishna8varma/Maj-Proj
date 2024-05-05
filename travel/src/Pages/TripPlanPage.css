@@ -16,7 +16,7 @@
   }
 
   .trip-planner :active,button:focus {
-    text-decoration: underline;
+    text-decoration: underline #028BB2;
 
    
  }
@@ -28,11 +28,14 @@ h2{
 
  .save{
   position: relative;
+   right: 7%;
   color: #038CB3;
   cursor: pointer;
  } 
 
  .refresh{
+  position: relative;
+   right: 7%;
   position: relative;
   color: #038CB3;
   cursor: pointer;
@@ -200,18 +203,18 @@ h3{
   }
 
   .type{
-       margin-left: 22rem;
+      
        position: relative;
-       bottom:4rem;
+       top:2.8rem;
        background-color: #D8D8D8 ;
        justify-content: center;
        text-align: center;
        border-radius: 20px;
        height: 1.8rem;
-       width: 8rem;
+       width: 15rem;
        font-size:smaller;
        font-weight: 200;
-       padding-top: 0.2rem;
+       padding-top: 0.2rem; 
   }
 
   .timing{

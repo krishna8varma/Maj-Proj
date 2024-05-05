@@ -41,10 +41,11 @@ const Manalipage = () => {
                         {
                             image: d1img1,
                             name: 'Hidimba Devi Temple',
-                            type: ' Religious Site',
+                            type1 : ' Religious Site',
+                            type2 : ' Temple Visit',
                             openingHours: '08:00 AM - 06:00 PM',
                             rating: 4.5,
-                            visit: 'Visit Around: 10:00 AM'
+                            
                         },
                     ],
 
@@ -58,7 +59,8 @@ const Manalipage = () => {
                         {
                             image:d1img2,
                             name: 'Manali Nature Park',
-                            type: 'Nature walks',
+                            type1: 'Nature walks',
+                            type2: 'Family hikes',
                             openingHours: '8:00 AM - 7:00 PM',
                             rating: 4.0,
                             visit: '02:00 PM'
@@ -73,7 +75,8 @@ const Manalipage = () => {
                         {
                             image: d1img3,
                             name: 'Mall Road',
-                            type: 'Shopping',
+                            type1: 'Shopping',
+                            type2: 'Exploring',
                             openingHours: '9:00 AM - 5:00 PM',
                             rating: 4.7,
                             visit: ' 6:00 PM'
@@ -95,7 +98,8 @@ const Manalipage = () => {
                         {
                             image: d2img1,
                             name: 'Solang Valley',
-                            type: 'Gondola rides',
+                            type1: 'Gondola rides',
+                            type2: 'Nature walks',
                             openingHours: '09:00 AM - 6:00 PM',
                             rating: 4.6,
                             visit: '11:00 AM'
@@ -112,7 +116,8 @@ const Manalipage = () => {
                         {
                             image: d2img2,
                             name: 'Vashisht Hot Springs',
-                            type: 'Hot spring soaking',
+                            type1: 'Hot spring soaking',
+                            type2: 'Sightseeing',
                             openingHours: '07:00 AM - 10:00 PM',
                             rating: 4.0,
                             visit: '03:00 PM'
@@ -127,7 +132,8 @@ const Manalipage = () => {
                         {
                             image: d2img3,
                             name: 'Drifters Cafe & Bar',
-                            type: 'Cafe hopping',
+                            type1: 'Cafe hopping',
+                            type2: 'Exploring',
                             openingHours: '11:00 AM - 11:00 PM',
                             rating: 4.2,
                             visit: '07:00 PM'
@@ -150,7 +156,8 @@ const Manalipage = () => {
                         {
                             image: d3img1,
                             name: 'Jogini Falls',
-                            type: 'Family Hikes',
+                            type1: 'Family Hikes',
+                            type2: 'Sightseeing',
                             openingHours: 'Sunrise to Sunset',
                             rating: 4.5,
                             visit: '10:00 AM'
@@ -167,7 +174,8 @@ const Manalipage = () => {
                         {
                             image:d3img2,
                             name: 'Himalayan Nyingmapa Buddhist Temple',
-                            type: 'Monastery visit',
+                            type1: 'Monastery visit',
+                            type2: 'Sightseeing',
                             openingHours: '06:00 AM - 07:00 PM',
                             rating: 4.7,
                             visit: ' 02:00 PM'
@@ -182,7 +190,8 @@ const Manalipage = () => {
                         {
                             image: d3img3,
                             name: 'Johnsons Cafe',
-                            type: 'Cafe hopping',
+                            type1: 'Cafe hopping',
+                            type2: 'Exploring',
                             openingHours: '09:00 AM - 10:00 PM',
                             rating: 4.3,
                             visit: '7:00 PM'
@@ -204,7 +213,8 @@ const Manalipage = () => {
                         {
                             image: d4img1,
                             name: 'Manu Temple',
-                            type: 'Kayaking',
+                            type1: 'Temple visits',
+                            type2: 'Religious Site',
                             openingHours: '06:00 AM - 05:00 PM',
                             rating: 4.3,
                             visit: '10:00 AM'
@@ -221,7 +231,8 @@ const Manalipage = () => {
                         {
                             image: d4img2,
                             name: 'Museum of Himachal Culture & Folk Art',
-                            type: 'Museum exploration',
+                            type1: 'Museum exploration',
+                            type2: 'Sightseeing',
                             openingHours: '08:00 AM - 01:00 PM and 02:00 PM - 05:00 PM',
                             rating: 4.0,
                             visit: '02:00 PM'
@@ -236,7 +247,8 @@ const Manalipage = () => {
                         {
                             image: d4img3,
                             name: 'Old Manali Market',
-                            type: 'Shopping',
+                            type1: 'Shopping',
+                            type2: 'Exploring',
                             openingHours: '10:00 AM - 08:00 PM',
                             rating:4.1,
                             visit: '06:00 PM'
@@ -258,7 +270,8 @@ const Manalipage = () => {
                         {
                             image: d5img1,
                             name: 'Naggar Castle',
-                            type: 'Sightseeing',
+                            type1: 'Sightseeing',
+                            type2: 'Nature Walks',
                             openingHours: '09:00 AM - 05:00 PM',
                             rating: 4.4,
                             visit: '11:00 AM'
@@ -275,7 +288,8 @@ const Manalipage = () => {
                         {
                             image: d5img2,
                             name: 'Beas River',
-                            type: 'Boating',
+                            type1: 'Boating',
+                            type2: 'Sightseeing',
                             openingHours: 'Sunrise to Sunset',
                             rating: 4.5,
                             visit: '03:00 PM'
@@ -290,7 +304,8 @@ const Manalipage = () => {
                         {
                             image:d5img3,
                             name: 'Il Forno',
-                            type: 'Cafe hopping',
+                            type1: 'Cafe hopping',
+                            type2: 'Exploring',
                             openingHours: '11:00 AM - 11:00 PM',
                             rating: 4.6,
                             visit: ' 07:00 PM'
@@ -310,10 +325,10 @@ const Manalipage = () => {
         <div className='manali'>
             <Navbar />
             <div className="selection-bar">
-                <button className="transport">Transport</button>
-                <Link to="/HotelsPage"><button className="hotels">Hotels</button></Link>
-                <Link to="/TripPlanner"><button className="trip-planner">Trip Planner</button></Link>
-                <Link to="/FoodPage"><button className="foodbtn">Food</button></Link>
+                <p className="transport1">Transport</p>
+                <p className="hotels1">Hotels</p>
+                <p className="trip-planner1">Trip Planner</p>
+                <p className="foodbtn1">Food</p>
             </div>
 
             <div className="main-content">
@@ -344,9 +359,10 @@ const Manalipage = () => {
                                                                 <img src={place.image} alt={place.name} />
                                                                 <div className="place-details">
                                                                     <h4 className='naming'>{place.name}</h4>
-                                                                    <div className='type'><p>{place.type}</p></div>
+                                                                    <div className='type1'><p>{place.type1}</p></div>
+                                                                    <div className='type2'><p>{place.type2}</p></div>
                                                                     <p className='timing'>Opening Hours: {place.openingHours}</p>
-                                                                    <p className='visit'>Visit Around : {place.visit}</p>
+                                                                   
                                                                     <p className='starRating'><span class="fa fa-star checked"> </span> {place.rating}</p>
                                                                 </div>
                                                             </li>

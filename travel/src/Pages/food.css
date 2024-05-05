@@ -25,7 +25,7 @@
  }
 
   .selection-bar {
-     margin-left: 350px;
+    margin-left: 350px;
     margin-right: 100px;
     margin-top : 80px;
     margin-bottom: 2px;
@@ -50,7 +50,7 @@
   
    .selection-bar > .selected {
      background-color: #f3f6f9; /*Selected item background color */
-    color: white;
+     color: white;
   } 
 
 .mainContent{
@@ -66,10 +66,10 @@
     flex: 1;
     overflow-y: auto; /* Add scrollbar when content overflows vertically */
     padding: 10px;
-   display: flex;
-  width: 50%;
-   flex-wrap: wrap;
-   justify-content:space-around;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content:space-around;
 }
 
 .heading{
@@ -80,8 +80,7 @@
     margin-left: 10px;
     line-height: 1.5rem;
     height: 20px;
-    position: relative;
-    top: 10px;
+    margin-top:-0.4rem;
 
     
   }
@@ -91,11 +90,11 @@
     margin-bottom: 30px;
     padding: 11px;
     box-shadow: #bbb;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid #D8D8D8;
     background: #FFF;
-    height: 18rem;
-     width: 37%;
+    height: 19rem;
+     width: 34.8%;
 
     /* &:hover{
      
@@ -105,15 +104,15 @@
   }
 
  .star{
-    position: relative;
-    left: 70%;
+  
+ 
+  margin-left: 10.5rem;
  }
 
   .Rating{
     margin-top : -1.5rem;
-    margin-left: 10px;
-   position: relative;
-   left: 75%;
+    margin-left: 12rem;
+    
       height: 2rem;
       width: 2rem;
       color: #000000;
@@ -127,11 +126,14 @@
   }
 
   .food-box img {
-    width:100%;
+    position: relative;
+    right: 0.7rem;
+    width:110%;
     height: 190px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-right: 10px;
+    bottom: 0.7rem;
+    object-fit:fill;
+    border-radius: 15px;
+    
   }
 
   .Map{
@@ -142,5 +144,10 @@
     color: #91D2E4;
   }
 
-
- 
+.foodtype{
+  color: #868686;
+  font-size: small;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}

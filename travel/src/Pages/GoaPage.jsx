@@ -41,7 +41,8 @@ const Manalipage = () => {
                         {
                             image: day1img1,
                             name: 'Calangute Beach',
-                            type: ' Beach',
+                            type1: ' Beach',
+                            type2: 'Water sports',
                             openingHours: '24 Hours',
                             rating: 4.5,
                             visit: '9:00 AM - 11:00 AM'
@@ -58,7 +59,8 @@ const Manalipage = () => {
                         {
                             image:day1img2,
                             name: 'Baga Beach',
-                            type: 'Water Sports',
+                            type1: 'Water Sports',
+                            type2: 'Beach hopping',
                             openingHours: '9:00 AM - 6:00 PM',
                             rating: 4.2,
                             visit: '1:00 PM - 3:00PM'
@@ -73,7 +75,8 @@ const Manalipage = () => {
                         {
                             image: day1img3,
                             name: 'Anjuna Flea Market',
-                            type: 'Shopping',
+                            type1: 'Shopping',
+                            type2: 'Food tasting',
                             openingHours: '6:00 AM - 12:00 AM',
                             rating: 4.0,
                             visit: ' 6:00 PM'
@@ -95,7 +98,8 @@ const Manalipage = () => {
                         {
                             image: day2img1,
                             name: 'Candolim Beach Parasailing',
-                            type: 'Parasailing',
+                            type1: 'Parasailing',
+                            type2: 'Water sports',
                             openingHours: '10:00 AM - 5:00 PM',
                             rating: 4.4,
                             visit: ' 10:00 PM - 12:00 PM'
@@ -112,7 +116,8 @@ const Manalipage = () => {
                         {
                             image: day2img2,
                             name: 'Mandovi River Cruise',
-                            type: 'Cruise',
+                            type1: 'Cruise',
+                            type2: 'Food tasting',
                             openingHours: '4:00 PM - 6:00 PM',
                             rating: 4.8,
                             visit: '4:00 PM - 5:30 PM'
@@ -127,7 +132,8 @@ const Manalipage = () => {
                         {
                             image: day2img3,
                             name: 'Tito’s Nightclub',
-                            type: 'Club',
+                            type1: 'Nightlife',
+                            type2: 'Club',
                             openingHours: '9:00 PM - 4:00 AM',
                             rating: 4.6,
                             visit: '6:00 PM'
@@ -150,7 +156,8 @@ const Manalipage = () => {
                         {
                             image: day3img1,
                             name: 'Beach Volleyball at Palolem Beach',
-                            type: 'Sport',
+                            type1: 'Sport',
+                            type2: 'Beach hopping',
                             openingHours: '9:00 AM - 11:00 AM',
                             rating: 4.0,
                             visit: ' 9:00 AM - 10:30 AM'
@@ -167,7 +174,8 @@ const Manalipage = () => {
                         {
                             image:day3img2,
                             name: 'Vagator Beach',
-                            type: 'Beach',
+                            type1: 'sightseeing',
+                            type2: 'Beach',
                             openingHours: '24 hours',
                             rating: 4.3,
                             visit: ' 1:00 PM - 4:00 PM'
@@ -182,7 +190,8 @@ const Manalipage = () => {
                         {
                             image: day3img3,
                             name: 'Arpora Night Market',
-                            type: 'Shopping',
+                            type1: 'Shopping',
+                            type2: 'Nightlife',
                             openingHours: '6:00 PM - 12:00 AM',
                             rating: 4.1,
                             visit: '7:00 PM - 9:00 PM'
@@ -204,7 +213,8 @@ const Manalipage = () => {
                         {
                             image: day4img1,
                             name: 'Backwaters Kayaking',
-                            type: 'Kayaking',
+                            type1: 'Kayaking',
+                            type2: 'Exploring',
                             openingHours: '9:00 AM - 11:00 AM',
                             rating: 4.5,
                             visit: '9:00 AM - 10:30 AM'
@@ -221,7 +231,8 @@ const Manalipage = () => {
                         {
                             image: day4img2,
                             name: 'Grand Island Snorkeling',
-                            type: 'Snorkeling',
+                            type1: 'Snorkeling',
+                            type2: 'Water Sport',
                             openingHours: '1:00 PM - 3:00 PM',
                             rating: 4.7,
                             visit: '1:00 PM - 2:30 PM'
@@ -236,7 +247,8 @@ const Manalipage = () => {
                         {
                             image: day4img3,
                             name: 'Chapora River Sunset Cruise',
-                            type: 'Cruise',
+                            type1: 'Cruise',
+                            type2: 'Nightlife',
                             openingHours: '5:00 PM - 7:00 PM',
                             rating:4.5,
                             visit: '5:00 PM - 6:30 PM'
@@ -258,7 +270,8 @@ const Manalipage = () => {
                         {
                             image: day5img1,
                             name: 'Aguada Fort',
-                            type: 'Historical',
+                            type1: 'Historical',
+                            type2: 'Fort exploration',
                             openingHours: ' 9:30 AM - 6:00 PM',
                             rating: 4.6,
                             visit: ' 9:30 AM - 11:00 AM'
@@ -275,7 +288,8 @@ const Manalipage = () => {
                         {
                             image: day5img2,
                             name: 'Colva Beach Water Sports',
-                            type: 'Water Sports',
+                            type1: 'Water Sports',
+                            type2: 'Beach',
                             openingHours: '9:00 AM - 6:00 PM',
                             rating: 4.0,
                             visit: '2:00 PM - 4:00 PM'
@@ -290,7 +304,8 @@ const Manalipage = () => {
                         {
                             image:day5img3,
                             name: 'Palolem Beach',
-                            type: 'Beach',
+                            type1: 'Beach',
+                            type2: 'Sightseeing',
                             openingHours: '24 hours',
                             rating: 4.4,
                             visit: '5:00 PM - 7:00 PM'
@@ -310,10 +325,10 @@ const Manalipage = () => {
         <div className='manali'>
             <Navbar />
             <div className="selection-bar">
-                <button className="transport">Transport</button>
-                <Link to="/HotelsPage"><button className="hotels">Hotels</button></Link>
-                <Link to="/TripPlanner"><button className="trip-planner">Trip Planner</button></Link>
-                <Link to="/FoodPage"><button className="foodbtn">Food</button></Link>
+               <p className="transport1">Transport</p>
+                <p className="hotels1">Hotels</p>
+                <p className="trip-planner1">Trip Planner</p>
+                <p className="foodbtn1">Food</p>
             </div>
 
             <div className="main-content">
@@ -344,10 +359,10 @@ const Manalipage = () => {
                                                                 <img src={place.image} alt={place.name} />
                                                                 <div className="place-details">
                                                                     <h4>{place.name}</h4>
-                                                                    <div className='type'><p>{place.type}</p></div>
+                                                                    <div className='type1'><p>{place.type1}</p></div>
+                                                                    <div className='type2'><p>{place.type2}</p></div>
                                                                     <p className='timing'>Opening Hours: {place.openingHours}</p>
-                                                                    <p className='visit'>Visit Around : {place.visit}</p>
-                                                                    <p className='starRating'><span class="fa fa-star checked"> </span> {place.rating}</p>
+                                                                   <p className='starRating'><span class="fa fa-star checked"> </span> {place.rating}</p>
                                                                 </div>
                                                             </li>
                                                         ))}
