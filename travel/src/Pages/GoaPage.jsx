@@ -380,7 +380,7 @@ const Manalipage = () => {
 
                 </div>
                 <div className="right-half">
-                    <MapComponent />
+                    <MapComponent selectedLocation={[15.29,74.12]}/>
                 </div>
             </div>
         </div>

@@ -49,16 +49,12 @@ useEffect(() => {
 
   
   const renderTripPlan = () => {
-    const count =0;
+  
     
     if (!tripPlanData) {
       
       if(errorFlag){
-        count++;
-        if (count==5){
-          <div className="">Internal Server Error! Please try again after some time.</div>
-          return;
-        }
+       
         window.location.reload();
       }
         return <div className="loadingTripData loading-spinner2">
