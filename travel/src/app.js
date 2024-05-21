@@ -15,7 +15,7 @@ import FoodPage from './Pages/FoodPage';
 import ManaliPage from './Pages/ManaliPage';
 import GoaPage from './Pages/GoaPage';
 import VaranasiPage from './Pages/VaranasiPage';
-
+import Explore from './Pages/explore'
 const App =()=>{
    
     return(
@@ -33,6 +33,7 @@ const App =()=>{
                <Route path="/ManaliPage" element={<ManaliPage />} />
                <Route path="/GoaPage" element={<GoaPage />} />
                <Route path="/VaranasiPage" element={<VaranasiPage />} />
+               <Route path="/explore" element={<Explore />} />
                
            </Routes>
        </Router>
