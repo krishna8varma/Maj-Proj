@@ -50,7 +50,7 @@ def tripType():
 @app.route('/activities', methods=['GET','POST'])
 def recommend_activities():
     if request.method == 'GET':
-        activities=gemini.get_activities(data['endingDestination'],data['tripType']) 
+        activities=gemini.get_activities(data['endingDestination'],data['duration'],data['tripType']) 
         return jsonify({'activities': activities}),200
 
     elif request.method == 'POST':
@@ -89,7 +89,7 @@ def hotels():
     destination=data['endingDestination']
     type_of_trip=data['tripType']
     try:
-        hotel_list=gemini.get_hotels(destination,type_of_trip)       
+        hotel_list=gemini.get_hotels(destination,data['duration'],type_of_trip)       
         return jsonify({'Hotels' : hotel_list}),200
     except gemini.ConversionError as e:
         return jsonify({'error' : e}),400
