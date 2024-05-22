@@ -50,17 +50,19 @@ const TripPlanPage = () => {
       return <div className="loadingTripData loading-spinner2"></div>;
     }
 
-    const tripPlanEntries = Object.entries(tripPlanData.tripPlan).slice(1);
+    const { tripPlan } = tripPlanData;
+    const budgets = tripPlan.Budget || [];
+    const days = Object.entries(tripPlan).filter(([key]) => key.startsWith('Day'));
 
     return (
       <div className="trip-plan">
-        {tripPlanEntries.map(([day, dayData], index) => (
+        {days.map(([day, dayData], index) => (
           <li key={index}>
             <div className="date" onClick={() => handleExpandDay(index)}>
               <div className="day">
                 <span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span>
                 <span className="date-text">{day}</span>
-                <span className="budget-text"> - Budget: {tripPlanData.Budget[index+1]}</span>
+                <span className="budget-text"> - Budget: {budgets[index] !== undefined ? budgets[index] : 'N/A'}</span>
               </div>
             </div>
             {expandedDay === index && (
