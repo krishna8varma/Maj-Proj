@@ -81,7 +81,7 @@ const Main = () => {
                 <hr className="line1"/>
             </div>
 
-            <div className="seeContent grid">
+            <div className="seeContent">
                 {
                     Data.map(({ id, imgSrc, destTitle,link }) => {
                         return (

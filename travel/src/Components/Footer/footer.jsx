@@ -10,7 +10,7 @@ const footer=()=> {
     return (
         <div className="Footer">
             <div className="footerinfo a">
-            <p className="logoname">LOGO</p>
+            <p className="logoname">@TripCraft</p>
             </div>
             <div className="footerinfo b">
             <p className="info">@2024 All rights reserved.</p>

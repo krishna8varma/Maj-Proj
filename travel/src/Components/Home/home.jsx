@@ -80,13 +80,13 @@ const Home=()=> {
                     <div className="col2">
                     
                     <div className="destinationInput">
-                        <label htmlFor="city">Ending Destination:</label>
+                        <label htmlFor="city">Ending Location:</label>
                         
                         <div className="input flex">
                             <input  type="text"
                                     id="endingDestination"
                                     name="endingDestination"
-                                    placeholder="Enter ending destination"
+                                    placeholder="Enter ending location"
                                     value={endingDestination}
                                     onChange={(e) => setEndingDestination(e.target.value)}/>
                             <span className="locicon"><IoLocationOutline /></span>
