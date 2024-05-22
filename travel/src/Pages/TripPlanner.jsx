@@ -67,7 +67,7 @@ useEffect(() => {
   <li key={index}>
     <div className="date" onClick={() => handleExpandDay(index)}>
       <div className="day"><span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span> 
-      <span className="date-text">{day}</span>
+      <span className="date-text">  {day}</span>
       </div>
     </div>
     {expandedDay === index && (
