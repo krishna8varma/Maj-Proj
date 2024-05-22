@@ -14,7 +14,37 @@ if gemini_key is None:
     raise ValueError("API_key not found in environment variables. Please set it in .env file")
 
 genai.configure(api_key=gemini_key)
-model = genai.GenerativeModel('gemini-pro')  #using gemini model
+# model = genai.GenerativeModel('gemini-pro')  
+# Set up the model
+generation_config = {
+  "temperature": 0.9,
+  "top_p": 1,
+  "top_k": 0,
+  "max_output_tokens": 2048,
+}
+
+safety_settings = [
+  {
+    "category": "HARM_CATEGORY_HARASSMENT",
+    "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+  },
+  {
+    "category": "HARM_CATEGORY_HATE_SPEECH",
+    "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+  },
+  {
+    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+    "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+  },
+  {
+    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+    "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+  },
+]
+
+model = genai.GenerativeModel(model_name="gemini-1.0-pro",
+                              generation_config=generation_config,
+                              safety_settings=safety_settings) #using gemini model
 
 class ConversionError(Exception):
     def __init__(self, message):
@@ -23,25 +53,31 @@ class ConversionError(Exception):
 
 def response_to_json(text):
     # Remove unwanted characters from the string
-    cleaned_text = text.replace("`", "").replace("\n", "").replace('\\', '').strip()   #or text=text.replace("`","")  text=text.replace("\n","")  text=text.replace(" ","")
-    #return cleaned_text
+    cleaned_text = text.replace("`", "").replace("\n", "").replace("'", '"').strip()   #or text=text.replace("`","")  text=text.replace("\n","")  text=text.replace(" ","")
     # Convert the cleaned response string to a Python dictionary using json.loads
     try:
         trip_details = json.loads(cleaned_text)
-        # Print the trip details dictionary
     except json.JSONDecodeError as e:
         print("Error decoding response:", e)
         return None
     return trip_details
 
-def get_activities(destination,type_of_trip):
-    prompt=f"Give me the python type of list of minimum 15 famous activities to do in {destination} for {type_of_trip} trip. Don't include any places name and any details. Also don't include any bracket details. Activity name should be short. output format: ['heritage site','amusement park','hiking','clubbing','bike ride',...]"
-    response=model.generate_content(prompt)
+def get_activities(destination,duration,type_of_trip):
+    r=15
+    if duration>5 : 
+      r=duration*3
+    prompt_parts = [
+      "input: suggest me the 15 famous activities to do around manali and trip type is friends.  Don't include any places name and any details. Also don't include any bracket details. Activity name should be short.",
+      "output: ['skiing', 'paragliding', 'rafting', 'trekking', 'shopping', 'camping', 'yoga', 'kayaking', 'horse riding', 'fishing', 'mountain biking', 'rock climbing', 'paragliding', 'sightseeing', 'wildlife safari']",
+      "input: suggest me the 20 famous activities to do around varanasi and trip type is family. Don't include any places name and any details. Also don't include any bracket details. Activity name should be short.",
+      "output: ['boating', 'sightseeing', 'temple', 'wildlife safari', 'museum', 'yoga', 'shopping', 'camping', 'trekking', 'kayaking', 'horse riding', 'rafting', 'fishing', 'cycling', 'cooking classes', 'cultural tours', 'hot air balloon', 'bird watching', 'river cruise', 'private tour']",
+      f"input: suggest me the {r} famous activities to do around {destination} and trip type is {type_of_trip}. Don't include any places name and any details. Also don't include any bracket details. Activity name should be short.",
+      "output: ",
+    ]    
+    response=model.generate_content(prompt_parts)
     txt=response.text
-    #txt=txt.translate(str.maketrans(' ',' ',string.punctuation))
-    txt=txt.replace("- ","")
     try:
-        response1=ast.literal_eval(txt)
+        response1=ast.literal_eval(txt) 
     except SyntaxError:
         return ['Heritage Site','Sightseeing','Cultural Experience', "Outdoor Adventures",'Relaxation and Well','Explore Cuisines','Shopping','Photography','Night Life','Sports and Recreation']
     #response1=response_to_json(txt)
@@ -117,72 +153,19 @@ def get_food(destination):
 
 def planned_trip(destination,duration,type_of_trip,activities): 
     #activities= ['Trekking', 'Skiing', 'Rafting', 'Paragliding', 'Camping', 'Shopping']
-    p1=f"""I am a tourist and want to plan a trip to {destination} for {duration} days. My type of trip is {type_of_trip} and i would like to enjoy following activities: {activities}. Dont consider activities other than these"""
-    p2="""
-    Inputs:
-    1. City to visit
-    2. duration of trip
-    3. Type of trip (eg solo, friends, family or couple)
-    4. Activities (Trekking, Skiing, Rafting, Paragliding, Camping, Shopping)"""
-    p3=f"""Output: json format which contains day wise itinerary plan for {duration} days with a mix of mentioned activities based on preferences and each day contains three sections (morning, afternoon and evening). Each section should contain only one nearby place name along with following fields:"""
-    p4="""1. Place name(should be short with maximun 3 words)
-    2. Place location=[latitude,longitude]
-    2. Opening Hours(options are ['08:00', '17:00'] or ['24 hours'])
-    3. Rating of the place
-    4. Activity type(include only 2 activities)
-    output format:
-    start with { char and don't assign any name to the dictionary
-    {
-        "Day 1": {
-            "Morning": {
-                "Place Name": "Solang Valley",
-                "Place_location" : [32.316,77.157]
-                "Opening Hours": [IN time, OUT time],
-                "Rating": 4.7,
-                "Activity Type": ["Paragliding,"Zorbing"]
-            },
-            "Afternoon": {
-                "Place Name": "Rohtang Pass",
-                "Place_location" : [32.372844,77.2446450]
-                "Opening Hours": [08:00, 17:00],
-                "Rating": 4.5,
-                "Activity Type": ["Photography", "Snow Activities"]
-            },
-            "Evening": {
-                "Place Name": "Old Manali",
-                "Place_location" : [latitude,longitude]
-                "Opening Hours": [IN time, OUT time],
-                "Rating": 4.4,
-                "Activity Type": ["Drinks", "Live Music"]
-            }
-        },
-        "Day 2": {
-            "Morning": {
-                ...
-            },
-            "Afternoon": {
-                ...
-            },
-            "Evening": {
-                ...
-            }
-        },
-        "Day 3"{...}
-        .
-        .
-        .
-        "Day {duration}"
-    }
-    """
-    p=p1+p2+p3+p4
-    response = model.generate_content(p)
+    prompt_parts = [
+        "input: I am a tourist and want to plan a trip to manali for 5 days. My type of trip is friends and I would like to enjoy the following activities:['heritage site', 'amusement park', 'hiking', 'clubbing', 'bike ride', 'camping', 'trekking', 'waterfall hike',' photography']. place_location should be a list consists of latitude, longitude",
+        "output: {'Day 1': {'Morning': {'Place Name': 'Hadimba Temple','Place_location': [latitude, longitude],'Opening Hours': ['08:00', '17:00'],'Rating': 4.7,'Activity Type': ['Photography', 'Heritage']},'Afternoon': {'Place Name': 'Himalayan Adventures Park','Place_location': [32.205276, 77.169732],'Opening Hours': ['09:00', '17:00'],'Rating': 4.2,'Activity Type': ['Amusement Park', 'Games']},'Evening': {'Place Name': 'Johnson’s Cafe','Place_location': [32.267461, 77.181867],'Opening Hours': ['24 hours'],'Rating': 4.6,'Activity Type': ['Clubbing', 'Party']}}, 'Day 2': {'Morning': {'Place Name': 'Solang Valley', 'Place_location': [32.315899, 77.157184],'Opening Hours': ['08:00', '17:00'],'Rating': 4.7,'Activity Type': ['Paragliding', 'Zorbing']}, 'Afternoon': {'Place Name': 'Rohtang Pass','Place_location': [32.372844, 77.244645],'Opening Hours': ['08:00', '17:00'],'Rating': 4.5,'Activity Type': ['Photography', 'Snow Activities']},'Evening': {'Place Name': 'Beas River','Place_location': [32.245843, 77.183274],'Opening Hours': ['24 hours'],'Rating': 4.6,'Activity Type': ['Camping', 'Bonfire']}},'Day 3': {'Morning': {'Place Name': 'Hidimba Devi Temple','Place_location': [32.236548, 77.174717],'Opening Hours': ['08:00', '17:00'],'Rating': 4.7,'Activity Type': ['Photography', 'Heritage']},'Afternoon': {'Place Name': 'Himalayan Adventures Park','Place_location': [32.205276, 77.169732],'Opening Hours': ['09:00', '17:00'],'Rating': 4.2,'Activity Type': ['Amusement Park', 'Games']},'Evening': {'Place Name': 'Manu Temple','Place_location': [32.239086, 77.180059],'Opening Hours': ['08:00', '17:00'],'Rating': 4.6,'Activity Type': ['Historical', 'Photography']}},'Day 4': {'Morning': {'Place Name': 'Jogini Waterfalls','Place_location': [32.22911, 77.166123],'Opening Hours': ['24 hours'],'Rating': 4.7,'Activity Type': ['Waterfall Hike', 'Photography']},'Afternoon': {'Place Name': 'Bhrigu Lake','Place_location': [32.178975, 77.652943],'Opening Hours': ['24 hours'],'Rating': 4.5,'Activity Type': ['Trekking', 'Photography']},'Evening': {'Place Name': 'Camp Purple','Place_location': [32.256245, 77.193496],'Opening Hours': ['24 hours'],'Rating': 4.6,'Activity Type': ['Camping', 'Bonfire']}},'Day 5': {'Morning': {'Place Name': 'Parvati River','Place_location': [32.106262, 77.177348],'Opening Hours': ['24 hours'],'Rating': 4.7,'Activity Type': ['River Rafting', 'Camping']}, 'Afternoon': {'Place Name': 'Solang Valley','Place_location': [32.315899, 77.157184],'Opening Hours': ['08:00', '17:00'],'Rating': 4.7,'Activity Type': ['Biking', 'Paragliding']}, 'Evening': {'Place Name': 'The Johnsons Bar & Restaurant', 'Place_location' : [32.24575, 77.183233],'Opening Hours': ['24 hours'],'Rating': 4.6,'Activity Type': ['Food', 'Drinks']}}}",
+        f"input: I am a tourist and want to plan a trip to {destination} for {duration} days. My type of trip is {type_of_trip} and i would like to enjoy following activities: {activities}",
+        "output: ",
+    ]
+    response = model.generate_content(prompt_parts)
     res1=response.text
-    # print(res1)
     plan=response_to_json(res1)  #plan is a python dict obj
     if plan is None:
         raise ConversionError("Failed to convert gemini response")
     #adding photos
-    places_imgs=photos.get_photo(f"places to visit in {destination}")
+    # places_imgs=photos.get_photo(f"places to visit in {destination}")
     # for i in range(duration):
     #     query=plan[f'Day {i+1}']['Morning']
     #     query['image']=random.choice(places_imgs)
