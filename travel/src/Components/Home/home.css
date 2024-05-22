@@ -9,188 +9,7 @@
     --cardBG:hsl(0, 29%, 97%);
 }
 
-/* .locicon{
-    color: black;
-    margin-top: 10px;
-    margin-right: 1rem;
-    font-size: 1.5rem;
-}
-.col1{
-    position: relative;
-    display: inline-block;
-    justify-content: space-between;
-    width: 50%;
-}
-.col2{
-    position: relative;
-    display: inline-block;
-    margin-right: -4.5rem;
-    width: 50%;
-} */
 
-
-/* .home{
-    width:100%;
-    position:relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    .overlay{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background: rgb(rgb(91, 11, 182), green, blue);
-        top:0;
-        bottom:0;
-        z-index: 1;
-        mix-blend-mode: hard-light;
-    }
-   img{
-        position :absolute;
-        height:125%;
-        width: 133%;
-        top: 0;
-        bottom: 0;
-        object-fit: cover;
-       
-    } */
-    /* .container::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 116.4%;
-        height: 125%;
-        background-color: rgba(0, 0, 0, 0.4); 
-    } */
-   
-    /* .smallText{
-        margin-left: 2rem;
-    } */
-
-    /* .homeContent{
-        padding-top: 3rem;
-        width: 50%;
-        height:max-content;
-        padding: 8rem,1.4 rem,3 rem;
-        display: flex;
-        
-        row-gap: 3rem;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: center;
-        margin: auto;
-        color: var(--white);
-        z-index: 100;
-        margin-bottom: 3rem;
-        .textDiv{
-            padding: 2rem 0;
-            margin-top: 3rem;
-            margin-left: -9rem;
-            font-size: x-large;
-            z-index: 1;
-            
-            .smallText{
-            
-                font-size: 30px;
-                text-transform:uppercase ;
-               
-            }
-            .homeTitle{
-                position:relative ;
-                font-size: 2.5rem;
-            }
-        }
-
-        .cardDiv{
-            position: relative;
-            padding: 1rem;
-            background-color: white;
-            border-radius: 20px;
-            gap: 1rem;
-            line-height: 4rem;
-            width: 140%;
-            text-align: center;
-            display: inline-block;
-            justify-content: center;
-            margin-left: -9rem;
-            text-align: center;
-            height: 250px;
-            margin-top: -1.5rem;
-
-            label{
-                margin-top: -1rem;
-                display: flex;
-                margin-left: 10px;
-                color: black;
-                padding: bottom 10px;
-                font-size: 20x;
-                font-weight: 600;
-            }
-        
-            .input{
-                height: 40px;
-                padding: 2 1rem;
-                background: rgb(234, 231, 231);
-                border-radius: 3rem;
-                line-height: 2rem;
-                width: 80%;
-
-                input{
-                    margin-left: 1rem;
-                    background-color: rgb(234, 231, 231);;
-                    border: none;
-                    outline: none;
-                    width:88%;
-                    font-size: 15px;
-                    font-weight: 200;
-                    &::placeholder{
-                        font: size 13px; ;
-                    }
-
-                }
-            }
-          
-           
-        }
-    }
-    .dateInput{
-        margin-top: 1rem;
-    }
-    .startButton{
-        margin-top: 25px;
-        margin-bottom: 5px;
-        text-align: center;
-        font-size: 20px;
-        
-        margin-left: -60px;
-        z-index: 1;
-       border: none;
-    }
-    .propbut{
-         padding: 0.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        border-radius: 30px;
-        text-align: center;
-        color: aliceblue;
-         width: 20rem;
-         margin-top: -1rem;
-         background:  #028BB2;
-         z-index: 1;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-        border: none;
-        margin-top: 4rem;
-        margin-left: 1.5rem;
-    } 
-    a{
-        color: white;
-    }
-
-} */
 
 @media screen and (max-width: 768px) {
     
@@ -202,15 +21,17 @@
     }
     .col1{
         position: relative;
-        display: inline-block;
+        display: grid;
         justify-content: space-between;
         width: 50%;
+        
     }
     .col2{
         position: relative;
-        display: inline-block;
+        display: grid;
         margin-right: -4.5rem;
         width: 50%;
+        
     }
     
     
@@ -233,7 +54,7 @@
         }
        img{
             position :absolute;
-            height:125%;
+            height:115%;
             width: 133%;
             top: 0;
             bottom: 0;
@@ -246,7 +67,7 @@
             top: 0;
             left: 0;
             width: 116.4%;
-            height: 125%;
+            height: 115%;
             background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity (last value) as needed */
         }
        
@@ -272,7 +93,7 @@
             .textDiv{
                 padding: 2rem 0;
                 margin-top: 3rem;
-                margin-left: -2rem;
+                margin-left:1.5rem;
                 font-size: x-large;
                 z-index: 1;
                 justify-content:center;
@@ -296,24 +117,26 @@
                 background-color: white;
                 border-radius: 20px;
                 gap: 1rem;
-                line-height: 4rem;
-                width: 140%;
+    
+                width: 110%;
                 text-align: center;
                 display: inline-block;
                 justify-content: center;
                 text-align: center;
-                height: 250px;
+                height: 30rem;
                 margin-top: -1.5rem;
-                margin-left: -2rem;
+                
     
                 label{
-                    margin-top: -1rem;
+                    margin-top: 0.2rem;
                     display: flex;
-                    margin-left: 10px;
+                    margin-left: 1.5rem;
                     color: black;
                     padding: bottom 10px;
                     font-size: 20x;
                     font-weight: 600;
+                     padding-top: 1rem;
+                     padding-bottom: 1rem;
                 }
             
                 .input{
@@ -323,9 +146,15 @@
                     border-radius: 3rem;
                     line-height: 2rem;
                     width: 80%;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    margin-left:1rem;
+                    width: 110%;
+                    justify-content: center;
     
                     input{
                         margin-left: 1rem;
+                        margin-right: 1rem;
                         background-color: rgb(234, 231, 231);;
                         border: none;
                         outline: none;
@@ -380,8 +209,203 @@
     }
 }
 
+@media screen and (max-width: 550px) {
+    
+    .locicon{
+        color: black;
+        margin-top: 10px;
+        margin-right: 1rem;
+        font-size: 1.5rem;
+    }
+    .col1{
+        position: relative;
+        display: grid;
+        justify-content: space-between;
+        width: 50%;
+        
+    }
+    .col2{
+        position: relative;
+        display: grid;
+        margin-right: -4.5rem;
+        width: 50%;
+        
+    }
+    
+    
+    .home{
+        width:100%;
+        position:relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        .overlay{
+            position: absolute;
+            height: 100%;
+            width: 70%;
+            background: rgb(rgb(91, 11, 182), green, blue);
+            top:0;
+            bottom:0;
+            z-index: 1;
+            mix-blend-mode: hard-light;
+        }
+       img{
+            position :absolute;
+            height:125%;
+            width: 133%;
+            top: 0;
+            bottom: 0;
+            object-fit: cover;
+           
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 116.4%;
+            height: 125%;
+            background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity (last value) as needed */
+        }
+       
+        /* .smallText{
+            margin-left: 2rem;
+        } */
+    
+        .homeContent{
+            padding-top: 3rem;
+            width: 50%;
+            height:max-content;
+            padding: 8rem,1.4 rem,3 rem;
+            display: flex;
+            
+            row-gap: 3rem;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            margin: auto;
+            color: var(--white);
+            z-index: 100;
+            margin-bottom: 3rem;
+            .textDiv{
+                padding: 2rem 0;
+                margin-top: 3rem;
+                margin-left:1.5rem;
+                font-size: x-large;
+                z-index: 1;
+                justify-content:center;
 
-
+                .smallText{
+                
+                    font-size: 30px;
+                    text-transform:uppercase ;
+                   
+                }
+                .homeTitle{
+                    margin-top: 0.5rem;
+                    position:relative ;
+                    font-size: 2.5rem;
+                }
+            }
+    
+            .cardDiv{
+                position: relative;
+                padding: 1rem;
+                background-color: white;
+                border-radius: 20px;
+                gap: 1rem;
+    
+                width: 110%;
+                text-align: center;
+                display: inline-block;
+                justify-content: center;
+                text-align: center;
+                height: 30rem;
+                margin-top: -1.5rem;
+                margin-left: -1rem;
+    
+                label{
+                    margin-top: 0.2rem;
+                    display: flex;
+                    margin-left: 1rem;
+                    color: black;
+                    padding: bottom 10px;
+                    font-size: 20x;
+                    font-weight: 600;
+                     padding-top: 1rem;
+                     padding-bottom: 1rem;
+                }
+            
+                .input{
+                    height: 40px;
+                    padding: 2 1rem;
+                    background: rgb(234, 231, 231);
+                    border-radius: 3rem;
+                    line-height: 2rem;
+                    width: 80%;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    margin-left:1rem;
+                    width: 80%;
+                    justify-content: center;
+    
+                    input{
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        background-color: rgb(234, 231, 231);;
+                        border: none;
+                        outline: none;
+                        width:88%;
+                        font-size: 15px;
+                        font-weight: 200;
+                        &::placeholder{
+                            font: size 13px; ;
+                        }
+    
+                    }
+                }
+              
+               
+            }
+        }
+        .dateInput{
+            margin-top: 1rem;
+        }
+        .startButton{
+            margin-top: 25px;
+            margin-bottom: 5px;
+            text-align: center;
+            font-size: 20px;
+            
+            margin-left: -85px;
+            z-index: 1;
+           border: none;
+        }
+        .propbut{
+             padding: 0.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border-radius: 30px;
+            text-align: center;
+            color: aliceblue;
+             width: 20rem;
+             margin-top: -1rem;
+             background:  #028BB2;
+             z-index: 1;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            border: none;
+            margin-top: 4rem;
+            margin-left: 1.5rem;
+        } 
+        a{
+            color: white;
+        }
+    
+    }
+}
 
 @media screen and (min-width: 769px) {
     .locicon{
@@ -462,7 +486,7 @@
             .textDiv{
                 padding: 2rem 0;
                 margin-top: 3rem;
-                margin-left: -11rem;
+                margin-left: -9rem;
                 font-size: x-large;
                 z-index: 1;
                 
@@ -489,7 +513,7 @@
                 text-align: center;
                 display: inline-block;
                 justify-content: center;
-                margin-left: -9rem;
+                margin-left: -7rem;
                 text-align: center;
                 height: 250px;
                 margin-top: -1.5rem;

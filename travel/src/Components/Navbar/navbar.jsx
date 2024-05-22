@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './navbar.css'
-import {MdOutlineTravelExplore} from 'react-icons/md'
+// import {MdOutlineTravelExplore} from 'react-icons/md'
 import {IoCloseCircle} from 'react-icons/io5'
 import { TbGridDots } from "react-icons/tb";
 import TripCraft from '../../Assets/TripCraft.png';
