@@ -115,7 +115,9 @@
  .price{
     position: relative;
     bottom:2rem;
-    left:16rem;
+    left:21rem;
+    width: 7rem;
+    height: 3rem;
     font-size: large;
  }
 
@@ -158,15 +160,17 @@
     color: white;
     border: none;
     padding: 5px 10px;
-    border-radius: 36px;
+    border-radius: 45px;
     cursor: pointer;
     background: #028BB2;
     box-shadow: #333;
     font-size: small;
     justify-content: center;
     position: relative;
-    left: 18rem;
-    top: 2rem;
+    left: 19rem;
+    top: 1.2rem;
+    width: 8rem;
+    height: 2.2rem;
   }
   
   /* .view-deal:hover {
