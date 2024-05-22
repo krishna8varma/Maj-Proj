@@ -3,7 +3,7 @@ import './navbar.css'
 import {MdOutlineTravelExplore} from 'react-icons/md'
 import {IoCloseCircle} from 'react-icons/io5'
 import { TbGridDots } from "react-icons/tb";
-
+import TripCraft from '../../Assets/TripCraft.png';
 
 
 const Navbar = () => {
@@ -26,7 +26,8 @@ const removeNavbar = () =>{
     <header className='header flex'>
         <div className='logoDiv'>
             <a href="/" className='logo flex'>
-            <h1> <MdOutlineTravelExplore className="icon"/> Travel</h1>
+              <img src={TripCraft} alt="TRIPCRAFT" />
+            {/* <h1> <MdOutlineTravelExplore className="icon"/> Travel</h1> */}
             </a>
         </div>
        
