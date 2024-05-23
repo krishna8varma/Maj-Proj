@@ -1,0 +1,785 @@
+{
+    "food": [
+        {
+            "Food Served": [
+                "Indian",
+                "Chinese"
+            ],
+            "Location": [
+                18.5279,
+                73.8993
+            ],
+            "Name": "Malaka Spice",
+            "Rating": 4.7,
+            "image": {
+                "alt_txt": "strawberry ice cream on cone",
+                "image": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHw5fHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Continental",
+                "Italian",
+                "Mexican"
+            ],
+            "Location": [
+                18.5265,
+                73.8999
+            ],
+            "Name": "Cafe Peter Pan",
+            "Rating": 4.5,
+            "image": {
+                "alt_txt": "sliced green avocado fruit",
+                "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHwxMHx8Rm9vZCUyMFJlc3R1YXJhbnRzJTIwaW4lMjBwdW5lfGVufDB8fHx8MTcxNjQ1MTQ4Mnww&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Parsi",
+                "Indian",
+                "Chinese"
+            ],
+            "Location": [
+                18.5281,
+                73.8981
+            ],
+            "Name": "Vohuman Cafe",
+            "Rating": 4.2,
+            "image": {
+                "alt_txt": "bunch of sliced American lemon",
+                "image": "https://images.unsplash.com/photo-1454944338482-a69bb95894af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHwyfHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Indian",
+                "Chinese",
+                "Tandoori"
+            ],
+            "Location": [
+                18.5246,
+                73.9013
+            ],
+            "Name": "Durvankur",
+            "Rating": 4.8,
+            "image": {
+                "alt_txt": "bunch of sliced American lemon",
+                "image": "https://images.unsplash.com/photo-1454944338482-a69bb95894af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHwyfHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Desserts",
+                "Bakery Items",
+                "Coffee"
+            ],
+            "Location": [
+                18.5268,
+                73.9008
+            ],
+            "Name": "Sugar N Spice",
+            "Rating": 4.3,
+            "image": {
+                "alt_txt": "person holding white bowl with sliced lime and ginger inside",
+                "image": "https://images.unsplash.com/34/rcaNUh3pQ9GD8w7Iy8qE__DSC0940.jpg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHw2fHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Indian",
+                "Chinese",
+                "Tandoori"
+            ],
+            "Location": [
+                18.5276,
+                73.9002
+            ],
+            "Name": "Spice Factory",
+            "Rating": 4.6,
+            "image": {
+                "alt_txt": "person holding white bowl with sliced lime and ginger inside",
+                "image": "https://images.unsplash.com/34/rcaNUh3pQ9GD8w7Iy8qE__DSC0940.jpg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHw2fHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Seafood",
+                "Indian",
+                "Chinese"
+            ],
+            "Location": [
+                18.5263,
+                73.9021
+            ],
+            "Name": "Trishna",
+            "Rating": 4.7,
+            "image": {
+                "alt_txt": "sliced green avocado fruit",
+                "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHwxMHx8Rm9vZCUyMFJlc3R1YXJhbnRzJTIwaW4lMjBwdW5lfGVufDB8fHx8MTcxNjQ1MTQ4Mnww&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Desserts",
+                "Ice Cream",
+                "Kulfi"
+            ],
+            "Location": [
+                18.5269,
+                73.8985
+            ],
+            "Name": "Kaikoshru Ice Cream",
+            "Rating": 4.4,
+            "image": {
+                "alt_txt": "shallow focus photography of strawberries on person's palm",
+                "image": "https://images.unsplash.com/photo-1464454709131-ffd692591ee5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHw0fHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "South Indian",
+                "Idlis",
+                "Dosas"
+            ],
+            "Location": [
+                18.5249,
+                73.9002
+            ],
+            "Name": "Annachi Idli House",
+            "Rating": 4.3,
+            "image": {
+                "alt_txt": "person holding white bowl with sliced lime and ginger inside",
+                "image": "https://images.unsplash.com/34/rcaNUh3pQ9GD8w7Iy8qE__DSC0940.jpg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHw2fHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Bakery Items",
+                "Coffee",
+                "Tea"
+            ],
+            "Location": [
+                18.5264,
+                73.9009
+            ],
+            "Name": "German Bakery",
+            "Rating": 4.2,
+            "image": {
+                "alt_txt": "silver spoon on black ceramic bowl with vegetables",
+                "image": "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHwzfHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Pizza",
+                "Pasta",
+                "Continental"
+            ],
+            "Location": [
+                18.5275,
+                73.8989
+            ],
+            "Name": "Brik Oven",
+            "Rating": 4.6,
+            "image": {
+                "alt_txt": "silver spoon on black ceramic bowl with vegetables",
+                "image": "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHwzfHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Barbecue",
+                "Grill",
+                "Continental"
+            ],
+            "Location": [
+                18.5253,
+                73.9008
+            ],
+            "Name": "Stone Water Grill",
+            "Rating": 4.7,
+            "image": {
+                "alt_txt": "assorted sliced citrus fruits on brown wooden chopping board",
+                "image": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHw1fHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Iranian",
+                "Parsi",
+                "Indian"
+            ],
+            "Location": [
+                18.5278,
+                73.8996
+            ],
+            "Name": "Irani Cafe",
+            "Rating": 4.3,
+            "image": {
+                "alt_txt": "bunch of sliced American lemon",
+                "image": "https://images.unsplash.com/photo-1454944338482-a69bb95894af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHwyfHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Continental",
+                "European",
+                "Italian"
+            ],
+            "Location": [
+                18.5256,
+                73.9025
+            ],
+            "Name": "Cafe Papillon",
+            "Rating": 4.4,
+            "image": {
+                "alt_txt": "strawberry ice cream on cone",
+                "image": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHw5fHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        },
+        {
+            "Food Served": [
+                "Japanese",
+                "Sushi",
+                "Ramen"
+            ],
+            "Location": [
+                18.5264,
+                73.9015
+            ],
+            "Name": "TYO - Taipei to Yokohama",
+            "Rating": 4.6,
+            "image": {
+                "alt_txt": "shallow focus photography of strawberries on person's palm",
+                "image": "https://images.unsplash.com/photo-1464454709131-ffd692591ee5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1OTU4NDB8MHwxfHNlYXJjaHw0fHxGb29kJTIwUmVzdHVhcmFudHMlMjBpbiUyMHB1bmV8ZW58MHx8fHwxNzE2NDUxNDgyfDA&ixlib=rb-4.0.3&q=80&w=400"
+            }
+        }
+    ],
+    "hotels": [
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "The Orchid Hotel, Hinjewadi, Pune-Hotel-photo",
+                "image": "https://imgs.search.brave.com/sbsULsP2Px55k1jWANn6CQzBLllu5xNTckHBHHxEAFw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9yMmlt/Z2h0bGFrLm1tdGNk/bi5jb20vcjItbW10/LWh0bC1pbWFnZS9o/dGwtaW1ncy8yMDEx/MDMwMjEwMjA0MzU1/ODgtOTRlMzllOWM4/YzNlMTFlOTgyYjEw/MjQyYWMxMTAwMDMu/anBnPyZvdXRwdXQt/cXVhbGl0eT03NSZk/b3duc2l6ZT0yNDM6/MTYyJmNyb3A9MjQz/OjE2MjswLDEwJm91/dHB1dC1mb3JtYXQ9/anBn"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Taj+Mahal+Palace,+Pune+pune",
+            "hotel_name": "The Taj Mahal Palace, Pune",
+            "location": [
+                18.5196,
+                73.8553
+            ],
+            "price_range": "₹8,000 - ₹12,000",
+            "rating": 4.6
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Spa"
+            ],
+            "hotelImage": {
+                "alt_text": "Exterior of 7 Apple Hotel Pimpri Pune",
+                "image": "https://imgs.search.brave.com/A2EjqDuObLKnWtEjm3GCzaFa55ZOmTz2w1z1C5uwxbg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/aG90ZWxwbGFubmVy/LmNvbS9Db21tb24v/SW1hZ2VzL0hvdGVs/SW1hZ2UvRnJvbnQv/Ny1BcHBsZS1Ib3Rl/bC1QaW1wcmktUHVu/ZS00ODkzMzE5XzEu/anBn"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Oberoi,+Pune+pune",
+            "hotel_name": "The Oberoi, Pune",
+            "location": [
+                18.5182,
+                73.8539
+            ],
+            "price_range": "₹7,000 - ₹10,000",
+            "rating": 4.7
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Ibis Pune Hinjewadi - An Accor Brand-Hotel-photo",
+                "image": "https://imgs.search.brave.com/Jqs5tRPevPSJ-Jz89U9KkciwNqwtRg6NqOJs9qpCgOM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9yMWlt/Z2h0bGFrLm1tdGNk/bi5jb20vNTNkMDgy/MzhkYmNmMTFlNzli/MzgwMjI0NTEwZjVl/NWIuanBnPyZvdXRw/dXQtcXVhbGl0eT03/NSZkb3duc2l6ZT0y/NDM6MTYyJmNyb3A9/MjQzOjE2MjswLDE1/Jm91dHB1dC1mb3Jt/YXQ9anBn"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+JW+Marriott+Hotel+Pune+pune",
+            "hotel_name": "The JW Marriott Hotel Pune",
+            "location": [
+                18.5176,
+                73.8525
+            ],
+            "price_range": "₹9,000 - ₹12,000",
+            "rating": 4.8
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Spa"
+            ],
+            "hotelImage": {
+                "alt_text": "pune india hotel fitness centre",
+                "image": "https://imgs.search.brave.com/FGr-9gNP-5hnKjpRTon6WqpVD4s2IAcDcjvW5QZGluY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jYWNo/ZS5tYXJyaW90dC5j/b20vY29udGVudC9k/YW0vbWFycmlvdHQt/cmVuZGl0aW9ucy9Q/TlFNQy9wbnFtYy1m/aXRuZXNzLTAwNDIt/aG9yLXdpZGUuanBn/P291dHB1dC1xdWFs/aXR5PTcwJmludGVy/cG9sYXRpb249cHJv/Z3Jlc3NpdmUtYmls/aW5lYXImZG93bnNp/emU9MTMxOHB4Oio"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Hyatt+Regency+Pune+pune",
+            "hotel_name": "The Hyatt Regency Pune",
+            "location": [
+                18.517,
+                73.8511
+            ],
+            "price_range": "₹10,000 - ₹15,000",
+            "rating": 4.9
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Exterior of Executive Tamanna Hotel Hinjawadi, Pune",
+                "image": "https://imgs.search.brave.com/B1jcLyBSijvBR-G4OoWOYe3ER35ROOK-epzaMPGwKtM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/aG90ZWxwbGFubmVy/LmNvbS9Db21tb24v/SW1hZ2VzL0hvdGVs/SW1hZ2UvRnJvbnQv/RXhlY3V0aXZlLVRh/bWFubmEtSG90ZWwt/SGluamF3YWRpLVB1/bmUtMzE5NTYyXzEu/anBn"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Le+Meridien+Pune+pune",
+            "hotel_name": "The Le Meridien Pune",
+            "location": [
+                18.5164,
+                73.8497
+            ],
+            "price_range": "₹7,000 - ₹10,000",
+            "rating": 4.7
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Image of Bizz Tamanna Hotel Hinjawadi, Pune",
+                "image": "https://imgs.search.brave.com/hNpfke1vagarysGwVpo1tj5axqOlnYNtx-NJ6q2MW6I/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/aG90ZWxwbGFubmVy/LmNvbS9Db21tb24v/SW1hZ2VzL0hvdGVs/SW1hZ2UvRnJvbnQv/Qml6ei1UYW1hbm5h/LUhvdGVsLUhpbmph/d2FkaS1QdW5lLTU5/NTc1Nl8xLmpwZw"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Courtyard+by+Marriott+Pune+pune",
+            "hotel_name": "The Courtyard by Marriott Pune",
+            "location": [
+                18.5158,
+                73.8483
+            ],
+            "price_range": "₹8,000 - ₹11,000",
+            "rating": 4.8
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "The Westin Pune Koregaon Park",
+                "image": "https://imgs.search.brave.com/sGpqkdXjAMctcgdodkIociDewQL-ZZVQM6VroTI76lw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJ2bC1tZWRp/YS5jb20vbG9kZ2lu/Zy80MDAwMDAwLzMw/MTAwMDAvMzAwMzgw/MC8zMDAzNzg0Lzc3/ZGI1ZjMwX3kuanBn"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Holiday+Inn+Pune+pune",
+            "hotel_name": "The Holiday Inn Pune",
+            "location": [
+                18.5152,
+                73.8469
+            ],
+            "price_range": "₹6,000 - ₹9,000",
+            "rating": 4.6
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Marriott Suites Pune",
+                "image": "https://imgs.search.brave.com/_DJNkt0VeDqDa6hAw6CiS1bYNomUKyjpvz0Gifu5Jos/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJ2bC1tZWRp/YS5jb20vbG9kZ2lu/Zy8zMDAwMDAwLzIz/NjAwMDAvMjM1NTkw/MC8yMzU1ODc2Lzdh/ZTRjZWVjX3kuanBn"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Novotel+Pune+pune",
+            "hotel_name": "The Novotel Pune",
+            "location": [
+                18.5146,
+                73.8455
+            ],
+            "price_range": "₹5,000 - ₹8,000",
+            "rating": 4.5
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Ginger Pune Wakad - Pune - Dining room",
+                "image": "https://imgs.search.brave.com/MeXadsjhqOH19AT167E0M9m2Vdlb2ApT__JZwvGzCXU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnI5Y2RuLm5l/dC9yaW1nL2hpbWcv/ZGYvOGEvZGEvbGVv/bmFyZG8tMTI3MDU0/Ni0xMl9yZXN0YXVy/YW50X0JfTy04Njcy/MzQuanBnP3dpZHRo/PTMzNSZoZWlnaHQ9/MjY4JmNyb3A9dHJ1/ZQ"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+DoubleTree+by+Hilton+Pune+pune",
+            "hotel_name": "The DoubleTree by Hilton Pune",
+            "location": [
+                18.514,
+                73.8441
+            ],
+            "price_range": "₹6,000 - ₹9,000",
+            "rating": 4.6
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Spa"
+            ],
+            "hotelImage": {
+                "alt_text": "7 Apple Hotel - Viman Nagar Pune Maharashtra Pune Public Areas",
+                "image": "https://imgs.search.brave.com/FZ0Zryu_2xafdOsbA7xsWjgt3nClYO6ulTKSPxS0yDY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mYXN0/dWkuY2x0cHN0YXRp/Yy5jb20vaW1hZ2Uv/dXBsb2FkL3dfMjg4/LGhfMjQwLGZsX3By/b2dyZXNzaXZlLGVf/c2hhcnBlbjo4MCxj/X2ZpbGwsZHByXzIs/Zl9hdXRvLHFfNzUv/aG90ZWxzL3BsYWNl/cy9ob3RlbHMvY21z/LzI2NTUvMjY1NTcz/MC9pbWFnZXMvaW1h/Z2VfMjY1NTczMF9i/ZWU4YmMzOC05YjY2/LTRhYzUtODFiNy0z/MWJkMzFiMTM4YmEu/anBlZw"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Park+Pune+pune",
+            "hotel_name": "The Park Pune",
+            "location": [
+                18.5134,
+                73.8427
+            ],
+            "price_range": "₹7,000 - ₹10,000",
+            "rating": 4.7
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "7 Apple Hotel - Viman Nagar Pune Maharashtra Pune Public Areas",
+                "image": "https://imgs.search.brave.com/FZ0Zryu_2xafdOsbA7xsWjgt3nClYO6ulTKSPxS0yDY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mYXN0/dWkuY2x0cHN0YXRp/Yy5jb20vaW1hZ2Uv/dXBsb2FkL3dfMjg4/LGhfMjQwLGZsX3By/b2dyZXNzaXZlLGVf/c2hhcnBlbjo4MCxj/X2ZpbGwsZHByXzIs/Zl9hdXRvLHFfNzUv/aG90ZWxzL3BsYWNl/cy9ob3RlbHMvY21z/LzI2NTUvMjY1NTcz/MC9pbWFnZXMvaW1h/Z2VfMjY1NTczMF9i/ZWU4YmMzOC05YjY2/LTRhYzUtODFiNy0z/MWJkMzFiMTM4YmEu/anBlZw"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Westin+Pune+pune",
+            "hotel_name": "The Westin Pune",
+            "location": [
+                18.5128,
+                73.8413
+            ],
+            "price_range": "₹8,000 - ₹11,000",
+            "rating": 4.8
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "All our hotels in Pune",
+                "image": "https://imgs.search.brave.com/Dq6KY_tZnRVjYGF37lejdR1_ceTsyp5oTJzouzyiCmw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9keW5s/Lm1rdGdjZG4uY29t/L3AvVTV0MXFUWWpQ/dmVNOGtDZEdJWjlv/TDN5eEdSY3ZMRUdk/WVBqZDROcDR5MC81/MDB4NTAw.jpeg"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Fairfield+by+Marriott+Pune+pune",
+            "hotel_name": "The Fairfield by Marriott Pune",
+            "location": [
+                18.5122,
+                73.84
+            ],
+            "price_range": "₹5,000 - ₹8,000",
+            "rating": 4.5
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Four Point by Sheraton Pune Maharashtra Pune Hotel Exterior",
+                "image": "https://imgs.search.brave.com/jUkiHbLF9Hs2w61xTTZNbd_zPyeRLgjhRqoMjCQv7hQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mYXN0/dWkuY2x0cHN0YXRp/Yy5jb20vaW1hZ2Uv/dXBsb2FkL3dfMjg4/LGhfMjQwLGZsX3By/b2dyZXNzaXZlLGVf/c2hhcnBlbjo4MCxj/X2ZpbGwsZHByXzIs/Zl9hdXRvLHFfNzUv/aG90ZWxzL3BsYWNl/cy9ob3RlbHMvY21z/LzMxODYvMzE4NjA1/L2ltYWdlcy9pbWFn/ZV8zMTg2MDVfNGFl/MDc0NmQtYjVhMC00/NjdmLWJkNmQtZGIw/YjM5MjBlN2I4Lmpw/ZWc"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Holiday+Inn+Express+Pune+pune",
+            "hotel_name": "The Holiday Inn Express Pune",
+            "location": [
+                18.5116,
+                73.8386
+            ],
+            "price_range": "₹4,000 - ₹7,000",
+            "rating": 4.4
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Marriott Suites Pune",
+                "image": "https://imgs.search.brave.com/83_-Bo2uWmolWDzfkKdCvWGdyCVV8tP3bBYhsYQ3f7I/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJ2bC1tZWRp/YS5jb20vaG90ZWxz/LzMwMDAwMDAvMjM2/MDAwMC8yMzU1OTAw/LzIzNTU4NzYvZWI4/NWY5Y2VfeS5qcGc"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Lemon+Tree+Premier+Pune+pune",
+            "hotel_name": "The Lemon Tree Premier Pune",
+            "location": [
+                18.511,
+                73.8372
+            ],
+            "price_range": "₹6,000 - ₹9,000",
+            "rating": 4.6
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "7 Apple Hotel Pimpri Pune, hotel in Pune",
+                "image": "https://imgs.search.brave.com/wGUialH4PYmIVbrUq08tmXbCiJt-6_m0pcwU_TGrwqQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZi5i/c3RhdGljLmNvbS94/ZGF0YS9pbWFnZXMv/aG90ZWwvc3F1YXJl/NjAwLzQ0ODA1MzU4/Ni53ZWJwP2s9ZTEy/YTAwOThlM2JjZWFi/NWYyZjE2MjllZGZj/YTA1OTI2NDE2OWVm/MjU2ZTljYWU5NDA5/YTZlMDE1ODA1MTFi/ZSZvPQ"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Ginger+Pune+Airport+pune",
+            "hotel_name": "The Ginger Pune Airport",
+            "location": [
+                18.5104,
+                73.8358
+            ],
+            "price_range": "₹3,000 - ₹6,000",
+            "rating": 4.3
+        }
+    ],
+    "tripPlan": {
+        "Day 1": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Sightseeing",
+                    "Historical",
+                    "Photography",
+                    "Exploring Local Markets"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "18:00"
+                ],
+                "Place_Name": "Shaniwar Wada",
+                "Place_location": [
+                    18.519444,
+                    73.8525
+                ],
+                "Rating": 4.6
+            },
+            "Budget": [
+                2000,
+                4200
+            ],
+            "Evening": {
+                "Activity Type": [
+                    "Exploring Local Markets",
+                    "Shopping"
+                ],
+                "Opening Hours": [
+                    "11:00",
+                    "22:00"
+                ],
+                "Place_Name": "Phoenix Market City",
+                "Place_location": [
+                    18.539167,
+                    73.8875
+                ],
+                "Rating": 4.6
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Sightseeing",
+                    "Historical",
+                    "Photography"
+                ],
+                "Opening Hours": [
+                    "09:00",
+                    "18:00"
+                ],
+                "Place_Name": "Aga Khan Palace",
+                "Place_location": [
+                    18.53333,
+                    73.866667
+                ],
+                "Rating": 4.7
+            }
+        },
+        "Day 2": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Nature Walk",
+                    "Photography"
+                ],
+                "Opening Hours": [
+                    "24 hours"
+                ],
+                "Place_Name": "Peshwe Park",
+                "Place_location": [
+                    18.512222,
+                    73.850556
+                ],
+                "Rating": 4.5
+            },
+            "Budget": [
+                1500,
+                3000
+            ],
+            "Evening": {
+                "Activity Type": [
+                    "Go Clubbing",
+                    "Food",
+                    "Drinks"
+                ],
+                "Opening Hours": [
+                    "08:00",
+                    "02:00"
+                ],
+                "Place_Name": "Koregaon Park",
+                "Place_location": [
+                    18.531944,
+                    73.875833
+                ],
+                "Rating": 4.6
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Historical",
+                    "Antique Collection",
+                    "Photography"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "18:00"
+                ],
+                "Place_Name": "Raja Dinkar Kelkar Museum",
+                "Place_location": [
+                    18.516024,
+                    73.850275
+                ],
+                "Rating": 4.7
+            }
+        },
+        "Day 3": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Adventure Sports",
+                    "Trekking",
+                    "Camping"
+                ],
+                "Opening Hours": [
+                    "24 hours"
+                ],
+                "Place_Name": "Camp X-Trail",
+                "Place_location": [
+                    18.436944,
+                    73.962222
+                ],
+                "Rating": 4.5
+            },
+            "Budget": [
+                500,
+                1400
+            ],
+            "Evening": {
+                "Activity Type": [
+                    "Trekking",
+                    "Photography"
+                ],
+                "Opening Hours": [
+                    "24 hours"
+                ],
+                "Place_Name": "Sinhagad Fort",
+                "Place_location": [
+                    18.313932,
+                    73.773417
+                ],
+                "Rating": 4.6
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Visiting Temples",
+                    "Historical",
+                    "Photography"
+                ],
+                "Opening Hours": [
+                    "08:00",
+                    "18:30"
+                ],
+                "Place_Name": "Pataleshwar Cave Temple",
+                "Place_location": [
+                    18.515833,
+                    73.868611
+                ],
+                "Rating": 4.7
+            }
+        },
+        "Day 4": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Workshops",
+                    "Attend a Theatre Show",
+                    "Photography"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "18:00"
+                ],
+                "Place_Name": "National Film Archive of India",
+                "Place_location": [
+                    18.509167,
+                    73.885556
+                ],
+                "Rating": 4.5
+            },
+            "Budget": [
+                1500,
+                3200
+            ],
+            "Evening": {
+                "Activity Type": [
+                    "Attend a Theatre Show",
+                    "Performing Arts"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "18:00"
+                ],
+                "Place_Name": "Bal Gandharva Rang Mandir",
+                "Place_location": [
+                    18.510278,
+                    73.859167
+                ],
+                "Rating": 4.6
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Visiting Temples",
+                    "Religious",
+                    "Photography"
+                ],
+                "Opening Hours": [
+                    "06:00",
+                    "22:00"
+                ],
+                "Place_Name": "Dagdusheth Halwai Ganapati Temple",
+                "Place_location": [
+                    18.510813,
+                    73.851976
+                ],
+                "Rating": 4.7
+            }
+        }
+    },
+    "weather": {
+        "AQI": 2,
+        "Day 1": {
+            "condition": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "sunrise": "05:58 AM",
+            "sunset": "07:05 PM"
+        },
+        "Day 2": {
+            "condition": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "sunrise": "05:58 AM",
+            "sunset": "07:05 PM"
+        },
+        "Day 3": {
+            "condition": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "sunrise": "05:58 AM",
+            "sunset": "07:06 PM"
+        },
+        "Day 4": {
+            "condition": "Partly Cloudy ",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+            "sunrise": "05:58 AM",
+            "sunset": "07:06 PM"
+        },
+        "location": [
+            18.53,
+            73.87
+        ]
+    }
+}
