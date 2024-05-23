@@ -92,11 +92,13 @@ button{
 .seeContent{
   
    display:grid;
+   margin-left: -6.5rem;
    
      .singleDestination{
         height:100%;
-       
-        padding: 1rem;
+        width: 20rem;
+        margin-left: 1rem;
+        padding-top: 1rem;
         row-gap: 2 rem;
         border-radius: 15px;
         align-items: center;
@@ -149,8 +151,7 @@ button{
 .cardbutton{
   background:  #028BB2;
   font-weight: 500;
-  position: relative;
-  left: 5.5rem;
+ margin-left: -1.5rem;
   box-shadow:4rem;
  justify-content: center;
  text-align: center;
@@ -166,7 +167,7 @@ button{
 }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 759px) {
   .iconss{
     img {
         max-width: 100%;
@@ -267,7 +268,7 @@ button{
    display: grid;
      .singleDestination{
         height:100%;
-        
+        width: 20rem;
         padding: 1rem;
         row-gap: 2 rem;
         border-radius: 15px;
@@ -346,8 +347,7 @@ button{
 .cardbutton{
   background:  #028BB2;
   font-weight: 500;
-  position: relative;
-  left: 5.5rem;
+ margin-left: 4.5rem;
   box-shadow:4rem;
  justify-content: center;
  text-align: center;
@@ -364,7 +364,7 @@ button{
 }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 760px) {
 .iconss{
     img {
         max-width: 100%;
@@ -378,7 +378,7 @@ button{
     padding: 20px;
     height: 180px;
     width: 120px;
-    left: 28%;
+    left: 31%;
     position: relative;
      top : 10rem;
      justify-content: center;
@@ -464,6 +464,7 @@ button{
    justify-content: center; 
    
      .singleDestination{
+       width: 100%;
         height:100%;
         display: grid;
         padding: 1rem;
@@ -545,7 +546,8 @@ button{
   background:  #028BB2;
   font-weight: 500;
   position: relative;
-  left: 5.5rem;
+  right: -30%;
+  width: 50%;
   box-shadow:4rem;
  justify-content: center;
  text-align: center;
