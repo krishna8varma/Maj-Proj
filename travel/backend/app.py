@@ -74,33 +74,49 @@ def trip_planner():
         future_weather=executor.submit(fetch_weather,destination,start_date,duration)
         future_trip=executor.submit(fetch_trip,destination,duration,type_of_trip,selected_activities)
         future_hotels = executor.submit(fetch_hotels, destination, type_of_trip)
-        # future_food = executor.submit(fetch_food, destination)
+        future_food = executor.submit(fetch_food, destination)
 
         # Collect results
         weather=future_weather.result()
         tripPlan = future_trip.result()
         hotels = future_hotels.result()
-        # food = future_food.result()
+        food = future_food.result()
 
     #add weather_data to tripPlan        
-    return jsonify({
+    return {
         'tripPlan': tripPlan,
         'weather' : weather,
-        'hotels': hotels
-        # 'food': food
-    }), 200
+        'hotels': hotels,
+        'food': food
+    }, 200
 
 def fetch_weather(destination,start_date,duration):
-    return weather.get_weather_data(destination,start_date,duration)
+    try:
+        weather_info=weather.get_weather_data(destination,start_date,duration)
+    except:
+        weather_info={}
+    return weather_info
 
 def fetch_trip(destination,duration,type_of_trip,selected_activities) :
-    return gemini.planned_trip(destination,duration,type_of_trip,selected_activities)
+    try:
+        trip=gemini.planned_trip(destination,duration,type_of_trip,selected_activities)
+    except:
+        trip={}
+    return trip
 
 def fetch_hotels(destination,type_of_trip):
-    return gemini.get_hotels(destination,type_of_trip)
+    try:
+       hotels=gemini.get_hotels(destination,type_of_trip)
+    except:
+        hotels=[]
+    return hotels
 
 def fetch_food(destination):
-    return gemini.get_food(destination)
+    try:
+        food=gemini.get_food(destination)
+    except:
+        food=[]
+    return food
 
 # @app.route('/weather', methods=['GET']) #desti,startdate,duration
 # def getweather():
@@ -132,5 +148,4 @@ def fetch_food(destination):
 #         return jsonify({'error' : "failed"}),400
 
 if __name__=='__main__':
-    app.config['JSON_SORT_KEYS']=False
     app.run(debug=True)

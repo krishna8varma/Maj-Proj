@@ -143,14 +143,15 @@ def planned_trip(destination,duration,type_of_trip,activities):
     if plan is None:
         return {}
     #adding photos
-    # places_imgs=photos.get_photo(f"places to visit in {destination}")
-    # for i in range(duration):
-    #     query=plan[f'Day {i+1}']['Morning']
-    #     query['image']=random.choice(places_imgs)
-    #     query=plan[f'Day {i+1}']['Afternoon']
-    #     query['image']=random.choice(places_imgs)
-    #     query=plan[f'Day {i+1}']['Evening']
-    #     query['image']=random.choice(places_imgs)
+    places_imgs=photos.scrapi_photo(f"places to visit in {destination}")
+    for i in range(duration):
+        query=plan[f'Day {i+1}']['Morning']
+        query['image']=random.choice(places_imgs)
+        query=plan[f'Day {i+1}']['Afternoon']
+        query['image']=random.choice(places_imgs)
+        query=plan[f'Day {i+1}']['Evening']
+        query['image']=random.choice(places_imgs)
+    print(plan)
     return plan
 
 

@@ -40,5 +40,5 @@ def scrapi_photo(query):
     return image_urls
 
 #SEARCH_QUERY = 'Taj Mahal'
-print(json.dumps(get_photo("food restuarants in nagpur"),sort_keys=False, indent=4))
+#print(json.dumps(get_photo("food restuarants in nagpur"),sort_keys=False, indent=4))
 # print(json.dumps(scrapi_photo("waterbodies in nagpur"),sort_keys=False, indent=4))
