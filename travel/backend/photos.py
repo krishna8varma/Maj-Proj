@@ -17,8 +17,9 @@ def get_photo(query):
         for x in range(0,10):
             photo=data['results'][x]['urls']['small']
             text=data['results'][x]['alt_description']
-            ls.append({'photo' : photo, "alt_txt" : text})
+            ls.append({'image' : photo, "alt_txt" : text})
         return ls
+
 def scrapi_photo(query):
     url = f"https://search.brave.com/images?q={query}"
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
@@ -35,9 +36,9 @@ def scrapi_photo(query):
     # Extract the 'src' attribute of the image if found
     image_urls = []
     for img in img_element:
-        image_urls.append({"img" : img['src'],"alt_text" : img['alt']})
+        image_urls.append({"image" : img['src'],"alt_text" : img['alt']})
     return image_urls
 
 #SEARCH_QUERY = 'Taj Mahal'
-print(json.dumps(get_photo("waterbodies in nagpur"),sort_keys=False, indent=4))
-print(json.dumps(scrapi_photo("waterbodies in nagpur"),sort_keys=False, indent=4))
+#print(json.dumps(get_photo("food restuarants in nagpur"),sort_keys=False, indent=4))
+# print(json.dumps(scrapi_photo("waterbodies in nagpur"),sort_keys=False, indent=4))
