@@ -1,0 +1,549 @@
+{
+    "food": [],
+    "hotels": [
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "FabHotel Dreams Inn, hotel in Pune",
+                "image": "https://imgs.search.brave.com/7tY1xpH3HAkwAB5Y178BRyDTdDQJp_CI2goRIvi4p8M/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZi5i/c3RhdGljLmNvbS94/ZGF0YS9pbWFnZXMv/aG90ZWwvc3F1YXJl/NjAwLzUwNjc2NzQ5/MC53ZWJwP2s9MDgz/N2NhZDFlYTg3ZjEz/MjQwZTcyNjdiYjBi/ZGM0ZDQ3ODNiMDAy/OGNiYTQyNDVkZDMy/OTllZjc5OThkMmQ0/MSZvPQ"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Oberoi,+Pune+pune",
+            "hotel_name": "The Oberoi, Pune",
+            "location": [
+                18.5175,
+                73.8642
+            ],
+            "price_range": "₹8,000 - ₹12,000",
+            "rating": 4.6
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Spa"
+            ],
+            "hotelImage": {
+                "alt_text": "Image of JW Marriott Hotel Pune",
+                "image": "https://imgs.search.brave.com/UXoJtEndn1MSf1KP8flvjZ4vneYAzOqfHp71scuo9ms/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/aG90ZWxwbGFubmVy/LmNvbS9Db21tb24v/SW1hZ2VzL0hvdGVs/SW1hZ2UvRnJvbnQv/SlctTWFycmlvdHQt/SG90ZWwtUHVuZS03/NjI3OTBfMS5qcGc"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Taj+Mahal+Palace,+Pune+pune",
+            "hotel_name": "The Taj Mahal Palace, Pune",
+            "location": [
+                18.5169,
+                73.8631
+            ],
+            "price_range": "₹7,000 - ₹10,000",
+            "rating": 4.7
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Ginger Pune, Wakad-Hotel-photo",
+                "image": "https://imgs.search.brave.com/YOxfRvDibjbzHyVQA3yBajw-9O44j11hTepwnT1_9WM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9yMWlt/Z2h0bGFrLm1tdGNk/bi5jb20vZmVjMTJj/N2E3OTE2MTFlNDhi/MDFkYWY0NzY4YWQ4/ZDkuamZpZj8mb3V0/cHV0LXF1YWxpdHk9/NzUmZG93bnNpemU9/MjQzOjE2MiZvdXRw/dXQtZm9ybWF0PWpw/Zw"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+JW+Marriott+Hotel+Pune+pune",
+            "hotel_name": "The JW Marriott Hotel Pune",
+            "location": [
+                18.5163,
+                73.862
+            ],
+            "price_range": "₹9,000 - ₹12,000",
+            "rating": 4.8
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Spa"
+            ],
+            "hotelImage": {
+                "alt_text": "Photo of Crowne Plaza Pune City Centre, an IHG Hotel",
+                "image": "https://imgs.search.brave.com/QM0xnpn1bOwtU-TBM96zh0ZQC6WmFva4lAej58ZvrPY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/aG90ZWxwbGFubmVy/LmNvbS9Db21tb24v/SW1hZ2VzL0hvdGVs/SW1hZ2UvRnJvbnQv/Q3Jvd25lLVBsYXph/LVB1bmUtQ2l0eS1D/ZW50cmUtYW4tSUhH/LUhvdGVsLTQ5Nzg2/NjJfMS5qcGc"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+ITC+Maratha,+a+Luxury+Collection+Hotel,+Pune+pune",
+            "hotel_name": "The ITC Maratha, a Luxury Collection Hotel, Pune",
+            "location": [
+                18.5157,
+                73.8609
+            ],
+            "price_range": "₹10,000 - ₹15,000",
+            "rating": 4.9
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Hyatt Pune, hotel in Pune",
+                "image": "https://imgs.search.brave.com/ZoK5CiLhdbtwJHP6wwe4b9Orw0PKKBnNYOFE2Dc3lYw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZi5i/c3RhdGljLmNvbS94/ZGF0YS9pbWFnZXMv/aG90ZWwvc3F1YXJl/NjAwLzUyNDE5MDU2/Ny53ZWJwP2s9NTg2/NWIzNDcwYWRiZTAx/MGQzYzY3OTJjZmQ2/MWYyMTY3NjVmNDBi/ZmE0N2M5MGI3OTY4/NGZlMmFjNjhmYmJk/OSZvPQ"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Hyatt+Regency+Pune+pune",
+            "hotel_name": "The Hyatt Regency Pune",
+            "location": [
+                18.5151,
+                73.8598
+            ],
+            "price_range": "₹7,000 - ₹10,000",
+            "rating": 4.7
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Conrad Pune by Hilton",
+                "image": "https://imgs.search.brave.com/outqgujHSijk0SIpm3Z7CcV_rPNPyf2VqQR0xPTRdyk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJ2bC1tZWRp/YS5jb20vbG9kZ2lu/Zy8xMzAwMDAwMC8x/MjI4MDAwMC8xMjI3/MDUwMC8xMjI3MDQ0/NS9iYTAxNjFhYV95/LmpwZw"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Le+Meridien+Pune+pune",
+            "hotel_name": "The Le Meridien Pune",
+            "location": [
+                18.5145,
+                73.8587
+            ],
+            "price_range": "₹8,000 - ₹11,000",
+            "rating": 4.8
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Novotel Pune, Nagar Road-Hotel-photo",
+                "image": "https://imgs.search.brave.com/bpteiFN8CQNwLfYi3ZcKd4NVk04MEUf5ZQX66Bg3xpE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9yMmlt/Z2h0bGFrLm1tdGNk/bi5jb20vcjItbW10/LWh0bC1pbWFnZS9o/dGwtaW1ncy8yMDE0/MDEwOTEwNDQwMTEw/NjgtMjQxMjAwMTI2/ZDg3MTFlZWFjNzYw/YTU4YTlmZWFjMDIu/anBnPyZvdXRwdXQt/cXVhbGl0eT03NSZk/b3duc2l6ZT0yNDM6/MTYyJmNyb3A9MjQz/OjE2MjsyMiwwJm91/dHB1dC1mb3JtYXQ9/anBn"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Courtyard+by+Marriott+Pune+pune",
+            "hotel_name": "The Courtyard by Marriott Pune",
+            "location": [
+                18.5139,
+                73.8576
+            ],
+            "price_range": "₹6,000 - ₹9,000",
+            "rating": 4.6
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "The Orchid Hotel Hinjewadi Pune Maharashtra Pune Public Areas",
+                "image": "https://imgs.search.brave.com/iPN1CPjyOL6MB7RB_iD0SuCMIF4aOFcJf5iRQBm4l7s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mYXN0/dWkuY2x0cHN0YXRp/Yy5jb20vaW1hZ2Uv/dXBsb2FkL3dfMjg4/LGhfMjQwLGZsX3By/b2dyZXNzaXZlLGVf/c2hhcnBlbjo4MCxj/X2ZpbGwsZHByXzIs/Zl9hdXRvLHFfNzUv/aG90ZWxzL3BsYWNl/cy9ob3RlbHMvY21z/LzMxOTUvMzE5NTU3/L2ltYWdlcy9pbWFn/ZV8zMTk1NTdfOGNm/ODJlYzAtMDI5My00/M2EwLWI0NDgtNDNk/Y2FkNjg5Y2U0Lmpw/ZWc"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Holiday+Inn+Pune+pune",
+            "hotel_name": "The Holiday Inn Pune",
+            "location": [
+                18.5133,
+                73.8565
+            ],
+            "price_range": "₹5,000 - ₹8,000",
+            "rating": 4.5
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Conrad Pune, hotel in Pune",
+                "image": "https://imgs.search.brave.com/6fKp2CPYCve7vCSu0sMs_uoZV0VMg2On72wjg5lWDA8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZi5i/c3RhdGljLmNvbS94/ZGF0YS9pbWFnZXMv/aG90ZWwvc3F1YXJl/NjAwLzQ4MzgyOTgx/MC53ZWJwP2s9NDgy/NjY4YzgwNjA2YTlm/M2U3NzJhM2QyZTdi/MzdlMGRlM2ZlY2E4/Njk2ZGJkNzhhMzBl/MzExMTVkZjc1ZmY1/MiZvPQ"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+DoubleTree+by+Hilton+Pune+pune",
+            "hotel_name": "The DoubleTree by Hilton Pune",
+            "location": [
+                18.5127,
+                73.8554
+            ],
+            "price_range": "₹6,000 - ₹9,000",
+            "rating": 4.6
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Spa"
+            ],
+            "hotelImage": {
+                "alt_text": "Royal Orchid Golden Suites Pune - Pune - Bedroom",
+                "image": "https://imgs.search.brave.com/L-gamgo6ZYKCaBl6iPqrpxjy4oQiX0QMFqsfr_ztRWg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnI5Y2RuLm5l/dC9yaW1nL2hpbWcv/NzYvZTIvYWIvZXhw/ZWRpYXYyLTE3NjI3/NC1iZTFiODYtOTgz/MTkwLmpwZz93aWR0/aD0zMzUmaGVpZ2h0/PTI2OCZjcm9wPXRy/dWU"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Park+Pune+pune",
+            "hotel_name": "The Park Pune",
+            "location": [
+                18.5121,
+                73.8543
+            ],
+            "price_range": "₹7,000 - ₹10,000",
+            "rating": 4.7
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Exterior of Executive Tamanna Hotel Hinjawadi, Pune",
+                "image": "https://imgs.search.brave.com/B1jcLyBSijvBR-G4OoWOYe3ER35ROOK-epzaMPGwKtM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/aG90ZWxwbGFubmVy/LmNvbS9Db21tb24v/SW1hZ2VzL0hvdGVs/SW1hZ2UvRnJvbnQv/RXhlY3V0aXZlLVRh/bWFubmEtSG90ZWwt/SGluamF3YWRpLVB1/bmUtMzE5NTYyXzEu/anBn"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Westin+Pune+pune",
+            "hotel_name": "The Westin Pune",
+            "location": [
+                18.5115,
+                73.8532
+            ],
+            "price_range": "₹8,000 - ₹11,000",
+            "rating": 4.8
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "7 Apple Hotel Pimpri Pune, hotel in Pune",
+                "image": "https://imgs.search.brave.com/wGUialH4PYmIVbrUq08tmXbCiJt-6_m0pcwU_TGrwqQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZi5i/c3RhdGljLmNvbS94/ZGF0YS9pbWFnZXMv/aG90ZWwvc3F1YXJl/NjAwLzQ0ODA1MzU4/Ni53ZWJwP2s9ZTEy/YTAwOThlM2JjZWFi/NWYyZjE2MjllZGZj/YTA1OTI2NDE2OWVm/MjU2ZTljYWU5NDA5/YTZlMDE1ODA1MTFi/ZSZvPQ"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Fairfield+by+Marriott+Pune+pune",
+            "hotel_name": "The Fairfield by Marriott Pune",
+            "location": [
+                18.5109,
+                73.8521
+            ],
+            "price_range": "₹5,000 - ₹8,000",
+            "rating": 4.5
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Crowne Plaza Pune City Centre-Hotel-photo",
+                "image": "https://imgs.search.brave.com/X3UoJuZL_eOI8T4e4RGGForjEnyrsxV_TbUo7kLEYVM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9yMWlt/Z2h0bGFrLm1tdGNk/bi5jb20vYWI3Nzhi/MDgyMzdkMTFlOGE4/ZDYwMjVmNzdkZjAw/NGYuanBnPyZvdXRw/dXQtcXVhbGl0eT03/NSZkb3duc2l6ZT0y/NDM6MTYyJm91dHB1/dC1mb3JtYXQ9anBn"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Holiday+Inn+Express+Pune+pune",
+            "hotel_name": "The Holiday Inn Express Pune",
+            "location": [
+                18.5103,
+                73.851
+            ],
+            "price_range": "₹4,000 - ₹7,000",
+            "rating": 4.4
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Exterior of The Orchid Hotel Pune Hinjewadi",
+                "image": "https://imgs.search.brave.com/5sxYAveHrSisyzWrh9B8gCjJFykUy3vQ_sufcT73OrA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/aG90ZWxwbGFubmVy/LmNvbS9Db21tb24v/SW1hZ2VzL0hvdGVs/SW1hZ2UvRnJvbnQv/VGhlLU9yY2hpZC1I/b3RlbC1QdW5lLUhp/bmpld2FkaS00ODk4/NzQzXzEuanBn"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Lemon+Tree+Premier+Pune+pune",
+            "hotel_name": "The Lemon Tree Premier Pune",
+            "location": [
+                18.5097,
+                73.8499
+            ],
+            "price_range": "₹6,000 - ₹9,000",
+            "rating": 4.6
+        },
+        {
+            "amenities": [
+                "Swimming Pool",
+                "Fitness Center"
+            ],
+            "hotelImage": {
+                "alt_text": "Lemon Tree Hotel, Hinjawadi , Pune Maharashtra Pune Hotel Exterior",
+                "image": "https://imgs.search.brave.com/TZr1sYb5hbuu_WEDSnlWfI5JFEvIWpE337AL5aG4voY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mYXN0/dWkuY2x0cHN0YXRp/Yy5jb20vaW1hZ2Uv/dXBsb2FkL3dfMjg4/LGhfMjQwLGZsX3By/b2dyZXNzaXZlLGVf/c2hhcnBlbjo4MCxj/X2ZpbGwsZHByXzIs/Zl9hdXRvLHFfNzUv/aG90ZWxzL3BsYWNl/cy9ob3RlbHMvY21z/LzgxMTAvODExMDcy/L2ltYWdlcy9pbWFn/ZV84MTEwNzJfODc2/ZDQyMGItMTkwYi00/Y2RhLWFmMmItMjhm/Nzg1MDU5MmYxLmpw/ZWc"
+            },
+            "hotelLink": "https://www.google.com/search?q=The+Ginger+Pune+Airport+pune",
+            "hotel_name": "The Ginger Pune Airport",
+            "location": [
+                18.5091,
+                73.8488
+            ],
+            "price_range": "₹3,000 - ₹6,000",
+            "rating": 4.3
+        }
+    ],
+    "tripPlan": {
+        "Day 1": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Visiting Temples",
+                    "Religious"
+                ],
+                "Opening Hours": [
+                    "06:00",
+                    "21:00"
+                ],
+                "Place_Name": "Dagdusheth Halwai Ganapati Temple",
+                "Place_location": [
+                    18.517442,
+                    73.854791
+                ],
+                "Rating": 4.8
+            },
+            "Budget": [
+                2000,
+                3000
+            ],
+            "Evening": {
+                "Activity Type": [
+                    "Exploring Local Markets",
+                    "Shopping"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "22:00"
+                ],
+                "Place_Name": "Laxmi Road",
+                "Place_location": [
+                    18.519506,
+                    73.853465
+                ],
+                "Rating": 4.2
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Sightseeing",
+                    "Historical"
+                ],
+                "Opening Hours": [
+                    "08:00",
+                    "18:00"
+                ],
+                "Place_Name": "Shaniwar Wada",
+                "Place_location": [
+                    18.520432,
+                    73.856743
+                ],
+                "Rating": 4.5
+            }
+        },
+        "Day 2": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Trekking",
+                    "Hiking"
+                ],
+                "Opening Hours": [
+                    "08:00",
+                    "18:00"
+                ],
+                "Place_Name": "Sinhagad Fort",
+                "Place_location": [
+                    18.392616,
+                    73.791523
+                ],
+                "Rating": 4.5
+            },
+            "Budget": [
+                1500,
+                2500
+            ],
+            "Evening": {
+                "Activity Type": [
+                    "Attend a Theatre Show",
+                    "Cultural"
+                ],
+                "Opening Hours": [
+                    "18:00",
+                    "21:00"
+                ],
+                "Place_Name": "Bal Gandharva Rang Mandir",
+                "Place_location": [
+                    18.513389,
+                    73.851213
+                ],
+                "Rating": 4.6
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Visit Museums",
+                    "Historical"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "18:00"
+                ],
+                "Place_Name": "Raja Dinkar Kelkar Museum",
+                "Place_location": [
+                    18.522632,
+                    73.858556
+                ],
+                "Rating": 4.7
+            }
+        },
+        "Day 3": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Sightseeing",
+                    "Historical"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "18:00"
+                ],
+                "Place_Name": "Aga Khan Palace",
+                "Place_location": [
+                    18.557583,
+                    73.881271
+                ],
+                "Rating": 4.5
+            },
+            "Budget": [
+                2500,
+                4000
+            ],
+            "Evening": {
+                "Activity Type": [
+                    "Go Clubbing",
+                    "Nightlife"
+                ],
+                "Opening Hours": [
+                    "18:00",
+                    "00:00"
+                ],
+                "Place_Name": "Koregaon Park",
+                "Place_location": [
+                    18.533029,
+                    73.879122
+                ],
+                "Rating": 4.2
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Go for a Nature Walk",
+                    "Hiking"
+                ],
+                "Opening Hours": [
+                    "06:00",
+                    "18:00"
+                ],
+                "Place_Name": "Vetal Tekdi",
+                "Place_location": [
+                    18.533369,
+                    73.869026
+                ],
+                "Rating": 4.2
+            }
+        },
+        "Day 4": {
+            "Afternoon": {
+                "Activity Type": [
+                    "Try Adventure Sports",
+                    "Water Activities"
+                ],
+                "Opening Hours": [
+                    "10:00",
+                    "18:00"
+                ],
+                "Place_Name": "Camp Aqua - Della Adventure",
+                "Place_location": [
+                    18.768572,
+                    73.733326
+                ],
+                "Rating": 4.2
+            },
+            "Budget": [
+                1500,
+                2500
+            ],
+            "Evening": {
+                "Activity Type": [
+                    "Relax at a Spa",
+                    "Wellness"
+                ],
+                "Opening Hours": [
+                    "09:00",
+                    "18:00"
+                ],
+                "Place_Name": "Osho International Meditation Resort",
+                "Place_location": [
+                    18.499196,
+                    73.849787
+                ],
+                "Rating": 4.7
+            },
+            "Morning": {
+                "Activity Type": [
+                    "Visit Museums",
+                    "Historical"
+                ],
+                "Opening Hours": [
+                    "09:30",
+                    "17:30"
+                ],
+                "Place_Name": "National War Museum",
+                "Place_location": [
+                    18.523301,
+                    73.864375
+                ],
+                "Rating": 4.5
+            }
+        }
+    },
+    "weather": {
+        "AQI": 2,
+        "Day 1": {
+            "condition": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "sunrise": "05:58 AM",
+            "sunset": "07:05 PM"
+        },
+        "Day 2": {
+            "condition": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "sunrise": "05:58 AM",
+            "sunset": "07:05 PM"
+        },
+        "Day 3": {
+            "condition": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "sunrise": "05:58 AM",
+            "sunset": "07:06 PM"
+        },
+        "Day 4": {
+            "condition": "Partly Cloudy ",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+            "sunrise": "05:58 AM",
+            "sunset": "07:06 PM"
+        },
+        "location": [
+            18.53,
+            73.87
+        ]
+    }
+}
+
+#input
+{
+    "duration": 4,
+    "endingDate": "2024-05-27",
+    "endingDestination": "pune",
+    "selected_activities": [
+        "Sightseeing",
+        "Exploring Local Markets",
+        "Visiting Temples",
+        "Attend a Theatre Show",
+        "Go for a Nature Walk",
+        "Trekking",
+        "Camping",
+        "Visit Museums",
+        "Go to a Concert",
+        "Attend a Workshop",
+        "Try Adventure Sports",
+        "Go Clubbing",
+        "Relax at a Spa"
+    ],
+    "startingDate": "2024-05-24",
+    "startingLocation": "nagpur",
+    "tripType": "solo"
+}
