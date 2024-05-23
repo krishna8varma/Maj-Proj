@@ -14,9 +14,7 @@ if gemini_key is None:
     raise ValueError("API_key not found in environment variables. Please set it in .env file")
 
 genai.configure(api_key=gemini_key)
-#using gemini model
-
-
+# model = genai.GenerativeModel('gemini-pro')  
 # Set up the model
 generation_config = {
   "temperature": 0.9,
@@ -46,10 +44,7 @@ safety_settings = [
 
 model = genai.GenerativeModel(model_name="gemini-1.0-pro",
                               generation_config=generation_config,
-                              safety_settings=safety_settings)
-
-
-
+                              safety_settings=safety_settings) #using gemini model
 
 class ConversionError(Exception):
     def __init__(self, message):
@@ -58,12 +53,10 @@ class ConversionError(Exception):
 
 def response_to_json(text):
     # Remove unwanted characters from the string
-    cleaned_text = text.replace("`", "").replace("\n", "").replace('\\', '').strip()   #or text=text.replace("`","")  text=text.replace("\n","")  text=text.replace(" ","")
-    #return cleaned_text
+    cleaned_text = text.replace("`", "").replace("\n", "").replace("'", '"').strip()   #or text=text.replace("`","")  text=text.replace("\n","")  text=text.replace(" ","")
     # Convert the cleaned response string to a Python dictionary using json.loads
     try:
         trip_details = json.loads(cleaned_text)
-        # Print the trip details dictionary
     except json.JSONDecodeError as e:
         print("Error decoding response:", e)
         print(cleaned_text)
@@ -86,7 +79,7 @@ def get_activities(destination,duration,type_of_trip):
     response=model.generate_content(prompt_parts)
     txt=response.text
     try:
-        response1=ast.literal_eval(txt)
+        response1=ast.literal_eval(txt) 
     except SyntaxError:
         return ['Heritage Site','Sightseeing','Cultural Experience', "Outdoor Adventures",'Relaxation and Well','Explore Cuisines','Shopping','Photography','Night Life','Sports and Recreation']
     return response1
@@ -149,9 +142,18 @@ def planned_trip(destination,duration,type_of_trip,activities):
 ]
     response = model.generate_content(prompt_parts)
     res1=response.text
-    # print(res1)
     plan=response_to_json(res1)  #plan is a python dict obj
-
+    if plan is None:
+        raise ConversionError("Failed to convert gemini response")
+    #adding photos
+    # places_imgs=photos.get_photo(f"places to visit in {destination}")
+    # for i in range(duration):
+    #     query=plan[f'Day {i+1}']['Morning']
+    #     query['image']=random.choice(places_imgs)
+    #     query=plan[f'Day {i+1}']['Afternoon']
+    #     query['image']=random.choice(places_imgs)
+    #     query=plan[f'Day {i+1}']['Evening']
+    #     query['image']=random.choice(places_imgs)
     return plan
 
 
