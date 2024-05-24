@@ -7,6 +7,7 @@ const Map = ({ selectedLocation }) => {
   const mapRef = useRef(null);
 
   useEffect(() => {
+    
     if (selectedLocation && mapRef.current) {
       mapRef.current.panTo({
         lat: parseFloat(selectedLocation[0]),
