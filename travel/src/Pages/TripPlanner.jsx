@@ -75,6 +75,7 @@ const TripPlanPage = () => {
                       <img src={weatherData[`Day ${index + 1}`].icon} alt={weatherData[`Day ${index + 1}`].condition} />
                       <p>Sunrise: {weatherData[`Day ${index + 1}`].sunrise}</p>
                       <p>Sunset: {weatherData[`Day ${index + 1}`].sunset}</p>
+                      <p>AQI :{weatherData["AQI"]}</p>
                     </div>
                   )}
                   {Object.entries(dayData).map(([section, sectionData], sectionIndex) => {
@@ -115,6 +116,7 @@ const TripPlanPage = () => {
       <div className="selection-bar">
     
       <Link to="/TransportPage"><button className="transport">Transport</button></Link> 
+      
         <Link to="/HotelsPage"><button className="hotels">Hotels</button></Link>
         <button style={{"text-decoration":"underline"}} className="trip-planner">Trip Planner</button>
         <Link to="/FoodPage"><button className="foodbtn">Food</button></Link>
