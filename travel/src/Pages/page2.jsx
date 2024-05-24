@@ -98,7 +98,7 @@ const Page2 = () => {
 
                 
             </section>
-            <Footer />
+            
         </>
 
     )

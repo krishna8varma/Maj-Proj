@@ -461,7 +461,7 @@ button{
   width: 25%;
 }
 .seeContent{
-   justify-content: center; 
+  justify-content: space-between; 
    
      .singleDestination{
        width: 100%;
@@ -475,7 +475,7 @@ button{
         overflow: hidden;
         position: relative;
         top : 7rem;
-
+      
         &:hover{
             background: rgba(204, 202, 202, 0.914);
             box-shadow: 0 2px 4px rgba(140, 140, 141, 0.6);
