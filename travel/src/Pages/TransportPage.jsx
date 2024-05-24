@@ -3,9 +3,14 @@ import Navbar from '../Components/Navbar/navbar'; // Assuming you have a Navbar 
 import './transport.css'; // Import the corresponding CSS file
 import { Link } from "react-router-dom";
 import Map from '../Components/Map/map'; // Assuming you have a Map component
-
+import  transport from '../Assets/transport.jpg';
 import { LuDot } from "react-icons/lu";
 import axios from 'axios';
+import { TbArrowsExchange } from "react-icons/tb";
+import { MdOutlineFlightTakeoff } from "react-icons/md";
+import { FaTrainSubway } from "react-icons/fa6";
+import { FaBus } from "react-icons/fa";
+
 
 const FoodPage = () => {
     const [foodData, setFoodData] = useState(null);
@@ -45,9 +50,24 @@ const FoodPage = () => {
             </div>
 
             <div className="mainContent">
-                <div className='hotelss'>
-                
-                   
+                <div className='Content1'>
+                   <div className='imgdiv'>
+                     <img src={transport} alt="" />
+                     <div className='contentdiv'>
+                       
+                         <p className='text1'> From</p>
+                        <p className='text2'>To</p>
+                        <span className='arrow'><TbArrowsExchange /></span>
+                        <p className='text3'>Amravati</p>
+                        <p className='text4'>Goa</p>
+                     </div>
+                   </div> 
+                   <div className='TransportData'>
+                       <div className='Plane'><span className='planeicon'><MdOutlineFlightTakeoff /></span><span className='planetext'>Fly to Goa</span></div> 
+                       <div className='Train'><span className='trainicon'><FaTrainSubway /></span><span className='traintext'>Train to Goa</span></div>
+                       <div className='Bus'><span className='busicon'><FaBus /></span><span className='bustext'>Bus to Goa</span></div> 
+                   </div>
+
                 </div>
 
                 <div className="Map">
