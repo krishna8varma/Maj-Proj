@@ -3,9 +3,7 @@ from datetime import datetime, timedelta
 import gemini
 import weather
 from flask_cors import CORS
-import functools
-from concurrent.futures import ThreadPoolExecutor
-from cachetools import TTLCache
+
 app = Flask(__name__)
 CORS(app)
 
@@ -70,82 +68,68 @@ def trip_planner():
     duration=data['duration']
     type_of_trip=data['tripType']
     selected_activities=data['selected_activities']
-    with ThreadPoolExecutor(max_workers=4) as executor:
-        future_weather=executor.submit(fetch_weather,destination,start_date,duration)
-        future_trip=executor.submit(fetch_trip,destination,duration,type_of_trip,selected_activities)
-        future_hotels = executor.submit(fetch_hotels, destination, type_of_trip)
-        future_food = executor.submit(fetch_food, destination)
-
-        # Collect results
-        weather=future_weather.result()
-        tripPlan = future_trip.result()
-        hotels = future_hotels.result()
-        food = future_food.result()
-
-    #add weather_data to tripPlan        
-    return {
-        'tripPlan': tripPlan,
-        'weather' : weather,
-        'hotels': hotels,
-        'food': food
-    }, 200
-
-def fetch_weather(destination,start_date,duration):
     try:
-        weather_info=weather.get_weather_data(destination,start_date,duration)
+        tripPlan=gemini.planned_trip(destination,duration,type_of_trip,selected_activities)
     except:
-        weather_info={}
-    return weather_info
+        return jsonify({'error' : "failed}),400
+    return {'tripPlan': tripPlan}, 200
 
-def fetch_trip(destination,duration,type_of_trip,selected_activities) :
+@app.route('/weather', methods=['GET']) #desti,startdate,duration
+def getweather():
+    destination=data['endingDestination']
+    start_date=data['startingDate']
+    duration=data['duration']
+    weather_data=weather.get_weather_data(destination,start_date,duration)       
     try:
-        trip=gemini.planned_trip(destination,duration,type_of_trip,selected_activities)
-    except:
-        trip={}
-    return trip
-
-def fetch_hotels(destination,type_of_trip):
+        data['destinationLocation']=weather_data['location']
+    except KeyError:
+        return {"Error" : "Data not found"}
+    return jsonify({'weather': weather_data}), 200
+@app.route('/hotels', methods=['GET']) #desti,type
+def hotels():
+    destination=data['endingDestination']
+    type_of_trip=data['tripType']
     try:
-       hotels=gemini.get_hotels(destination,type_of_trip)
+        hotel_list=gemini.get_hotels(destination,type_of_trip)
     except:
-        hotels=[]
-    return hotels
-
-def fetch_food(destination):
-    try:
-        food=gemini.get_food(destination)
-    except:
-        food=[]
-    return food
-
-# @app.route('/weather', methods=['GET']) #desti,startdate,duration
-# def getweather():
-#     destination=data['endingDestination']
-#     start_date=data['startingDate']
-#     duration=data['duration']
-#     weather_data=weather.get_weather_data(destination,start_date,duration)       
-#     try:
-#         data['destinationLocation']=weather_data['location']
-#     except KeyError:
-#         return {"Error" : "Data not found"}
-#     return jsonify({'weather': weather_data}), 200
-# @app.route('/hotels', methods=['GET']) #desti,type
-# def hotels():
-#     destination=data['endingDestination']
-#     type_of_trip=data['tripType']
-#     try:
-#         hotel_list=gemini.get_hotels(destination,data['duration'],type_of_trip)       
-#         return jsonify({'Hotels' : hotel_list}),200
-#     except gemini.ConversionError as e:
-#         return jsonify({'error' : e}),400
+        return jsonify({'error' : "failed}),400
+    return jsonify({'Hotels' : hotel_list}),200
  
-# @app.route('/food', methods=['GET']) #desti
-# def food():
+@app.route('/food', methods=['GET']) #desti
+def food():
+    try:
+        food=gemini.get_food(data['endingDestination'])
+    except:
+        return jsonify({'error' : "failed"}),400
+    return jsonify({'food' : food}),200
+    
+# def fetch_weather(destination,start_date,duration):
 #     try:
-#         food=gemini.get_food(data['endingDestination'])
-#         return jsonify({'food' : food}),200
+#         weather_info=weather.get_weather_data(destination,start_date,duration)
 #     except:
-#         return jsonify({'error' : "failed"}),400
+#         weather_info={}
+#     return weather_info
+
+# def fetch_trip(destination,duration,type_of_trip,selected_activities) :
+#     try:
+#         trip=gemini.planned_trip(destination,duration,type_of_trip,selected_activities)
+#     except:
+#         trip={}
+#     return trip
+
+# def fetch_hotels(destination,type_of_trip):
+#     try:
+#        hotels=gemini.get_hotels(destination,type_of_trip)
+#     except:
+#         hotels=[]
+#     return hotels
+
+# def fetch_food(destination):
+#     try:
+#         food=gemini.get_food(destination)
+#     except:
+#         food=[]
+#     return food
 
 if __name__=='__main__':
     app.run(debug=True)
