@@ -4,7 +4,7 @@ import './transport.css'; // Import the corresponding CSS file
 import { Link } from "react-router-dom";
 import Map from '../Components/Map/map'; // Assuming you have a Map component
 import  transport from '../Assets/transport.jpg';
-import { LuDot } from "react-icons/lu";
+
 import axios from 'axios';
 import { TbArrowsExchange } from "react-icons/tb";
 import { MdOutlineFlightTakeoff } from "react-icons/md";
@@ -15,7 +15,7 @@ import { FaBus } from "react-icons/fa";
   
 const FoodPage = () => {
     const [foodData, setFoodData] = useState(null);
-    const [selectedLocation, setSelectedLocation] = useState([28,78]);
+    const [selectedLocation] = useState([28,78]);
     const [errorFlag, seterrorFlag] = useState(false);
    
     // const [selectedLocation, setSelectedLocation] = useState(null);
@@ -55,9 +55,9 @@ const FoodPage = () => {
     </div>
   </div> 
   <div className='TransportData'>
-     <a href="https://www.in.cheapflights.com/?lang=en&utm_campaign=Generic+-+Group&utm_content=No+Location+-+flights+-+T%3Dnone+-+P%3Dflights+-+D%3DNone&utm_medium=cpc&utm_source=bing&utm_term=flights+anywhere&skipapp=true"><div className='Plane'><span className='planeicon'><MdOutlineFlightTakeoff /></span><span className='planetext'>Fly to {foodData["endingDestination"]}</span></div> </a> 
-      <a href="https://www.irctc.co.in/nget/train-search"><div className='Train'><span className='trainicon'><FaTrainSubway /></span><span className='traintext'>Train to {foodData["endingDestination"]}</span></div></a>
-      <a href="https://www.redbus.in/"><div className='Bus'><span className='busicon'><FaBus /></span><span className='bustext'>Bus to {foodData["endingDestination"]}</span></div> </a>
+     <a className='link' href="https://www.in.cheapflights.com/?lang=en&utm_campaign=Generic+-+Group&utm_content=No+Location+-+flights+-+T%3Dnone+-+P%3Dflights+-+D%3DNone&utm_medium=cpc&utm_source=bing&utm_term=flights+anywhere&skipapp=true"><div className='Plane'><span className='planeicon'><MdOutlineFlightTakeoff /></span><span className='planetext'>Fly to {foodData["endingDestination"]}</span></div> </a> 
+      <a className='link' href="https://www.irctc.co.in/nget/train-search"><div className='Train'><span className='trainicon'><FaTrainSubway /></span><span className='traintext'>Train to {foodData["endingDestination"]}</span></div></a>
+      <a className='link' href="https://www.redbus.in/"><div className='Bus'><span className='busicon'><FaBus /></span><span className='bustext'>Bus to {foodData["endingDestination"]}</span></div> </a>
   </div>
   </div>
    }
