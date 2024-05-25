@@ -12,16 +12,17 @@ import { FaTrainSubway } from "react-icons/fa6";
 import { FaBus } from "react-icons/fa";
 
 
+  
 const FoodPage = () => {
     const [foodData, setFoodData] = useState(null);
     const [selectedLocation, setSelectedLocation] = useState([28,78]);
     const [errorFlag, seterrorFlag] = useState(false);
-    
+   
     // const [selectedLocation, setSelectedLocation] = useState(null);
   useEffect(() => {
     const fetchFood = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/food');
+            const response = await axios.get('http://localhost:5000/start');
             // console.log('Hotel Data:', response.data);
             setFoodData(response.data); // Assuming tripPlan is a state variable
         } catch (error) {
@@ -32,12 +33,37 @@ const FoodPage = () => {
   
     fetchFood();
   }, []);
-  const handleHotelClick = (location) => {
-    setSelectedLocation(location);
-   
-  };
+  const renderFood = () => {
+    if (!foodData) {
+        if (errorFlag) {
+          window.location.reload(); 
+          }
+        return <div className="loadingTripData"><p className='styling'>Please wait! <br /> </p> <br />
+        <div className="spinner"></div></div>
+    }
+    return  <div className="">
+        
+    <div className='imgdiv'>
+    <img src={transport} alt="" />
+    <div className='contentdiv'>
+      
+        <p className='text1'> From</p>
+       <p className='text2'>To</p>
+       <span className='arrow'><TbArrowsExchange /></span>
+       <p className='text3'>{foodData["startingLocation"]}</p>
+       <p className='text4'>{foodData["endingDestination"]}</p>
+    </div>
+  </div> 
+  <div className='TransportData'>
+     <a href="https://www.in.cheapflights.com/?lang=en&utm_campaign=Generic+-+Group&utm_content=No+Location+-+flights+-+T%3Dnone+-+P%3Dflights+-+D%3DNone&utm_medium=cpc&utm_source=bing&utm_term=flights+anywhere&skipapp=true"><div className='Plane'><span className='planeicon'><MdOutlineFlightTakeoff /></span><span className='planetext'>Fly to {foodData["endingDestination"]}</span></div> </a> 
+      <a href="https://www.irctc.co.in/nget/train-search"><div className='Train'><span className='trainicon'><FaTrainSubway /></span><span className='traintext'>Train to {foodData["endingDestination"]}</span></div></a>
+      <a href="https://www.redbus.in/"><div className='Bus'><span className='busicon'><FaBus /></span><span className='bustext'>Bus to {foodData["endingDestination"]}</span></div> </a>
+  </div>
+  </div>
+   }
    
     return (
+        
         <div className='foodpage'>
             <Navbar />
 
@@ -51,23 +77,8 @@ const FoodPage = () => {
 
             <div className="mainContent">
                 <div className='Content1'>
-                   <div className='imgdiv'>
-                     <img src={transport} alt="" />
-                     <div className='contentdiv'>
-                       
-                         <p className='text1'> From</p>
-                        <p className='text2'>To</p>
-                        <span className='arrow'><TbArrowsExchange /></span>
-                        <p className='text3'>Amravati</p>
-                        <p className='text4'>Goa</p>
-                     </div>
-                   </div> 
-                   <div className='TransportData'>
-                       <div className='Plane'><span className='planeicon'><MdOutlineFlightTakeoff /></span><span className='planetext'>Fly to Goa</span></div> 
-                       <div className='Train'><span className='trainicon'><FaTrainSubway /></span><span className='traintext'>Train to Goa</span></div>
-                       <div className='Bus'><span className='busicon'><FaBus /></span><span className='bustext'>Bus to Goa</span></div> 
-                   </div>
-
+                {renderFood()}
+                
                 </div>
 
                 <div className="Map">
