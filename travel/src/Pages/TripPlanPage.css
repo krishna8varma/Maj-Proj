@@ -75,10 +75,7 @@ h2{
     
   }
   
-  /* .selected {
-   
-    color: white;
-  } */
+  
   
   /* Date list styles */
   .date-list {
@@ -88,7 +85,7 @@ h2{
     box-shadow: #bbb;
     border-radius: 8px;
     border: 1px solid #D8D8D8;
-    background: #e6e6e6;
+    background: #D8D8D8;
   
    
   }
@@ -112,6 +109,7 @@ h2{
     color: #366960;
     margin-bottom: 20px;
     font-size: medium;
+    
   }
   
   .loc{
@@ -124,6 +122,8 @@ h2{
     list-style-type: none;
     padding: 0;
     margin-top: 10px;
+    margin-bottom: 1rem;
+    background-color: #D8D8D8;
   }
   
   .sections-list h3 {
@@ -275,3 +275,57 @@ h3{
     100% { transform: rotate(360deg); }
   }
   
+  .budget-text{
+    margin-left: 26rem;
+  }
+
+  .conditionicon{
+    margin-top: rem;
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+  .conditiontext{
+    margin-left: 0.2rem;
+    font-size: 0.85rem;
+    display: inline-block;
+   
+  }
+
+  .sunriseicon{
+    margin-left: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .sunrisetext{
+    margin-left: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+  }
+
+  .sunseticon{
+    margin-left: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .sunsettext{
+    margin-left: -0.5rem;
+    margin-top: -2rem;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .aqiicon{
+    margin-top: -10rem;
+    margin-left: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .aqitext{
+    margin-left: -3rem;
+   
+  }
+  .div1{
+    display: inline-block;
+    font-size: -1rem;
+    font-weight: 300;
+  }

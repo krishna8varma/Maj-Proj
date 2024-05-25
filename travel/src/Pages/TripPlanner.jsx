@@ -8,6 +8,10 @@ import { FiBookmark } from "react-icons/fi";
 import { IoLocationSharp } from "react-icons/io5";
 import axios from 'axios';
 import { IoMdRefresh } from "react-icons/io";
+import  sunrise from '../Assets/sunrise.png';
+import  sunset from '../Assets/sunset.png';
+import  aqi from '../Assets/aqi.png';
+
 
 const TripPlanPage = () => {
   const [expandedDay, setExpandedDay] = useState(null);
@@ -63,19 +67,20 @@ const TripPlanPage = () => {
               <div className="date" onClick={() => handleExpandDay(index)}>
                 <div className="day">
                   <span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span>
-                  <span className="date-text">{day}</span>
-                  {budget && <span className="budget-text"> - Budget: {budget.join(' - ')}</span>}
+                  <span className="date-text"> {day}</span>
+                  {budget && <span className="budget-text"> Rs. {budget.join(' - Rs. ')}</span>}
                 </div>
               </div>
               {expandedDay === index && (
                 <ul className="sections-list">
                   {weatherData && weatherData[`Day ${index + 1}`] && (
                     <div className="weather-info">
-                      <p>Condition: {weatherData[`Day ${index + 1}`].condition}</p>
-                      <img src={weatherData[`Day ${index + 1}`].icon} alt={weatherData[`Day ${index + 1}`].condition} />
-                      <p>Sunrise: {weatherData[`Day ${index + 1}`].sunrise}</p>
-                      <p>Sunset: {weatherData[`Day ${index + 1}`].sunset}</p>
-                      <p>AQI :{weatherData["AQI"]}</p>
+                      
+                      <p className='div1' ><img className='conditionicon' src={weatherData[`Day ${index + 1}`].icon} alt={weatherData[`Day ${index + 1}`].condition} /> <div className='conditiontext'>{weatherData[`Day ${index + 1}`].condition}</div></p>
+                      
+                      <p className='div1'><img className='sunriseicon' src={sunrise} alt="sunrise" /><div className='conditiontext'>{weatherData[`Day ${index + 1}`].sunrise}</div></p>
+                      <p className='div1'><img className='sunseticon' src={sunset} alt="sunset" /><div className='conditiontext'>{weatherData[`Day ${index + 1}`].sunset}</div></p>
+                      <p className='div1'><img className='aqiicon' src={aqi} alt="aqi" /><div className='conditiontext' >AQI : {weatherData["AQI"]}</div></p>
                     </div>
                   )}
                   {Object.entries(dayData).map(([section, sectionData], sectionIndex) => {
