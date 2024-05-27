@@ -83,7 +83,7 @@ const Review = () => {
 
                 </div>
             </div>
-            <button className="ReviewForm">Leave a Review</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSflAl9fiuveFHk1q2f3e7xrCO75HLcTmkaXlFGQbD76HvVAqA/viewform?usp=sf_link"><button className="ReviewForm">Leave a Review</button></a>
         </section>
     )
 }

@@ -491,5 +491,8 @@ button{
    margin-left: 29rem;
    width: 15rem;
    cursor: pointer;
+   a{
+     text-decoration: none;
+   }
 }
 }
