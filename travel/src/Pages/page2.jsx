@@ -88,7 +88,7 @@ const Page2 = () => {
                             </div>
                         </div>
                         <div >
-                            <Link to="/HotelsPage"> <button className="btn2" onClick={handleSubmit}>Next</button></Link>
+                            <Link to="/TransportPage"> <button className="btn2" onClick={handleSubmit}>Next</button></Link>
                         </div>
                     </div>
 

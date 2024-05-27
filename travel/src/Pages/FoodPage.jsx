@@ -3,10 +3,10 @@ import Navbar from '../Components/Navbar/navbar'; // Assuming you have a Navbar 
 import './food.css'; // Import the corresponding CSS file
 import { Link } from "react-router-dom";
 import Map from '../Components/Map/map'; // Assuming you have a Map component
-import food1 from '../Assets/food1.jpg';
-import food2 from '../Assets/food2.jpg';
-import food3 from '../Assets/food3.jpg';
-import food4 from '../Assets/food4.jpg';
+// import food1 from '../Assets/food1.jpg';
+// import food2 from '../Assets/food2.jpg';
+// import food3 from '../Assets/food3.jpg';
+// import food4 from '../Assets/food4.jpg';
 import { LuDot } from "react-icons/lu";
 import axios from 'axios';
 
@@ -34,56 +34,12 @@ const FoodPage = () => {
     setSelectedLocation(location);
    
   };
-    // const FoodData = [
-    //     {
-    //         id: 1,
-    //         name: 'Hotel Mountain Meadows',
-    //         image: food1,
-    //         rating: 4.5,
-    //         type : ["Seafood" , <LuDot /> , "Continentel"]  ,
-    //     },
-    //     {
-    //         id: 2,
-    //         name: 'Hotel Mountain Meadows',
-    //         image: food2,
-    //         rating: 4.2,
-    //         type : ["Seafood" ,  <LuDot /> , "Continentel"]  ,
-            
-    //     },
-    //     // Add more hotel data as needed
-    //     {
-    //         id: 3,
-    //         name: 'Hotel Mountain Meadows',
-    //         image: food3,
-    //         rating: 4.0,
-    //         type : ["Seafood" , <LuDot /> , "Continentel"] ,
-    //     },
-    //     {
-    //         id: 4,
-    //         name: 'Hotel Mountain Meadows',
-    //         image: food4,
-    //         rating: 4.7,
-    //         type : ["Seafood" , <LuDot /> , "Continentel"]  ,
-    //     },
-    //     {
-    //         id: 5,
-    //         name: 'Hotel Mountain Meadows',
-    //         image: food2,
-    //         rating: 4.7,
-    //         type : ["Seafood" , <LuDot /> , "Continentel"]  ,
-    //     },
-    //     {
-    //         id: 6,
-    //         name: 'Hotel Mountain Meadows',
-    //         image: food1,
-    //         rating: 4.7,
-    //         type : ["Seafood" , <LuDot /> , "Continentel"]  ,
-    //     },
-    // ];
+  
     const renderFood = () => {
+        
         if (!foodData) {
-            if (errorFlag) {
-              window.location.reload(); 
+            if (errorFlag ) {
+                window.location.reload(); 
               }
             return <div className="loadingTripData"><p className='styling'>Please wait! <br /> Loading Food Details...</p> <br />
             <div className="spinner"></div></div>
@@ -92,9 +48,9 @@ const FoodPage = () => {
           {Object.entries(foodData.food).map(([food,hotel])=> (
                 //   <div className="hotel-box" key={index} onClick={() => handleHotelClick(index["location"])}>
                 <div className="food-box" key={hotel} onClick={() => handleHotelClick(hotel["location"])}>
-                <img src={food1} alt={hotel["Restaurant Name"]} />
+                <img src={hotel["image"].image} alt={hotel["Restaurant Name"]} />
                 <div className="details">
-                    <p className='heading'>{hotel["Restaurant Name"]} </p>
+                    <p className='heading'><b>{hotel["Restaurant Name"]} </b></p>
                     <div className="star">
                         <span class="fa fa-star checked"></span>
                     </div>
@@ -115,10 +71,10 @@ const FoodPage = () => {
 
             <div className="selection-bar">
 
-                <button className="transport">Transport</button>
+               <Link to="/TransportPage"><button className="transport">Transport</button></Link> 
                 <Link to="/HotelsPage"><button className="hotelSelected">Hotels</button></Link>
                 <Link to="/TripPlanner"> <button className="trip-planner">Trip Planner</button></Link>
-                <button className="foodbtn">Food</button>
+                <button style={{"text-decoration":"underline"}}className="foodbtn">Food</button>
             </div>
 
             <div className="mainContent">

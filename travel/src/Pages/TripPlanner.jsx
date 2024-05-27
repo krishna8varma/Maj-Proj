@@ -8,6 +8,10 @@ import { FiBookmark } from "react-icons/fi";
 import { IoLocationSharp } from "react-icons/io5";
 import axios from 'axios';
 import { IoMdRefresh } from "react-icons/io";
+import  sunrise from '../Assets/sunrise.png';
+import  sunset from '../Assets/sunset.png';
+import  aqi from '../Assets/aqi.png';
+
 
 const TripPlanPage = () => {
   const [expandedDay, setExpandedDay] = useState(null);
@@ -21,7 +25,7 @@ const TripPlanPage = () => {
       try {
         const tripPlanResponse = await axios.get('http://localhost:5000/trip');
         const weatherResponse = await axios.get('http://localhost:5000/weather');
-        
+
         setTripPlan(tripPlanResponse.data);
         setWeatherData(weatherResponse.data.weather);
       } catch (error) {
@@ -51,52 +55,61 @@ const TripPlanPage = () => {
     }
 
     const { tripPlan } = tripPlanData;
-    const budgets = tripPlan.Budget || [];
     const days = Object.entries(tripPlan).filter(([key]) => key.startsWith('Day'));
 
     return (
       <div className="trip-plan">
-        {days.map(([day, dayData], index) => (
-          <li key={index}>
-            <div className="date" onClick={() => handleExpandDay(index)}>
-              <div className="day">
-                <span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span>
-                <span className="date-text">{day}</span>
-                <span className="budget-text"> - Budget: {budgets[index] !== undefined ? budgets[index] : 'N/A'}</span>
+        {days.map(([day, dayData], index) => {
+          const budget = dayData.Budget;
+
+          return (
+            <li key={index}>
+              <div className="date" onClick={() => handleExpandDay(index)}>
+                <div className="day">
+                  <span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span>
+                  <span className="date-text"> {day}</span>
+                  {budget && <span className="budget-text"> {budget.join(' - ')}</span>}
+                </div>
               </div>
-            </div>
-            {expandedDay === index && (
-              <ul className="sections-list">
-                {weatherData && weatherData[`Day ${index + 1}`] && (
-                  <div className="weather-info">
-                    <p>Condition: {weatherData[`Day ${index + 1}`].condition}</p>
-                    <img src={weatherData[`Day ${index + 1}`].icon} alt={weatherData[`Day ${index + 1}`].condition} />
-                    <p>Sunrise: {weatherData[`Day ${index + 1}`].sunrise}</p>
-                    <p>Sunset: {weatherData[`Day ${index + 1}`].sunset}</p>
-                  </div>
-                )}
-                {Object.entries(dayData).map(([section, sectionData], sectionIndex) => (
-                  <li key={sectionIndex}>
-                    <div className='dayTime'><p>{section}</p></div>
-                    {sectionData["Place Name"] && (
-                      <ul className="places-list">
-                        <li key={sectionIndex} className="place-card" onClick={() => handlePlaceClick(sectionData["Place_location"])}>
-                          <img src={sectionData.image} alt={sectionData["Place Name"]} />
-                          <div className="place-details">
-                            <h4>{sectionData["Place Name"]}</h4>
-                            <div className='type'><p>{sectionData["Activity Type"].join(' - ')}</p></div>
-                            <p className='timing'>Opening Hours: {sectionData["Opening Hours"].join(' - ')}</p>
-                            <p className='starRating'><span className="fa fa-star checked"> </span> {sectionData["Rating"]}</p>
-                          </div>
-                        </li>
-                      </ul>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-        ))}
+              {expandedDay === index && (
+                <ul className="sections-list">
+                  {weatherData && weatherData[`Day ${index + 1}`] && (
+                    <div className="weather-info">
+                      
+                      <p className='div1' ><img className='conditionicon' src={weatherData[`Day ${index + 1}`].icon} alt={weatherData[`Day ${index + 1}`].condition} /> <div className='conditiontext'>{weatherData[`Day ${index + 1}`].condition}</div></p>
+                      
+                      <p className='div1'><img className='sunriseicon' src={sunrise} alt="sunrise" /><div className='conditiontext'>{weatherData[`Day ${index + 1}`].sunrise}</div></p>
+                      <p className='div1'><img className='sunseticon' src={sunset} alt="sunset" /><div className='conditiontext'>{weatherData[`Day ${index + 1}`].sunset}</div></p>
+                      <p className='div1'><img className='aqiicon' src={aqi} alt="aqi" /><div className='conditiontext' >AQI : {weatherData["AQI"]}</div></p>
+                    </div>
+                  )}
+                  {Object.entries(dayData).map(([section, sectionData], sectionIndex) => {
+                    if (section === 'Budget') return null;
+
+                    return (
+                      <li key={sectionIndex}>
+                        <div className='dayTime'><p>{section}</p></div>
+                        {sectionData.Place_Name && (
+                          <ul className="places-list">
+                            <li key={sectionIndex} className="place-card" onClick={() => handlePlaceClick(sectionData.Place_location)}>
+                              <img src={sectionData.image.image} alt={sectionData.image.alt_text} />
+                              <div className="place-details">
+                                <h4>{sectionData.Place_Name}</h4>
+                                <div className='type'><p>{sectionData["Activity Type"].join(' - ')}</p></div>
+                                <p className='timing'>Opening Hours: {sectionData["Opening Hours"].join(' - ')}</p>
+                                <p className='starRating'><span className="fa fa-star checked"> </span> {sectionData.Rating}</p>
+                              </div>
+                            </li>
+                          </ul>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
+            </li>
+          );
+        })}
       </div>
     );
   };
@@ -106,9 +119,11 @@ const TripPlanPage = () => {
       <Navbar />
 
       <div className="selection-bar">
-        <button className="transport">Transport</button>
+    
+      <Link to="/TransportPage"><button className="transport">Transport</button></Link> 
+      
         <Link to="/HotelsPage"><button className="hotels">Hotels</button></Link>
-        <button className="trip-planner">Trip Planner</button>
+        <button style={{"text-decoration":"underline"}} className="trip-planner">Trip Planner</button>
         <Link to="/FoodPage"><button className="foodbtn">Food</button></Link>
       </div>
 

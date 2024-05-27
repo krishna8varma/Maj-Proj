@@ -45,14 +45,14 @@ const HotelsPage = () => {
     return <div className="">
       {Object.entries(hotelsData.Hotels).map(([hotel, index]) => (
         <div className="hotel-box" key={index} onClick={() => handleHotelClick(index["location"])}>
-          <img src={index["image"]} alt={index["hotel_name"]} />
+          <img src={index["hotelImage"].image} alt={index["hotelImage"].alt_text} />
           <div className="details">
-            <h3 className='heading'>{index["hotel_name"]}</h3>
+            <h3 className='heading'><b>{index["hotel_name"]}</b></h3>
             <div className="rating">
               <span class="fa fa-star checked"></span> {index["rating"]}
             </div>
             <div className="price"><b>{index["price_range"]} </b> <br /> <h6>For 1 Night Stay</h6> </div>
-            <a href={index["hotel_page"]}><button className="view-deal">View Deal</button></a>
+            <a href={index["hotelLink"]}><button className="view-deal">View Deal</button></a>
 
           </div>
 
@@ -121,8 +121,9 @@ const HotelsPage = () => {
 
       <div className="selection-bar">
 
-        <button className="transport">Transport</button>
-        <button className="hotelSelected">Hotels</button>
+        
+      <Link to="/TransportPage"><button className="transport">Transport</button></Link> 
+        <button style={{"text-decoration":"underline"}} className="hotelSelected">Hotels</button>
         <Link to="/TripPlanner"> <button className="trip-planner">Trip Planner</button></Link>
         <Link to="/FoodPage"><button className="foodbtn">Food</button></Link>
       </div>
