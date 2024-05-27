@@ -68,7 +68,7 @@ const TripPlanPage = () => {
                 <div className="day">
                   <span className='loc'><IoIosArrowForward /> <IoLocationSharp /></span>
                   <span className="date-text"> {day}</span>
-                  {budget && <span className="budget-text"> Rs. {budget.join(' - Rs. ')}</span>}
+                  {budget && <span className="budget-text"> {budget.join(' - ')}</span>}
                 </div>
               </div>
               {expandedDay === index && (

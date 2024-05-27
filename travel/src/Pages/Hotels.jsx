@@ -47,7 +47,7 @@ const HotelsPage = () => {
         <div className="hotel-box" key={index} onClick={() => handleHotelClick(index["location"])}>
           <img src={index["hotelImage"].image} alt={index["hotelImage"].alt_text} />
           <div className="details">
-            <h3 className='heading'>{index["hotel_name"]}</h3>
+            <h3 className='heading'><b>{index["hotel_name"]}</b></h3>
             <div className="rating">
               <span class="fa fa-star checked"></span> {index["rating"]}
             </div>

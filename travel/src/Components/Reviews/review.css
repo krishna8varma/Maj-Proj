@@ -461,4 +461,12 @@ button{
   background-color:#F7D660 ;
   top: 12.5rem;
 }
+
+.ReviewForm {
+    background-color: #F7D660;
+    color: black;
+   font-weight: 600;
+   
+   margin-left: 30rem;
+}
 }

@@ -125,7 +125,7 @@ def get_food(destination):
         return []
     img_fc=photos.get_photo(f"Food Restuarants in {destination}")
     for i in fc:
-        i['restuarantLink']=hotel.getHotelLink(i['Restuarant Name'],destination)
+        # i['restuarantLink']=hotel.getHotelLink(i['Restuarant Name'],destination)
         i['image']=random.choice(img_fc)
     return fc
 

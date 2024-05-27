@@ -77,7 +77,7 @@ const Page1 = () => {
                     <form onSubmit={handleCompanySubmit}></form>
                     <div className="button-container">
                         <div className="icon" onClick={() => handleOptionSelect("Solo")}>
-                            <button className="but"><img src={img1} alt="Button 1" /> <p>Wondering solo</p></button>
+                            <button className="but"><img src={img1} alt="Button 1" /> <p>Wandering solo</p></button>
                         </div>
                         <div className="icon" onClick={() => handleOptionSelect("Couple")}>
                         <button className="but"><img src={img2} alt="Button 2"  /><p>Holidaying as a couple</p></button>

@@ -36,9 +36,10 @@ const FoodPage = () => {
   };
   
     const renderFood = () => {
+        
         if (!foodData) {
-            if (errorFlag) {
-              window.location.reload(); 
+            if (errorFlag ) {
+                window.location.reload(); 
               }
             return <div className="loadingTripData"><p className='styling'>Please wait! <br /> Loading Food Details...</p> <br />
             <div className="spinner"></div></div>
@@ -49,7 +50,7 @@ const FoodPage = () => {
                 <div className="food-box" key={hotel} onClick={() => handleHotelClick(hotel["location"])}>
                 <img src={hotel["image"].image} alt={hotel["Restaurant Name"]} />
                 <div className="details">
-                    <p className='heading'>{hotel["Restaurant Name"]} </p>
+                    <p className='heading'><b>{hotel["Restaurant Name"]} </b></p>
                     <div className="star">
                         <span class="fa fa-star checked"></span>
                     </div>

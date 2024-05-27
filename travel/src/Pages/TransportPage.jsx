@@ -72,7 +72,7 @@ const FoodPage = () => {
                 <button style={{"text-decoration":"underline"}} className="transport">Transport</button>
                 <Link to="/HotelsPage"><button className="hotelSelected">Hotels</button></Link>
                 <Link to="/TripPlanner"> <button className="trip-planner">Trip Planner</button></Link>
-                <button className="foodbtn">Food</button>
+               <Link to="/FoodPage"><button className="foodbtn">Food</button></Link> 
             </div>
 
             <div className="mainContent">
