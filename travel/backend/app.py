@@ -71,7 +71,7 @@ def trip_planner():
     try:
         tripPlan=gemini.planned_trip(destination,duration,type_of_trip,selected_activities)
     except:
-        return jsonify({'error' : "failed}),400
+        return jsonify({'error' : "failed"}),400
     return {'tripPlan': tripPlan}, 200
 
 @app.route('/weather', methods=['GET']) #desti,startdate,duration
@@ -92,7 +92,7 @@ def hotels():
     try:
         hotel_list=gemini.get_hotels(destination,type_of_trip)
     except:
-        return jsonify({'error' : "failed}),400
+        return jsonify({'error' : "failed"}),400
     return jsonify({'Hotels' : hotel_list}),200
  
 @app.route('/food', methods=['GET']) #desti
