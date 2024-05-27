@@ -7,7 +7,7 @@ import Map from '../Components/Map/map'; // Assuming you have a Map component
 // import food2 from '../Assets/food2.jpg';
 // import food3 from '../Assets/food3.jpg';
 // import food4 from '../Assets/food4.jpg';
-import { LuDot } from "react-icons/lu";
+
 import axios from 'axios';
 
 const FoodPage = () => {
@@ -93,15 +93,3 @@ const FoodPage = () => {
 
 };
 export default FoodPage;
-{/* <div className="food-box" key={hotel}>
-<img src={hotel.image} alt={hotel["Restaurant Name"]} />
-<div className="details">
-    <p className='heading'>{hotel["Restaurant Name"]} </p>
-    <div className="star">
-        <span class="fa fa-star checked"></span>
-    </div>
-    <p className="Rating"> {hotel["Rating"]} </p>
-    <p className="foodtype"> {hotel["Food Served"]} </p>
-</div>
-
-</div>  */}
