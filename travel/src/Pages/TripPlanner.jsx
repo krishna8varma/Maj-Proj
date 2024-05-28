@@ -25,7 +25,7 @@ const TripPlanPage = () => {
       try {
         const tripPlanResponse = await axios.get('http://localhost:5000/trip');
         const weatherResponse = await axios.get('http://localhost:5000/weather');
-
+        
         setTripPlan(tripPlanResponse.data);
         setWeatherData(weatherResponse.data.weather);
       } catch (error) {
@@ -44,6 +44,7 @@ const TripPlanPage = () => {
 
   const handleExpandDay = (dayIndex) => {
     setExpandedDay(expandedDay === dayIndex ? null : dayIndex);
+    setSelectedLocation(weatherData.location)
   };
 
   const renderTripPlan = () => {
