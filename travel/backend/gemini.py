@@ -1,11 +1,10 @@
 import google.generativeai as genai
-import requests,random
-from datetime import datetime, timedelta
+import random
 import json
 import os
 from dotenv import load_dotenv
 import ast
-import photos,geocoding
+import photos
 import hotel
 load_dotenv()
 

@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-import json
 
 def get_photo(query):
     key='KITvPIESUiDZyOPsXAK0_8dyFbwHTBoD3avdzOqJs78'
