@@ -5,7 +5,7 @@ import img1 from '../Assets/solo.png';
 import img2 from '../Assets/couple.png';
 import img3 from '../Assets/family.png';
 import img4 from '../Assets/friends.png';
-import Footer from "../Components/Footer/footer";
+
 import './page1.css';
 // import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';

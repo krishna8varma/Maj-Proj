@@ -98,6 +98,9 @@ h2{
     justify-content: space-between;
     align-items: center;
     color: #366960;
+    background-color: #d3d3d3;
+    border-radius: 13px;
+    margin-top: 1.2rem;
   }
   
   .day{
@@ -120,10 +123,10 @@ h2{
   /* Sections list styles */
   .sections-list {
     list-style-type: none;
-    padding: 0;
     margin-top: 10px;
     margin-bottom: 1rem;
-    background-color: #efe7e7;
+    background-color: #d3d3d3;
+    border-radius: 13px;
   }
   
   .sections-list h3 {
