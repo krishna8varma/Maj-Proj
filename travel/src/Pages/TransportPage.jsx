@@ -14,17 +14,21 @@ import { FaBus } from "react-icons/fa";
 
   
 const FoodPage = () => {
+    
     const [foodData, setFoodData] = useState(null);
-    const [selectedLocation] = useState([28,78]);
+    const [selectedLocation,setSelectedLocation] = useState([28,78]);
     const [errorFlag, seterrorFlag] = useState(false);
-   
+    const [weatherData, setWeatherData] = useState(null);
     // const [selectedLocation, setSelectedLocation] = useState(null);
   useEffect(() => {
     const fetchFood = async () => {
         try {
             const response = await axios.get('http://localhost:5000/start');
+            const weatherResponse = await axios.get('http://localhost:5000/weather');
+            setWeatherData(weatherResponse.data.weather);
             // console.log('Hotel Data:', response.data);
             setFoodData(response.data); // Assuming tripPlan is a state variable
+            // setSelectedLocation(weatherData["location"]);
         } catch (error) {
             seterrorFlag(true);
             // console.error('Error fetching Food Daata:', error);
@@ -33,6 +37,10 @@ const FoodPage = () => {
   
     fetchFood();
   }, []);
+  const handlePlaceClick = () => {
+    setSelectedLocation(weatherData.location)
+  };
+
   const renderFood = () => {
     if (!foodData) {
         if (errorFlag) {
@@ -45,13 +53,14 @@ const FoodPage = () => {
         
     <div className='imgdiv'>
     <img src={transport} alt="" />
-    <div className='contentdiv'>
+    <div className='contentdiv' onClick={() => handlePlaceClick(weatherData["location"])}>
       
         <p className='text1'> From</p>
-       <p className='text2'>To</p>
+       <p className='text2' >To</p>
        <span className='arrow'><TbArrowsExchange /></span>
        <p className='text3'>{foodData["startingLocation"]}</p>
        <p className='text4'>{foodData["endingDestination"]}</p>
+    
     </div>
   </div> 
   <div className='TransportData'>
