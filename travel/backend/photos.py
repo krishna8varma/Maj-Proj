@@ -8,13 +8,13 @@ def get_photo(query):
     params={
         "query" : query,
         "client_id" : key,
-        "per_page" : 10,
+        "per_page" : 30,
     }
     response=requests.get(url=url,params=params)
     if response.status_code == 200:
         data=response.json()
         ls=[]
-        for x in range(0,10):
+        for x in range(0,30):
             photo=data['results'][x]['urls']['small']
             text=data['results'][x]['alt_description']
             ls.append({'image' : photo, "alt_txt" : text})
