@@ -69,7 +69,11 @@ def get_weather_data(destination,start_date,duration):
 
     return forecast_data
 
+<<<<<<< Updated upstream
 '''destination='nagpur'
 start_date='2024-05-05'
 end_date='2024-05-10'
 print(get_weather_data(destination,start_date,5))'''
+=======
+# print(get_weather_data("Nagpur","25-04-2024",4))
+>>>>>>> Stashed changes

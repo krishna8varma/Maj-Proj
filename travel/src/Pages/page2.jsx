@@ -84,7 +84,18 @@ const Page2 = () => {
 
                         <div className="black-box">
                             <div className="activities-list">
+<<<<<<< Updated upstream
                                 {renderactivities()}
+=======
+                            
+                                {activities.map((activity, index) => (
+                                    <button key={index}
+                                    className={selectedActivities.includes(activity) ? 'button2_selected' : 'button2'}
+                                    onClick={() => handleActivitySelection(activity)} >
+                                        {activity}
+                                    </button>
+                                ))}
+>>>>>>> Stashed changes
                             </div>
                         </div>
                         <div >

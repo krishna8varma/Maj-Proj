@@ -24,6 +24,7 @@ generation_config = {
   "max_output_tokens": 2048,
 }
 
+<<<<<<< Updated upstream
 safety_settings = [
   {
     "category": "HARM_CATEGORY_HARASSMENT",
@@ -42,6 +43,10 @@ safety_settings = [
     "threshold": "BLOCK_MEDIUM_AND_ABOVE"
   },
 ]
+=======
+def get_travel_duration_days(start_date,end_date):
+    date_format = '%Y-%m-%d'
+>>>>>>> Stashed changes
 
 model = genai.GenerativeModel(model_name="gemini-1.0-pro",
                               generation_config=generation_config,
@@ -167,6 +172,11 @@ print(get_food(destination='pune'))
 activities=get_activities(destination,type_of_trip)
 duration=get_travel_duration_days(start_date,end_date)
 tripPlan=planned_trip(destination,duration,type_of_trip,activities)
+<<<<<<< Updated upstream
 #print(type(activities))
 print(tripPlan)
 #print(activities)'''
+=======
+# print(tripPlan)
+# print(activities)
+>>>>>>> Stashed changes
