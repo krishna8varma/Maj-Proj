@@ -7,7 +7,7 @@ import Map from '../Components/Map/map'; // Assuming you have a Map component
 // import food2 from '../Assets/food2.jpg';
 // import food3 from '../Assets/food3.jpg';
 // import food4 from '../Assets/food4.jpg';
-import { LuDot } from "react-icons/lu";
+
 import axios from 'axios';
 
 const FoodPage = () => {
@@ -36,9 +36,10 @@ const FoodPage = () => {
   };
   
     const renderFood = () => {
+        
         if (!foodData) {
-            if (errorFlag) {
-              window.location.reload(); 
+            if (errorFlag ) {
+                window.location.reload(); 
               }
             return <div className="loadingTripData"><p className='styling'>Please wait! <br /> Loading Food Details...</p> <br />
             <div className="spinner"></div></div>
@@ -49,7 +50,7 @@ const FoodPage = () => {
                 <div className="food-box" key={hotel} onClick={() => handleHotelClick(hotel["location"])}>
                 <img src={hotel["image"].image} alt={hotel["Restaurant Name"]} />
                 <div className="details">
-                    <p className='heading'>{hotel["Restaurant Name"]} </p>
+                    <p className='heading'><b>{hotel["Restaurant Name"]} </b></p>
                     <div className="star">
                         <span class="fa fa-star checked"></span>
                     </div>
@@ -92,15 +93,3 @@ const FoodPage = () => {
 
 };
 export default FoodPage;
-{/* <div className="food-box" key={hotel}>
-<img src={hotel.image} alt={hotel["Restaurant Name"]} />
-<div className="details">
-    <p className='heading'>{hotel["Restaurant Name"]} </p>
-    <div className="star">
-        <span class="fa fa-star checked"></span>
-    </div>
-    <p className="Rating"> {hotel["Rating"]} </p>
-    <p className="foodtype"> {hotel["Food Served"]} </p>
-</div>
-
-</div>  */}

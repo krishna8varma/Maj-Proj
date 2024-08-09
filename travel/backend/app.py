@@ -5,6 +5,7 @@ import weather
 from flask_cors import CORS
 
 app = Flask(__name__)
+app.json.sort_keys= False
 CORS(app)
 
 data={}
@@ -62,9 +63,7 @@ def recommend_activities():
 
 @app.route('/trip', methods=['GET']) #desti,duration,type,selected_act
 def trip_planner():
-    startLocation=data['startingLocation']
     destination=data['endingDestination']
-    start_date=data['startingDate']
     duration=data['duration']
     type_of_trip=data['tripType']
     selected_activities=data['selected_activities']
@@ -78,9 +77,9 @@ def trip_planner():
 def getweather():
     destination=data['endingDestination']
     start_date=data['startingDate']
-    duration=data['duration']
-    weather_data=weather.get_weather_data(destination,start_date,duration)       
+    duration=data['duration']       
     try:
+        weather_data=weather.get_weather_data(destination,start_date,duration)
         data['destinationLocation']=weather_data['location']
     except KeyError:
         return {"Error" : "Data not found"}
@@ -102,34 +101,6 @@ def food():
     except:
         return jsonify({'error' : "failed"}),400
     return jsonify({'food' : food}),200
-    
-# def fetch_weather(destination,start_date,duration):
-#     try:
-#         weather_info=weather.get_weather_data(destination,start_date,duration)
-#     except:
-#         weather_info={}
-#     return weather_info
-
-# def fetch_trip(destination,duration,type_of_trip,selected_activities) :
-#     try:
-#         trip=gemini.planned_trip(destination,duration,type_of_trip,selected_activities)
-#     except:
-#         trip={}
-#     return trip
-
-# def fetch_hotels(destination,type_of_trip):
-#     try:
-#        hotels=gemini.get_hotels(destination,type_of_trip)
-#     except:
-#         hotels=[]
-#     return hotels
-
-# def fetch_food(destination):
-#     try:
-#         food=gemini.get_food(destination)
-#     except:
-#         food=[]
-#     return food
 
 if __name__=='__main__':
     app.run(debug=True)

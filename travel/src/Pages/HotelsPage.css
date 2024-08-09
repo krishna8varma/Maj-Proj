@@ -18,12 +18,7 @@
    
   }
 
-  .hotelSelected :active,.hotelSelected:focus {
-    text-decoration: underline;
-    color: #028BB2;
-   
- }
-
+  
 
   .selection-bar {
      margin-left: 350px;
@@ -70,14 +65,13 @@
   }
   .heading{
     color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
     width: 13rem;
     margin-left: 10px;
-    line-height: 1.5rem;
+    line-height: 2rem;
     height: 2rem;
     position: relative;
-    top: 1.3rem;
-
+    top: 2rem;
+   
     
   }
   h6{

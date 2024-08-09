@@ -78,11 +78,12 @@ const Review = () => {
                         )
                     })
                 }
-                <div className="rcard">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSflAl9fiuveFHk1q2f3e7xrCO75HLcTmkaXlFGQbD76HvVAqA/viewform?usp=sf_link">   <div className="rcard">
                     <img src={Reviewcard} muted autoPlay loop type="Reviewcard/jpg" alt="Ratings"></img>
 
-                </div>
+                </div></a> 
             </div>
+          <button className="ReviewForm">Leave a Review</button>
         </section>
     )
 }
