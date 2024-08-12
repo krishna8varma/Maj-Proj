@@ -24,8 +24,6 @@ const footer=()=> {
                 <BsTwitterX className="icon"/>
                 </div>
                 </div>
-                
-                   
             </div>
         </div>
     )

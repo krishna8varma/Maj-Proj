@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import json
 
 def get_photo(query):
     key='KITvPIESUiDZyOPsXAK0_8dyFbwHTBoD3avdzOqJs78'
@@ -7,13 +8,13 @@ def get_photo(query):
     params={
         "query" : query,
         "client_id" : key,
-        "per_page" : 30,
+        "per_page" : 10,
     }
     response=requests.get(url=url,params=params)
     if response.status_code == 200:
         data=response.json()
         ls=[]
-        for x in range(0,30):
+        for x in range(0,10):
             photo=data['results'][x]['urls']['small']
             text=data['results'][x]['alt_description']
             ls.append({'image' : photo, "alt_txt" : text})
